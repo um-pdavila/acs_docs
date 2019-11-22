@@ -14,7 +14,7 @@ How do I connect to CCS resources from off-site?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To access CCS resources while offsite, :ref:`open a VPN connection
-first <vpn>`__. 
+first <vpn>`. 
 
 .. note :: CCS does not administer UM VPN accounts.  Support is handled by UMIT for any and all VPN issues: 
    
