@@ -273,7 +273,7 @@ Example : cdo and nco depend on netcdf, and netcdf depends on hdf5.
 
 To view dependent modules in ``ml av``, first load their prerequisites.
 
-**“Behind the scenes”**
+**"Behind the scenes"**
 
 After an hdf5 module is loaded, any available netcdf modules will show
 in ``ml av`` output :
