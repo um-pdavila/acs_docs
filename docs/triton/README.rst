@@ -6,3 +6,4 @@ Triton user guides
 
    Triton Modules <1-modules>
    WML CE <2-wmlce>
+   JupyterHub <3-jh>
