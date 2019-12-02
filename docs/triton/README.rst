@@ -2,7 +2,7 @@ Triton user guides
 ==================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    Triton Modules <1-modules>
    WML CE <2-wmlce>
