@@ -5,5 +5,5 @@ Triton user guides
    :maxdepth: 3
 
    Triton Modules <1-modules>
-   WML CE <2-wmlce>
+   IBM WML CE (Deep Learning) <2-wmlce>
    JupyterHub <3-jh>
