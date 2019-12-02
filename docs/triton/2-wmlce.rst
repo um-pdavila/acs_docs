@@ -15,17 +15,17 @@ Introduction
 ------------
 
 Each of Triton's compute nodes is an IBM POWER System AC922 with two
-NVIDIA Tesla V100 GPUs, which is engineered to be [the most powerful
-training platform]
-(https://www.ibm.com/us-en/marketplace/power-systems-ac922). In order to
-release the power of the advanced hardware, IBM provides Watson Machine
-Learning Community Edition (WML CE) which is a set of software packages
-for deep learning and machine learning development and applications on
-the state-of-the-art POWER system equiped with the most advanced NVIDIA
-GPUs. WML CE contains the popular open source deep learning frameworks
-such as TensorFlow and PyTorch, IBM-optimized Caffe, IBM's machine
-learning library (Snap ML) and software for distributed training (DDL)
-and large model support (LMS).
+NVIDIA Tesla V100 GPUs, which is engineered to be `the most powerful
+training
+platform <https://www.ibm.com/us-en/marketplace/power-systems-ac922>`__.
+In order to release the power of the advanced hardware, IBM provides
+Watson Machine Learning Community Edition (WML CE) which is a set of
+software packages for deep learning and machine learning development and
+applications on the state-of-the-art POWER system equiped with the most
+advanced NVIDIA GPUs. WML CE contains the popular open source deep
+learning frameworks such as TensorFlow and PyTorch, IBM-optimized Caffe,
+IBM's machine learning library (Snap ML) and software for distributed
+training (DDL) and large model support (LMS).
 
 Login
 -----
@@ -35,9 +35,9 @@ Login
 Using Anaconda
 --------------
 
-The WML CE packages are distributed as conda packages in [an online
-conda repository]
-(https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/).
+The WML CE packages are distributed as conda packages in `an online
+conda
+repository <https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/>`__.
 You can use Anaconda or Miniconda to install and manage the packages.
 
 On Triton, you have two options:
@@ -51,8 +51,8 @@ On Triton, you have two options:
    assistance.
 
 -  Option 2. You can also install Anaconda or Miniconda at your home
-   directory following [the WML CE system setup guide]
-   (https://www.ibm.com/support/knowledgecenter/SS5SF7\_1.6.2/navigation/wmlce\_setupAnaconda.html),
+   directory following `the WML CE system setup
+   guide <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.6.2/navigation/wmlce_setupAnaconda.html>`__,
    and handle it by yourself.
 
 Conda general commands:
@@ -141,8 +141,8 @@ be submitted to the compute nodes using LSF.
 Submitting jobs using LSF on Triton
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please read [Scheduling Jobs on Pegasus]
-(https://ccs.miami.edu/ac/docs/).
+Please read `Scheduling Jobs on
+Pegasus <https://ccs.miami.edu/ac/docs/>`__.
 
 Use ``#BSUB -q normal`` to submit job to queue normal for testing on
 Triton now (it will change in the future).
@@ -264,12 +264,12 @@ Notes:
 References and Additional Resources
 -----------------------------------
 
-[Watson Machine Learning Community Edition]
-(https://developer.ibm.com/linuxonpower/deep-learning-powerai/releases/)
+`Watson Machine Learning Community
+Edition <https://developer.ibm.com/linuxonpower/deep-learning-powerai/releases/>`__
 
-[IBM Watson Machine Learning Community Edition Version 1.6.2
-documentation]
-(https://www.ibm.com/support/knowledgecenter/SS5SF7\_1.6.2/navigation/welcome.html)
+`IBM Watson Machine Learning Community Edition Version 1.6.2
+documentation <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.6.2/navigation/welcome.html>`__
 
-[Deep learning and AI on Power Systems technical resources]
-(https://developer.ibm.com/linuxonpower/deep-learning-powerai/library/)
+`Deep learning and AI on Power Systems technical
+resources <https://developer.ibm.com/linuxonpower/deep-learning-powerai/library/>`__
+
