@@ -1,4 +1,9 @@
- # JupyterHub on Triton User Menu ## Introduction
+JupyterHub on Triton User Menu
+==============================
+
+Introduction
+------------
+
 `JupyterHub <https://jupyterhub.readthedocs.io/en/stable/index.html>`__
 provides Jupyter Notebook for multiple users.
 
