@@ -1,4 +1,9 @@
- # JupyterHub on Triton User Menu ## Introduction
+JupyterHub on Triton User Menu
+==============================
+
+Introduction
+------------
+
 `JupyterHub <https://jupyterhub.readthedocs.io/en/stable/index.html>`__
 provides Jupyter Notebook for multiple users.
 
@@ -61,7 +66,7 @@ Logout ( **IMPORTANT** )
       button at the top-right corner.
 
 Using Jupyter Notebook
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 After the notebook server starts, you will see the interface page
 showing your home directory.
@@ -73,7 +78,7 @@ Details can be found at the official `Jupyter Notebook User
 Documentation <https://jupyter-notebook.readthedocs.io/en/stable/notebook.html>`__.
 
 Using System-wise Kernels
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The system-wise kernels installed by the system administrators contain
 common packages. You can use them to test your code if you do not need
@@ -116,7 +121,7 @@ If you cannot find the packages you need through the system-wise
 kernels, you can create your own kernels.
 
 Creating Your Own IPython Kernel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  $ ``ssh <caneid>@triton.ccs.miami.edu`` to login to Triton
 -  $ If you do not need deep learning packages, do
@@ -174,7 +179,7 @@ After the package is installed, you can use it in your notebook by
 typing and running ``import <package name>`` in a code cell.
 
 Creating Your Own R kernel
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 (While installing Python packages, press ``y`` on your keyboard when you
 see ``Proceed ([y]/n)?``) (While installing R packages inside R, you can
