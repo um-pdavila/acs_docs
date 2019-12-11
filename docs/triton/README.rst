@@ -7,3 +7,5 @@ Triton user guides
    Triton Modules <1-modules>
    IBM WML CE (Deep Learning) <2-wmlce>
    JupyterHub <3-jh>
+   R Packages <4-rPackages>
+   
