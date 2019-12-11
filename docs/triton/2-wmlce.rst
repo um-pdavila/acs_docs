@@ -142,7 +142,7 @@ Submitting jobs using LSF on Triton
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please read `Scheduling Jobs on
-Pegasus <https://ccs.miami.edu/ac/docs/>`__.
+Pegasus <https://acs-docs.readthedocs.io/pegasus/jobs/README.html>`__.
 
 Use ``#BSUB -q normal`` to submit job to queue normal for testing on
 Triton now (it will change in the future).
