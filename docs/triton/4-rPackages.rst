@@ -8,7 +8,7 @@ install.packages('nameOfPackage') command within R.
 
 
 Installing readr/tidyverse Packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 -  Create a .R directory within your home on Triton: $ ``mkdir .R``
 -  Move into your new .R directory and open a new file called Makevars: $ ``vi .R/Makevars``
 -  Include the following lines within your Makevars file to set the specified C-flags and C-compiler to C99 mode:
