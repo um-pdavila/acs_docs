@@ -52,7 +52,7 @@ which will search packages from ``https://repo.anaconda.com/pkgs/main``
 and ``https://repo.anaconda.com/pkgs/r``. The conda version is 4.7.12.
 
 In order to use it, run $
-``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh``.
+``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh``
 
 Anaconda 2
 ~~~~~~~~~~
