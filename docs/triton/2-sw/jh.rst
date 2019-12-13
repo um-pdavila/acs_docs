@@ -90,13 +90,11 @@ the menubar and choosing ``Change kernel``.
 
 -  Anaconda2 Base (Python 2.7) and Anaconda3 Base (Python 3.7) kernels are the Anaconda base environments. Each of them has over 150 scientific packages automatically installed with Anaconda. You can check what packages have been installed with the following commands.
 
-- $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh``
-or
-
-- $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh``
+- For Anaconda2, $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh`` or,
+- For Anaconda3, $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh`` 
 - $ ``conda activate base``
 - $ ``conda list``
-```
+
 -  Deep Learning (IBM WML CE v1.6.1) and Deep Learning (IBM WML CE
    v1.6.2) kernels The Deep Learning kernel has the `IBM Watson Machine
    Learning Community Edition
