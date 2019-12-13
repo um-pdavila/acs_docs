@@ -1,5 +1,11 @@
 JupyterHub on Triton User Menu
 ==============================
+In this document
+
+-  the dollar sign ($) indicates the ``text`` follows it is a
+   command-line interface (CLI) command that you need to type in.
+-  the angle brackets (< >) indicates the enclosed element is mandatory
+   that needs to be replaced with the user-dependent information.
 
 Introduction
 ------------
@@ -24,9 +30,7 @@ Using JupyterHub on Triton
 Login
 ~~~~~
 
--  First you need to request a project on Triton. (please see the
-   policies for CCS Account Registration and Project Request:
-   https://ccs.miami.edu/ac/policies/)
+-  First you need to have access to Triton. Please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__.
 -  Connect with the UM network on campus or via
    `VPN <https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html>`__.
 -  Open the Login page https://jupyter.ccs.miami.edu:8000 on your
@@ -41,8 +45,8 @@ Starting your Jupyter Notebook server
 -  Choose the memory, number of CPU cores, time you want to run the
    Notebook server and whether or not you want to use a GPU.
 -  Press the ``Request`` button to request and start a Notebook server.
-   (It takes time to locate the resources and start the notebook server,
-   so please be patient.)
+   It takes time to locate the resources and start the notebook server,
+   so please be patient.
 
 Logout ( **IMPORTANT** )
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,13 +92,12 @@ new notebook file (.ipynb) with a selected kernel by clicking on the
 Notebook Editor page, you can change kernel by clicking ``Kernel`` in
 the menubar and choosing ``Change kernel``.
 
--  Python 2.7 and Python 3.7 kernels Installed Packages: numpy, scipy,
-   scikit-learn, pandas, matplotlib.
+-  Anaconda2 Base (Python 2.7) and Anaconda3 Base (Python 3.7) kernels are the Anaconda base environments. Each of them has over 150 packages automatically installed. You can check the packages using the following commands after you login to Triton via SSH ($ ``ssh <caneid>@triton.ccs.miami.edu``).
 
-   -  Python 2.7 kernel is located at
-      ``/share/apps/jupyter_notebook_kernels/python27``
-   -  Python 3.7 kernel is located at
-      ``/share/apps/jupyter_notebook_kernels/python37``
+   - For Anaconda2, $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh``
+   - For Anaconda3, $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh`` 
+   - $ ``conda activate base``
+   - $ ``conda list``
 
 -  Deep Learning (IBM WML CE v1.6.1) and Deep Learning (IBM WML CE
    v1.6.2) kernels The Deep Learning kernel has the `IBM Watson Machine
