@@ -1,13 +1,13 @@
 .. _transfer: 
 
-Transferring Files to Pegasus
-=============================
+Transferring Files
+==================
 
-Pegasus supports multiple file transfer programs such as FileZilla and
+CCS systems support multiple file transfer programs such as FileZilla and
 PSFTP, and common command line utilities such as ``scp`` and ``rsync``.
-Use Pegasus head nodes (login nodes) for these types of file transfers.
+Use cluster head nodes (login nodes) for these types of file transfers.
 For transferring large amounts of data from systems outside the
-University of Miami, CCS AC also offers a gateway server that supports
+University of Miami, CCS ACS also offers a gateway server that supports
 SFTP and Globus.
 
 Using command line utilities
@@ -15,7 +15,7 @@ Using command line utilities
 
 Use ``cp`` to copy files within the same computation system. Use
 ``scp``, ``sftp``, or ``rsync`` to transfer files between computational
-systems (e.g.  Pegasus scratch to Visx project space). When executing
+systems (e.g., scratch space to Visx project space). When executing
 multiple instantiations of command line utilities like rsync and scp,
 please ***limit your transfers to no more than 2-3 processes at a
 time.***
@@ -73,9 +73,7 @@ installation instructions for the appropriate platform
 
 Launch FileZilla and open **File : Site Manager**.
 
-Click the "New Site" button and name the entry.
-
-::
+Click the "New Site" button and name the entry.  Pegasus example::
 
     Host:       pegasus.ccs.miami.edu
     Protocol:   SFTP

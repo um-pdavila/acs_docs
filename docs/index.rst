@@ -7,8 +7,8 @@ Policies <https://ccs.miami.edu/ac/policies>`__ webpage.
 How do I reset my CCS password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Via the CCS Portal: https://portal.ccs.miami.edu Click on “Reset
-Password”
+| Via the CCS Portal: https://portal.ccs.miami.edu 
+| Click on “Reset Password”
 
 How do I connect to CCS resources from off-site?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,16 +30,7 @@ first <vpn>`.
 .. toctree::
    :maxdepth: 2
 
-   Triton (in development) <triton/README>
+   ACS Services <services/README>
+   Triton Cluster (in development) <triton/README>
    Pegasus Cluster <pegasus/README>
-   SVN service <services/svn>
    Linux on Clusters <linux/README> 
-
-
---------------
-
-**Admin notes :**    
-
-- this file in acs_docs/docs must be named "index.rst" for ReadTheDocs Sphinx 
-- all other sub-directories have README.rst files 
-- Sphinx toctree section is necessary for ReadTheDocs menus 

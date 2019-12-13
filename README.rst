@@ -42,3 +42,6 @@ first <vpn>`.
 
 - this file is for GitHub.com navigation only 
 - ReadTheDocs renders content from "index.rst" in the "docs" directory    
+- the menu file in [repo]/docs must be named "index.rst" for ReadTheDocs Sphinx 
+- all other sub-directories have README.rst files 
+- Sphinx toctree section in "index.rst" is necessary for ReadTheDocs menus 

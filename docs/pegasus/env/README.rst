@@ -7,6 +7,5 @@ Pegasus Environment
 
    Pegasus Introduction <1-intro>
    Connecting <2-connect>
-   File Transfers <3-transfer>
-   Pegasus Projects & Resources <4-projects>
+   Pegasus Projects & Resources <3-projects>
    
