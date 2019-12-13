@@ -30,7 +30,7 @@ first <vpn>`.
 .. toctree::
    :maxdepth: 2
 
-   Triton (in development) <triton/README>
+   CCS Services <services/README>
+   Triton Cluster (in development) <triton/README>
    Pegasus Cluster <pegasus/README>
-   SVN service <services/svn>
    Linux on Clusters <linux/README> 
