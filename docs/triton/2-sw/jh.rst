@@ -92,8 +92,8 @@ the menubar and choosing ``Change kernel``.
 
 - $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh``
 or
-- $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh``
 
+- $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh``
 - $ ``conda activate base``
 - $ ``conda list``
 ```
