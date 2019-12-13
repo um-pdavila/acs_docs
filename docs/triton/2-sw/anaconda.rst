@@ -15,7 +15,7 @@ Anaconda is an open-source distribution of the Python and R programming
 languages for scientific computing. The Anaconda distribution comes with
 conda, which is a package manager and environment manager, and over 150
 packages automatically installed (other 1,500+ packages could be
-downloaded and installed easily from the Anaconda repository).
+downloaded and installed easily from the Anaconda repository). In order to use Anaconda on Triton, you need to have access to Triton. Please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__.
 
 Conda Environment
 -----------------
@@ -38,8 +38,8 @@ Using Different Anaconda Installed on Triton
 
 Several Anaconda have been installed on Triton in the /share directory
 and could be used by everyone. The easy way to use a different Anaconda
-is to login to Triton from a new terminal and source the specific
-Anaconda ``conda.sh`` file.
+is to login to Triton from a new terminal ($ ``ssh <caneid>@triton.ccs.miami.edu``) and source the specific
+Anaconda ``conda.sh`` file. 
 
 $ ``source <anaconda installed path>/etc/profile.d/conda.sh``
 
