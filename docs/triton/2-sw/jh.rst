@@ -30,8 +30,7 @@ Using JupyterHub on Triton
 Login
 ~~~~~
 
--  First you need to have access to Triton. (please check the
-   _`CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__)
+-  First you need to have access to Triton. (please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__)
 -  Connect with the UM network on campus or via
    `VPN <https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html>`__.
 -  Open the Login page https://jupyter.ccs.miami.edu:8000 on your
@@ -93,7 +92,7 @@ new notebook file (.ipynb) with a selected kernel by clicking on the
 Notebook Editor page, you can change kernel by clicking ``Kernel`` in
 the menubar and choosing ``Change kernel``.
 
--  Anaconda2 Base (Python 2.7) and Anaconda3 Base (Python 3.7) kernels are the Anaconda base environments. Each of them has over 150 packages automatically installed. You can check the packages using the following commands after you login to Triton via SSH. ($ ``ssh <caneid>@triton.ccs.miami.edu``)
+-  Anaconda2 Base (Python 2.7) and Anaconda3 Base (Python 3.7) kernels are the Anaconda base environments. Each of them has over 150 packages automatically installed. You can check the packages using the following commands after you login to Triton via SSH ($ ``ssh <caneid>@triton.ccs.miami.edu``).
 
    - For Anaconda2, $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh``
    - For Anaconda3, $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh`` 
