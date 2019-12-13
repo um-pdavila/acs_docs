@@ -1,5 +1,9 @@
 JupyterHub on Triton User Menu
 ==============================
+In this document
+
+- the dollar sign ($) indicates the `text` follows it is a command-line interface (CLI) command that you need to type in.
+- the angle brackets (< >) indicates the enclosed element is mandatory that needs to be replaced with the user-dependent information. 
 
 Introduction
 ------------
@@ -88,9 +92,9 @@ new notebook file (.ipynb) with a selected kernel by clicking on the
 Notebook Editor page, you can change kernel by clicking ``Kernel`` in
 the menubar and choosing ``Change kernel``.
 
--  Anaconda2 Base (Python 2.7) and Anaconda3 Base (Python 3.7) kernels are the Anaconda base environments. Each of them has over 150 scientific packages automatically installed with Anaconda. You can check what packages have been installed with the following commands.
+-  Anaconda2 Base (Python 2.7) and Anaconda3 Base (Python 3.7) kernels are the Anaconda base environments. Each of them has over 150 packages automatically installed. You can check the packages using the following commands after you login to Triton via SSH.
 
-- For Anaconda2, $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh`` or,
+- For Anaconda2, $ ``source /share/apps/anaconda2/2019.10/etc/profile.d/conda.sh``
 - For Anaconda3, $ ``source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh`` 
 - $ ``conda activate base``
 - $ ``conda list``
