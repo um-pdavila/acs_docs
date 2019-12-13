@@ -30,7 +30,7 @@ Using JupyterHub on Triton
 Login
 ~~~~~
 
--  First you need to have access to Triton. (please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__)
+-  First you need to have access to Triton. Please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__.
 -  Connect with the UM network on campus or via
    `VPN <https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html>`__.
 -  Open the Login page https://jupyter.ccs.miami.edu:8000 on your
@@ -45,8 +45,8 @@ Starting your Jupyter Notebook server
 -  Choose the memory, number of CPU cores, time you want to run the
    Notebook server and whether or not you want to use a GPU.
 -  Press the ``Request`` button to request and start a Notebook server.
-   (It takes time to locate the resources and start the notebook server,
-   so please be patient.)
+   It takes time to locate the resources and start the notebook server,
+   so please be patient.
 
 Logout ( **IMPORTANT** )
 ~~~~~~~~~~~~~~~~~~~~~~~~
