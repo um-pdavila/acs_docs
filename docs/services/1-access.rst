@@ -111,7 +111,7 @@ allowing continued use of the terminal.
 
 
 Connecting to CCS Systems from offsite
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Triton, Pegasus, and other CCS resources are only available from within the
 University’s secure campus networks (wired or SecureCanes wireless). To
