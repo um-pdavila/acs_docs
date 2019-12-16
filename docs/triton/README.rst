@@ -5,5 +5,5 @@ Triton user guides
    :maxdepth: 5
 
    Triton Environment <1-env/README>
-   Triton Available Software <2-sw/README>
+   Triton Software Suites <2-sw/README>
    
