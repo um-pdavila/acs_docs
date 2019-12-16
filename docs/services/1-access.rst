@@ -46,14 +46,14 @@ http://wiki.centos.org/HowTos/Network/SecuringSSH
 .. _x11: 
 
 Forwarding the display with x11
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To use graphical programs over SSH, the graphical display must be
 forwarded securely. This typically requires running an X Window System
 server and adding the ``-X`` option when connecting via SSH.
 
 Download an X Window System server
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 -  For Windows, Xming with the default installation options : http://sourceforge.net/projects/xming/files/latest/download
 -  For Mac, XQuartz (OSX 10.8+) : http://www.xquartz.org/ 
@@ -63,7 +63,7 @@ _OS X versions 10.5 through 10.7 include X11 and do not require XQuartz._
 
 
 Connect with X11 forwarding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Launch the appropriate X Window server **before** connecting to CCS servers via SSH.
 
@@ -97,7 +97,7 @@ Using either the Mac Terminal or the xterm window, connect using the
     bash-4.1$ ssh -X username@pegasus.ccs.miami.edu
 
 Launch a graphical application
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 Use ``&`` after the command to run the application in the background,
 allowing continued use of the terminal.
