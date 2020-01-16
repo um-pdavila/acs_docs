@@ -28,11 +28,13 @@ first <vpn>`.
 
 `ACS Docs Index <docs/index.rst>`__
 
+`CCS ACS Policies <docs/policies/>`__
+
+`ACS Services <docs/services/>`__
+
 `Triton Cluster (in development) <docs/triton/>`__
 
 `Pegasus Cluster <docs/pegasus/>`__
-
-`SVN service <docs/services/svn>`__
 
 `Linux on Pegasus <docs/linux/>`__
 
