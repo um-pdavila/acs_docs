@@ -219,14 +219,14 @@ A job script example:
    #BSUB -W 00:10
 
    # Anaconda setup
-   CONDA_ROOT=~/share/apps/ibm_wml_ce/1.6.2/anaconda3
+   CONDA_ROOT=/share/apps/ibm_wml_ce/1.6.2/anaconda3
    source ${CONDA_ROOT}/etc/profile.d/conda.sh
-   conda activate bash
+   conda activate wml_162_env
 
    cat > setup.sh << EoF_s
    #! /bin/sh
    if [ \${OMPI_COMM_WORLD_LOCAL_RANK} -eq 0 ]; then
-     /bin/rm -rf /tmp/data.\${USER}
+     /bin/rm -rf /scratch/<your scratch directory>/mnist
    fi
    EoF_s
    chmod +x setup.sh
@@ -246,11 +246,10 @@ A job script example:
      ./launch.sh \
      python \
        /scratch/dl_examples/tensorflow_examples/mnist/mnist-env.py \
-          --data_dir="/tmp/data.${USER}"
+          --data_dir="/scratch/<your scratch directory>/mnist"
 
    # Clean up
    /bin/rm -f launch.sh
-
 
 Using LMS (Testing)
 -------------------
