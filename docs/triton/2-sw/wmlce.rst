@@ -205,6 +205,52 @@ Using DDL (Testing)
 https://www.ibm.com/support/knowledgecenter/SS5SF7_1.6.2/navigation/wmlce_ddltf_tutorial.html
 https://www.ibm.com/support/knowledgecenter/SS5SF7_1.6.2/navigation/wmlce_ddlpytorch_tutorial.html
 
+A job script example:
+
+::
+
+   #BSUB -L /bin/bash
+   #BSUB -J "MNIST_DDL"
+   #BSUB -o "MNIST_DDL.%J"
+   #BSUB -n 2
+   #BSUB -R "span[ptile=2]"
+   #BSUB -gpu "num=2"
+   #BSUB -q "normal"
+   #BSUB -W 00:10
+
+   # Anaconda setup
+   CONDA_ROOT=/share/apps/ibm_wml_ce/1.6.2/anaconda3
+   source ${CONDA_ROOT}/etc/profile.d/conda.sh
+   conda activate wml_162_env
+
+   cat > setup.sh << EoF_s
+   #! /bin/sh
+   if [ \${OMPI_COMM_WORLD_LOCAL_RANK} -eq 0 ]; then
+     /bin/rm -rf /scratch/<your scratch directory>/mnist
+   fi
+   EoF_s
+   chmod +x setup.sh
+   mpirun ./setup.sh
+
+   # Workaround for GPU selection issue
+   cat > launch.sh << EoF_l
+   #! /bin/sh
+   export CUDA_VISIBLE_DEVICES=0,1
+   exec \$*
+   EoF_l
+   chmod +x launch.sh
+
+   # Run the program
+   export PAMI_IBV_ADAPTER_AFFINITY=0
+   ddlrun \
+     ./launch.sh \
+     python \
+       /scratch/dl_examples/tensorflow_examples/mnist/mnist-env.py \
+          --data_dir="/scratch/<your scratch directory>/mnist"
+
+   # Clean up
+   /bin/rm -f launch.sh
+
 Using LMS (Testing)
 -------------------
 
