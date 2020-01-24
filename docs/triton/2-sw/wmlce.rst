@@ -212,7 +212,7 @@ A job script example:
    #BSUB -L /bin/bash
    #BSUB -J "MNIST_DDL"
    #BSUB -o "MNIST_DDL.%J"
-   #BSUB -n 2
+   #BSUB -n 4
    #BSUB -R "span[ptile=2]"
    #BSUB -gpu "num=2"
    #BSUB -q "normal"
@@ -222,15 +222,6 @@ A job script example:
    CONDA_ROOT=/share/apps/ibm_wml_ce/1.6.2/anaconda3
    source ${CONDA_ROOT}/etc/profile.d/conda.sh
    conda activate wml_162_env
-
-   cat > setup.sh << EoF_s
-   #! /bin/sh
-   if [ \${OMPI_COMM_WORLD_LOCAL_RANK} -eq 0 ]; then
-     /bin/rm -rf /scratch/<your scratch directory>/mnist
-   fi
-   EoF_s
-   chmod +x setup.sh
-   mpirun ./setup.sh
 
    # Workaround for GPU selection issue
    cat > launch.sh << EoF_l
@@ -250,6 +241,8 @@ A job script example:
 
    # Clean up
    /bin/rm -f launch.sh
+
+In this example, 4 processors are requested (-n 4), and they need to be 2 processors per node (-R "span[ptile=2]"), so 2 nodes (4 processors / 2 processors per node) will be involved. Also, 2 GPUs per node are requested (-gpu "num=2"), and therefore 4 gpu in total (2 GPUs per node * 2 nodes) are requested for this job.
 
 Using LMS (Testing)
 -------------------
