@@ -242,7 +242,7 @@ A job script example:
    # Clean up
    /bin/rm -f launch.sh
 
-In this example, 4 processors are requested (-n 4), and they need to be 2 processors per node (-R "span[ptile=2]"), so 2 nodes (4 processors / 2 processors per node) will be involved. Also, 2 GPUs per node are requested (-gpu "num=2"), and therefore 4 gpu in total (2 GPUs per node * 2 nodes) are requested for this job.
+In this example, 4 CPU cores are requested (-n 4), and they need to be 2 cores per node (-R "span[ptile=2]"), so 2 nodes (4 cores / 2 cores per node) will be involved. Also, 2 GPUs per node are requested (-gpu "num=2"), and therefore 4 GPUs in total (2 GPUs per node * 2 nodes) are requested for this job.
 
 Using LMS (Testing)
 -------------------
