@@ -207,3 +207,14 @@ Common reasons include:
 See :ref:`LSF <p-jobs>` for assistance with appropriate resource
 reservations and :ref:`Pegasus Queues <p-queues>` for default wall
 times.
+
+
+What about jobs in UNKWN state?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Re-queue your job in LSF : 
+
+| ``$ bkill -r jobID`` 
+| ``$ bkill -r jobID``   (a second time) 
+| ``$ brequeue -e jobID``
+
