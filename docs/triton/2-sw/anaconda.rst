@@ -15,7 +15,7 @@ Anaconda is an open-source distribution of the Python and R programming
 languages for scientific computing. The Anaconda distribution comes with
 conda, which is a package manager and environment manager, and over 150
 packages automatically installed (other 1,500+ packages could be
-downloaded and installed easily from the Anaconda repository). In order to use Anaconda on Triton, you need to have access to Triton. Please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__.
+downloaded and installed easily from the Anaconda repository). In order to use Anaconda on Triton, you need to have access to Triton. Please check the `CCS AC Policies <https://acs-docs.readthedocs.io/policies/README.html>`__.
 
 Conda Environment
 -----------------
@@ -80,7 +80,7 @@ In order to use it, run $
 ``source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh``
 
 More details can be found at `IBM WML on Triton User
-Menu <https://acs-docs.readthedocs.io/triton/2-wmlce.html>`__.
+Menu <https://acs-docs.readthedocs.io/triton/2-sw/wmlce.html>`__.
 
 Using Anaconda Base Environment (Python)
 ----------------------------------------
@@ -130,8 +130,8 @@ An job script example:
     python ./<my_test.py> 
 
 In my\_test.py, you can import any package that is provided by the base
-environment. Details about job scheduling can be found at [Pegasus Job
-Scheduling] (https://acs-docs.readthedocs.io/pegasus/jobs/README.html).
+environment. Details about job scheduling can be found at `Pegasus Job
+Scheduling <https://acs-docs.readthedocs.io/pegasus/jobs/README.html>`_.
 On Triton, using ``normal`` queue.
 
 Creating Your Own Environment
