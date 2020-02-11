@@ -20,8 +20,8 @@ C++ program and compilation:
     //=================================================================
     // C++ example: MPI Example 1
     //=================================================================
-    #include 
-    #include 
+    #include <iostream>
+    #include <mpi.h> 
     using namespace std;
     int main(int argc, char** argv){
       int iproc;
@@ -60,8 +60,8 @@ C program and compilation:
     //=================================================================
     // C example: MPI Example 1
     //=================================================================
-    #include 
-    #include 
+    #include <stdio.h>
+    #include "mpi.h" 
     int main(int argc, char** argv){
     int iproc;
     int icomm;
