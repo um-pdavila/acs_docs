@@ -132,28 +132,3 @@ Example script with MPI
 ``foo.exe`` is the mpi executable name. It can be followed by its own
 argument list.
 
-Example script for MPI/OpenMP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-``testparao.job``
-
---------------
-
-.. code:: bash
-
-    #!/bin/bash
-    #BSUB -J mpijob
-    #BSUB -o %J.out
-    #BSUB -e %J.err
-    #BSUB -W 1:30
-    #BSUB -q parallel
-    #BSUB -n 32                             # Request 32 cores                
-    #BSUB -R "span[ptile=16]"               # Request 16 cores per node
-    #BSUB -R "rusage[mem=128]"              # Request 128MB per core
-    #
-
-    mpiexec --mca btl self,sm,openib foo.exe
-
-The command line is similar to Intel MPI job above. Option
-``--mca self,sm,openib`` tells OpenMP to use lookback, shared memory,
-and openib for inter-process communication.
