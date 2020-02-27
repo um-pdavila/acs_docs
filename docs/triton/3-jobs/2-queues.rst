@@ -24,23 +24,23 @@ bigmem queue.
      - Wall time default \/ max 
      - Description 
    * - normal 
-     - - 
+     - 512
      - 256GB max 
      - 1 day \/ 7 days 
      - Parallel and serial jobs up to 256GB memory per host
    * - bigmem 
-     - 64 max 
+     - 40
      - 250GB max hosts
      - 4 hours \/ 5 days 
-     - jobs requiring nodes with expanded memory 
-   * - debug 
-     - 64 max 
+     - Jobs requiring nodes with expanded memory up to 1TB
+   * - short 
+     - 64  
      - 25GB max 
      - 30 mins \/ 30 mins 
-     - job debugging 
+     - Jobs less than 1 hour wall time.  Scheduled with higher priority.
    * - interactive 
-     - 40- 
+     - 40 
      - 250GB max 
      - 6 hours \/ 1 day 
-     - interactive jobs <br/> only max 1 job per user
+     - Interactive jobs <br/> only max 1 job per user
 
