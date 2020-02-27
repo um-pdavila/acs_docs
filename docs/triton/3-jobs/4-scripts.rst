@@ -107,7 +107,7 @@ number other than 16 will be rejected from the parallel queue.***
 core. Parallel job performance may be affected, or even interrupted, by
 other badly-configured jobs running on the same host.
 
-Example script for Intel/Intel MPI
+Example script with MPI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``testparai.job``
@@ -121,7 +121,7 @@ Example script for Intel/Intel MPI
     #BSUB -o %J.out
     #BSUB -e %J.err
     #BSUB -W 1:30
-    #BSUB -q parallel
+    #BSUB -q normal
     #BSUB -n 32                             # Request 32 cores
     #BSUB -R "span[ptile=16]"               # Request 16 cores per node
     #BSUB -R "rusage[mem=128]"              # Request 128MB per core
