@@ -6,4 +6,4 @@ Triton user guides
 
    Triton Environment <1-env/README>
    Triton Software Suites <2-sw/README>
-   
+   Triton Job Scheduling <3-lsf/README>
