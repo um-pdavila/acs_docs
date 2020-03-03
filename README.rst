@@ -1,7 +1,7 @@
 Advanced Computing Guides
 =========================
 
-Detailed information for FAQ topics is available here and on our :ref: `CCS ACS Policies<policies>`.
+Detailed information for FAQ topics is available here and on our :ref:`CCS ACS Policies<policies>`.
 
 How do I reset my CCS password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
