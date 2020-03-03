@@ -1,8 +1,7 @@
 Advanced Computing Guides
 =========================
 
-Detailed information for FAQ topics is available here and on our `ACS
-Policies <https://ccs.miami.edu/ac/policies>`__ webpage.
+Detailed information for FAQ topics is available here and on our :ref:`CCS ACS Policies<policies>`
 
 How do I reset my CCS password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
