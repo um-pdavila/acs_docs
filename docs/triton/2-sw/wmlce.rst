@@ -244,7 +244,9 @@ A job script example:
    # Clean up
    /bin/rm -f launch.sh
 
-In this example, 4 CPU cores are requested (-n 4), and they need to be 2 cores per node (-R "span[ptile=2]"), so 2 nodes (4 cores / 2 cores per node) will be involved. Also, 2 GPUs per node are requested (-gpu "num=2"), and therefore 4 GPUs in total (2 GPUs per node * 2 nodes) are requested for this job.
+-  ``#BSUB -n 4`` requests 4 CPU cores 
+-  ``#BSUB -R "span[ptile=2]"`` asks for 2 cores per node, so 2 nodes (4 cores / 2 cores per node) will be involved.
+-  ``#BSUB -gpu "num=2"`` requests 2 GPUs per node, and therefore 4 GPUs in total (2 GPUs per node * 2 nodes) are requested for this job.
 
 Using LMS (Testing)
 -------------------
