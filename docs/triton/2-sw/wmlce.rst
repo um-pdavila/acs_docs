@@ -222,6 +222,8 @@ A job script example:
    CONDA_ROOT=/share/apps/ibm_wml_ce/1.6.2/anaconda3
    source ${CONDA_ROOT}/etc/profile.d/conda.sh
    conda activate wml_162_env
+   
+   EXAMPLE_DIR=/scratch/dl_examples/tensorflow_examples/mnist
 
    # Workaround for GPU selection issue
    cat > launch.sh << EoF_l
@@ -236,8 +238,8 @@ A job script example:
    ddlrun \
      ./launch.sh \
      python \
-       /scratch/dl_examples/tensorflow_examples/mnist/mnist-env.py \
-          --data_dir="/scratch/<your scratch directory>/mnist"
+       ${EXAMPLE_DIR}/mnist-env.py \
+          --data_dir=${EXAMPLE_DIR}/data
 
    # Clean up
    /bin/rm -f launch.sh
