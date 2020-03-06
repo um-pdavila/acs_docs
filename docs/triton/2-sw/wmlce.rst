@@ -168,7 +168,7 @@ A job script example:
     conda activate wml_162_env
     cd /scratch/dl_examples/tensorflow_examples/mnist
 
-    python ./mnist.py --data_dir=${HOME}/temp
+    python ./mnist.py --data_dir=./data
 
 If the above file is named mnist\_example.job, then
 
