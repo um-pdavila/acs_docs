@@ -218,4 +218,7 @@ kernel, you can do:
 Then you can use the package in your notebook by typing and running
 ``library('<package name>')`` in a code cell.
 
+Switching to JupyterLab
+-----------------------
 
+After the Jupyter Notebook server starts, you can switch to JupyterLab by changing the url from ``.../tree`` to ``.../lab``. If you want to stop the server from JupyterLab, choose ``File`` >> ``Hub Control Panel`` in the menu bar, then press ``Stop My Notebook Server`` button in the panel.
