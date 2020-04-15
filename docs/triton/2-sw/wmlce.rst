@@ -292,17 +292,18 @@ Notes:
    ``/share/apps/ibm_wml_ce/1.6.2/anaconda3/.condarc`` instead of
    ``/root/.condarc`` to avoid conflicts with other Anconda installed.
 
-Installing all supported packages in one Conda environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installing all supported packages in one system-level Conda environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  $ ``conda create -n wml_162_env python=3.7``
 -  $ ``conda activate wml_162_env``
--  (wml\_162\_env)$ ``conda install powerai``
+-  (wml\_162\_env)$ ``conda install powerai=1.6.2``
 
 Notes:
 
 -  The environment is created at
-   ``/share/apps/ibm_wml_ce/1.6.2/anaconda3/envs``
+   ``/share/apps/ibm_wml_ce/1.6.2/anaconda3/envs`` 
+   Everyone can use this evironment by doing ``conda activate wml_162_env``
 
 References and Additional Resources
 -----------------------------------
