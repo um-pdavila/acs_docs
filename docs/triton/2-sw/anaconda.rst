@@ -43,7 +43,7 @@ Anaconda ``conda.sh`` file.
 
 $ ``source <anaconda installed path>/etc/profile.d/conda.sh``
 
-(Note: currently, Anaconda does not work with the Environment Module system, and you are not able to 'unload' it. If you want to switch to another Anaconda, you need to login with a new shell and source the other Anaconda's conda.sh script.)
+(Note: currently, Anaconda does not work with the Environment Module system, and you are not able to 'unload' it. If you want to switch to another Anaconda, you need to login again and source the other Anaconda's conda.sh script.)
 
 Anaconda 3
 ~~~~~~~~~~
