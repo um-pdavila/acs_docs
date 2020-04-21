@@ -18,7 +18,7 @@ If you do not know the resources your jobs need, use the
 **debug** queue to benchmark your jobs. More on :ref:`Pegasus
 Queues <p-queues>` and :ref:`LSF Job Scripts <lsf-scripts>` 
 
-.. warning:: Jobs with insufficient resource allocations interfere with cluster performance and the CCS account responsible for those jobs may be suspended (:ref:`Policies <policies>).
+.. warning:: Jobs with insufficient resource allocations interfere with cluster performance and the CCS account responsible for those jobs may be suspended (:ref:`Policies <policies>`).
 
 .. tip:: **Stage data for running jobs exclusively in the** ``/scratch`` **file system,** which is optimized for fast data access. 
 
@@ -34,7 +34,7 @@ slower-access.
 These spawned processes cannot be killed with **bkill** after the parent is
 gone. 
 
-.. warning:: Using the & operator while running jobs degrades the performance of the entire system and the CCS account responsible may be suspended (:ref:`Policies <policies>).
+.. warning:: Using the & operator while running jobs degrades the performance of the entire system and the CCS account responsible may be suspended (:ref:`Policies <policies>`).
 
 LSF Batch Jobs
 --------------
