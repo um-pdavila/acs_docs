@@ -8,7 +8,7 @@ high-performance supercomputer, available to all University of Miami
 employees and students. Pegasus resources such as hardware (login and
 compute nodes) and system software are shared by all users.
 
-.. tip:: **Before** running commands, submitting jobs, or using software on the Pegasus supercomputer, understand our core `CCS AC Policies <https://ccs.miami.edu/ac/policies>`__.
+.. tip:: **Before** running commands, submitting jobs, or using software on the Pegasus supercomputer, understand our core :ref:`Policies <policies>`.
 
 ::
 
