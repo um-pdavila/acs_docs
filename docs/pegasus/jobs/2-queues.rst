@@ -22,7 +22,7 @@ memory. Submitting jobs to this queue requires project membership. Do
 not submit jobs that can run on the general and parallel queues to the
 bigmem queue. 
 
-.. warning:: Jobs using less than 1.5G of memory per core on the bigmem queue are in violation of acceptable use policies and the CCS account responsible for those jobs may be suspended (`Policies <https://ccs.miami.edu/ac/policies>`__).
+.. warning:: Jobs using less than 1.5G of memory per core on the bigmem queue are in violation of acceptable use policies and the CCS account responsible for those jobs may be suspended (:ref:`Policies <policies>`).
 
 
 
