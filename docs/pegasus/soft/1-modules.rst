@@ -61,5 +61,5 @@ The table below lists commonly used modules commands.
 
 Request new global software for Pegasus using our `Software
 Request <https://portal.ccs.miami.edu/resources/soft/new>`__ form. See
-our `Policies <https://ccs.miami.edu/ac/policies>`__ page for minimum
+our :ref:`Policies <policies>` page for minimum
 requirements and more information.
