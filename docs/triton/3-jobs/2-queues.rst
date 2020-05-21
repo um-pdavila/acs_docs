@@ -1,5 +1,3 @@
-.. _p-queues:
-
 Triton Job Queues
 ==================
 
