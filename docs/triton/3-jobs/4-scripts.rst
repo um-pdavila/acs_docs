@@ -1,5 +1,3 @@
-.. _lsf-scripts:
-
 Triton LSF Job Scripts
 =======================
 
