@@ -1,5 +1,3 @@
-.. _p-jobs: 
-
 Job Scheduling with LSF
 ===============================
 
