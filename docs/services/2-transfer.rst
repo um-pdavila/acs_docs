@@ -75,7 +75,7 @@ Launch FileZilla and open **File : Site Manager**.
 
 Click the "New Site" button and name the entry.  Pegasus example::
 
-    Host:       pegasus.ccs.miami.edu
+    Host:       pegasus.ccs.miami.edu  or triton.ccs.miami.edu
     Protocol:   SFTP
     Logon Type: Normal
     enter your username and password
@@ -90,7 +90,7 @@ Using the gateway server
 ------------------------
 
 To transfer large amounts of data from systems outside the University of
-Miami, use the gateway server. This server supports Globus and SFTP file
+Miami, use the gateway server. This server supports SFTP file
 transfers. Users ***must be a member of a project*** to request access
 to the gateway server. E-mail hpc@ccs.miami.edu to request access.
 
