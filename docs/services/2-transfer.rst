@@ -97,35 +97,25 @@ to the gateway server. E-mail hpc@ccs.miami.edu to request access.
 SFTP
 ~~~~
 
+::
+
+    Host:  xfer.ccs.miami.edu
+    protocol:  SFTP
+    user:    caneid
+    pw:  [UM caneid passwd]  
+    Folder: download/<projectname>
+
 Open an SFTP session to the gateway server using your CCS account
-credentials: ``gw.ccs.miami.edu``
+credentials: ``xfer.ccs.miami.edu``
 
 ::
 
-    [localmachine: ~]$ sftp username@gw.ccs.miami.edu
-    ..
-    sftp> 
+    [localmachine: ~]$ sftp username@xfer.ccs.miami.edu
+    sftp> cd download
+    sftp> mkdir <project>
+    sftp> cd project
+    sftp> put newfile
 
-Globus
-~~~~~~
-
-For the CCS Globus Server,
-
-::
-
-    The Host:    gw.ccs.miami.edu
-    The DN:      /C=US/O=Globus Consortium/OU=Globus Connect Service/CN=7ef3df44-c348-11e3-b46f-22000a971261
-    The Scheme:  GridFTP
-
-Users can log into Globus with UM CaneID account credentials (previous
-Globus IDs can also be linked with UM Globus accounts). Once logged in,
-create an endpoint with our Globus Server information to begin
-transferring files. Our Globus Server requires authentication. The
-identity provider is MyProxy, the Host and DN are the same as our Globus
-Server.
-
-For more information about data sharing with Globus:
-https://www.globus.org/data-sharing
 
 .. |FileZilla Site Manager| image:: assets/fz_sm1.png
 
