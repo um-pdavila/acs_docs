@@ -1,5 +1,3 @@
-.. _p-interactive: 
-
 Triton Interactive Jobs
 ========================
 
