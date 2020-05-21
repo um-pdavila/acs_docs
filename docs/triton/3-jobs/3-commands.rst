@@ -1,5 +1,3 @@
-.. _lsf-commands: 
-
 Pegasus LSF Commands
 ====================
 
