@@ -9,6 +9,7 @@ How do I reset my CCS password?
 | Via the CCS Portal: https://portal.ccs.miami.edu 
 | Click on "Login" (upper right menu), then "Reset Password" (under textbox)
 
+
 .. note :: The CCS Portal is accessible from secure University of Miami networks only (wired on campus, SecureCanes wireless, or VPN).
 
 How do I register for a CCS account? 
