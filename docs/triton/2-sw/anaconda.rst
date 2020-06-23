@@ -25,7 +25,7 @@ Using Conda environment on the command line
 -  ``conda deactivate``
 
 .. note::
-   You should only test small program on the command line. Formal job should be submitted via LSF.
+   Only small test program should be run on the command line. Formal job needs to be submitted via LSF.
 
 Using Conda environment in the LSF job script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,16 +48,16 @@ An LSF job script example using Conda environment:
 
     ml anaconda3
     conda activate <my_environment>
-    cd <path to my_test.py>
+    cd <path to my_program.py>
 
-    python ./<my_test.py> 
+    python ./<my_program.py> 
 
-In my\_test.py, you can import any package that has been installed in your environment.
+In my\_program.py, you can import any package that has been installed in your environment.
 Details about job scheduling can be found at `Pegasus Job
 Scheduling <https://acs-docs.readthedocs.io/pegasus/jobs/README.html>`_.
 
 .. note::
-   On Triton, using ``normal`` queue.
+   On Triton, please use ``normal`` queue which is different from Pegasus.
 
 Different Anaconda Installed on Triton
 --------------------------------------
