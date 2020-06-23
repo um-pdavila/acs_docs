@@ -59,6 +59,78 @@ Scheduling <https://acs-docs.readthedocs.io/pegasus/jobs/README.html>`_.
 .. note::
    On Triton, please use ``normal`` queue which is different from Pegasus.
 
+Creating an Conda environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For Python
+^^^^^^^^^^
+
+If you are not sure what packages to be installed while creating the environment
+
+$ ``conda create -n <environment name> python=<version>``
+
+For example, ``conda create -n my_env python=3.7`` will create a Conda
+environment named ``my_env`` and Conda will install the latest Python
+3.7.x it can find.
+
+If you know what packages you need for this environment
+
+$
+``conda create -n <environment name> python=<version> <package1> <package2> <...>``
+
+For example, ``conda create -n my_env python=3.7 numpy scipy`` will
+create a Conda environment with the latest Python 3.7.x and two packages
+numpy and scipy. It will resolve the dependencies altogether and avoid
+further conflicts, so this is the recommended way to create the
+environment.
+
+The environement will be created at ``~/.conda/envs`` when using
+``conda create -n ...``.
+
+For R
+^^^^^
+
+$ ``conda create -n <r environemnt name> -c conda-forge r-base``
+
+``-c conda-forge`` guides conda to find the ``r-base`` package from
+``conda-forge`` channel. Channels are locations for the repositories
+where conda looks for packages. In the next section, we will discuss how
+to find the public channels.
+
+Installing Conda Packages
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After creating your environment, you can install more packages. First
+activate the environment
+
+$ ``conda activate <environment name>``
+
+Then install the package
+
+(<environment>)$ ``conda install <package>`` or
+``conda install <package>=<version>`` if you want a specific version.
+
+If Conda finds the package from the channels configured, it will
+download and install the package.
+
+If the package is not found, you can do a search in the `Anaconda
+Cloud <https://anaconda.org/>`__ and choose Platform ``linux-ppc64le``.
+Click on the name of the found package, the detail page will show you
+the specific channel to install the package. Then you can do
+
+(<environment>)$ ``conda install -c <channel> <package>``
+
+If the package is still not found, try
+
+(<environment>)$ ``pip install <package>``
+
+.. warning:: 
+   Issues may arise when using pip and conda together.
+   Only after conda has been used to install as many packages
+   as possible should pip be used to install any remaining software. If
+   modifications are needed to the environment, it is best to create a new
+   environment rather than running conda after pip.
+
 Different Anaconda Installed on Triton
 --------------------------------------
 
@@ -103,79 +175,6 @@ In order to use it, run ``ml wml_anaconda3/<version>``.
 
 More details can be found at `IBM WML on Triton User
 Menu <https://acs-docs.readthedocs.io/triton/2-sw/wmlce.html>`__.
-
-
-Creating An Conda Environment
------------------------------
-
-For Python
-~~~~~~~~~~
-
-If you are not sure what packages to be installed while creating the environment
-
-$ ``conda create -n <environment name> python=<version>``
-
-For example, ``conda create -n my_env python=3.7`` will create a Conda
-environment named ``my_env`` and Conda will install the latest Python
-3.7.x it can find.
-
-If you know what packages you need for this environment
-
-$
-``conda create -n <environment name> python=<version> <package1> <package2> <...>``
-
-For example, ``conda create -n my_env python=3.7 numpy scipy`` will
-create a Conda environment with the latest Python 3.7.x and two packages
-numpy and scipy. It will resolve the dependencies altogether and avoid
-further conflicts, so this is the recommended way to create the
-environment.
-
-The environement will be created at ``~/.conda/envs`` when using
-``conda create -n ...``.
-
-For R
-~~~~~
-
-$ ``conda create -n <r environemnt name> -c conda-forge r-base``
-
-``-c conda-forge`` guides conda to find the ``r-base`` package from
-``conda-forge`` channel. Channels are locations for the repositories
-where conda looks for packages. In the next section, we will discuss how
-to find the public channels.
-
-Installing Conda Packages
--------------------------
-
-After creating your environment, you can install more packages. First
-activate the environment
-
-$ ``conda activate <environment name>``
-
-Then install the package
-
-(<environment>)$ ``conda install <package>`` or
-``conda install <package>=<version>`` if you want a specific version.
-
-If Conda finds the package from the channels configured, it will
-download and install the package.
-
-If the package is not found, you can do a search in the `Anaconda
-Cloud <https://anaconda.org/>`__ and choose Platform ``linux-ppc64le``.
-Click on the name of the found package, the detail page will show you
-the specific channel to install the package. Then you can do
-
-(<environment>)$ ``conda install -c <channel> <package>``
-
-If the package is still not found, try
-
-(<environment>)$ ``pip install <package>``
-
-.. warning:: 
-   Issues may arise when using pip and conda together.
-   Only after conda has been used to install as many packages
-   as possible should pip be used to install any remaining software. If
-   modifications are needed to the environment, it is best to create a new
-   environment rather than running conda after pip.
 
 Installing Your Own Anaconda
 ----------------------------
