@@ -19,13 +19,13 @@ A Conda environment contains a specific collection of application software, fram
 Using Conda environment on the command line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  ``ml anaconda3/<version>`` or ``ml wml_anaconda3/<version>`` 
+-  ``ml anaconda3/<version>`` or ``ml wml_anaconda3/<version>``
 -  ``conda activate <your environment or system installed environment>``
 -  Run test program which dependencies have been installed in the environment
 -  ``conda deactivate``
 
 .. note::
-   Only small test program should be run on the command line. Formal job needs to be submitted via LSF.
+   Only small test program should be run on the command line. Formal jobs need to be submitted via LSF.
 
 Using Conda environment in the LSF job script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,9 +48,7 @@ An LSF job script example using Conda environment:
 
     ml anaconda3
     conda activate <my_environment>
-    cd <path to my_program.py>
-
-    python ./<my_program.py> 
+    python <path to my_program.py>
 
 In my\_program.py, you can import any package that has been installed in your environment.
 Details about job scheduling can be found at `Pegasus Job
@@ -97,7 +95,7 @@ $ ``conda create -n <r environemnt name> -c conda-forge r-base``
 where conda looks for packages. In the next section, we will discuss how
 to find the public channels.
 
-Installing Conda Packages
+Installing Conda packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After creating your environment, you can install more packages. First
