@@ -19,10 +19,10 @@ A Conda environment contains a specific collection of application software, fram
 Using Conda environment on the command line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. ``ml anaconda3/<version>`` or ``ml wml_anaconda3/<version>`` 
-2. ``conda activate <your environment or system installed environment>``
-3. Run test program which dependencies have been installed in the environment
-4. ``conda deactivate``
+-  ``ml anaconda3/<version>`` or ``ml wml_anaconda3/<version>`` 
+-  ``conda activate <your environment or system installed environment>``
+-  Run test program which dependencies have been installed in the environment
+-  ``conda deactivate``
 
 .. note::
    You should only test small program on the command line. Formal job should be submitted via LSF.
