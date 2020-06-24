@@ -8,9 +8,9 @@ Introduction
 provides Jupyter Notebook for multiple users.
 
 Through JupyterHub on Triton, you can request and start a Jupyter
-Notebook server on one of Triton's compute nodes (via the `IBM Platform
-LSF <https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_welcome/lsf_welcome.html>`__
-job scheduler on the back-end). In this way, you can interactively test
+Notebook server on one of Triton's compute nodes (using
+LSF job scheduler <https://acs-docs.readthedocs.io/triton/3-jobs/1-lsf.html>`__ 
+behind the scenes). In this way, you can interactively test
 your Python or R programs through the Notebook with the supercomputer
 resources.
 
@@ -43,6 +43,7 @@ Logout
 ~~~~~~
 
 When using the JupyterHub, you need to be clear that there are three things you need to turn off:
+
 1. Close Notebook File - After saving, press ``File`` in the menu bar and choose ``Close and Halt``.
 2. Stop Notebook Server - Click the ``Control Panel`` button at the top-right corner and press ``Stop My Notebook Server``.
 3. Logout from JupyterHub - Click the ``Logout from JupyterHub`` button at the top-right corner.
@@ -93,7 +94,7 @@ Later on, you can still install new packages to the kernel using ``conda install
    If the package could not be found, you can search `Anaconda
    Cloud <https://anaconda.org/>`__ and **choose Platform** ``linux-ppc64le``
    
-   If Anaconda Cloud does not have the package neither, you can try ``pip install``
+   If Anaconda Cloud does not have the package neither, you could try ``pip install``
 
 .. warning:: 
    Issues may arise when using pip and conda together.
@@ -114,8 +115,8 @@ Creating Your R kernel
 -  (inside R) > ``install.packages(c('repr', 'IRdisplay', 'IRkernel'))``
 -  (inside R) > ``IRkernel::installspec(name='<your r kernel name>', displayname='<display name of your kernel>')``
 
-Later on, you can still install new R packages to the kernel by activating the environment, entering R and running ``install.packages('<package name>')``.
-The pacakge will be installed at ``/~/.conda/envs/<your r environment>/lib/R/library`` by default.
+Later on, you can still install new R packages to the kernel by activating the environment, entering R and running ``install.packages('<package name>')``
+(The pacakge will be installed at ``/~/.conda/envs/<your r environment>/lib/R/library``)
 
 After a R package is installed, you can use it in your notebook by running ``library('<package name>')`` in a cell.
 
