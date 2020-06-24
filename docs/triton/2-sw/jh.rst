@@ -68,9 +68,9 @@ Creating Your IPython Kernel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  $ ``ssh <caneid>@triton.ccs.miami.edu`` to login to Triton
--  $ ``ml anaconda3`` if you do not need to install deep learning packages
+-  $ ``ml anaconda3``
 
-   or ``ml wml_anaconda3`` if deep learning packages are needed
+   or ``ml wml_anaconda3`` if you need to install deep learning packages
 -  $ ``conda create -n <your environment> python=<version> <package1> <package2> ...`` 
 -  $ ``conda activate <your environment>``
 -  (your environment)$ ``conda install ipykernel``
@@ -92,7 +92,7 @@ Here is an example:
 Later on, you can install new packages to the kernel using ``conda install <package>`` after the environment is activated.
 
 If the package could not be found, you can search `Anaconda
-Cloud <https://anaconda.org/>`__ and *choose Platform ``linux-ppc64le``*. 
+Cloud <https://anaconda.org/>`__ and **choose Platform ``linux-ppc64le``**. 
 
 If Anaconda Cloud does not have the package neither, you can try ``pip install``.
 
@@ -133,7 +133,8 @@ new notebook file (.ipynb) with a selected kernel by clicking on the
 Notebook Editor page, you can change kernel by clicking ``Kernel`` in
 the menubar and choosing ``Change kernel``.
 
--  Python 2.7 and Python 3.7 kernels have several basic Python packages.
+-  Python 2.7 and Python 3.7 kernels are the Anaconda2 2019.07 and Anaconda3 2019.07 base environments.
+   Each of them has over 150 packages automatically installed. 
 
 -  WML CE kernels have the `IBM Watson Machine
    Learning Community Edition
