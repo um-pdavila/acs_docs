@@ -25,7 +25,7 @@ Using Conda environment on the command line
 - $  ``conda deactivate``
 
 .. note::
-   Only small test program should be run on the command line. Formal jobs need to be submitted via `LSF <https://acs-docs.readthedocs.io/triton/3-jobs/1-lsf.html>__`.
+   Only small test program should be run on the command line. Formal jobs need to be submitted via `LSF <https://acs-docs.readthedocs.io/triton/3-jobs/1-lsf.html>`__.
 
 Using Conda environment in the LSF job script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
