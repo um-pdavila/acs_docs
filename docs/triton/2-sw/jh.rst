@@ -43,13 +43,12 @@ Logout
 ~~~~~~
 
 When using the JupyterHub, you need to be clear that there are three things you need to turn off:
-
 1. Close Notebook File - After saving, press ``File`` in the menu bar and choose ``Close and Halt``.
 2. Stop Notebook Server - Click the ``Control Panel`` button at the top-right corner and press ``Stop My Notebook Server``.
 3. Logout from JupyterHub - Click the ``Logout from JupyterHub`` button at the top-right corner.
    
 .. warning::
-   If you only Logout from JupyterHub without stopping the Notebook Server first, 
+   If you only logout from JupyterHub without stopping the Notebook Server first, 
    the Notebook Server will run until the time you set up when starting it.
    
 Using Jupyter Notebook
@@ -69,7 +68,6 @@ Creating Your Python Kernel
 
 -  $ ``ssh <caneid>@triton.ccs.miami.edu`` to login to Triton
 -  $ ``ml anaconda3``
-
    or ``ml wml_anaconda3`` if you need to install deep learning packages
 -  $ ``conda create -n <your environment> python=<version> <package1> <package2> ...`` 
 -  $ ``conda activate <your environment>``
@@ -93,9 +91,9 @@ Later on, you can still install new packages to the kernel using ``conda install
 
 .. note::
    If the package could not be found, you can search `Anaconda
-   Cloud <https://anaconda.org/>`__ and **choose Platform** ``linux-ppc64le``. 
-
-   If Anaconda Cloud does not have the package neither, you can try ``pip install``.
+   Cloud <https://anaconda.org/>`__ and **choose Platform** ``linux-ppc64le``
+   
+   If Anaconda Cloud does not have the package neither, you can try ``pip install``
 
 .. warning:: 
    Issues may arise when using pip and conda together.
