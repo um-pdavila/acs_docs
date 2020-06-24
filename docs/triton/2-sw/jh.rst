@@ -120,9 +120,6 @@ Later on, you can still install new R packages to the kernel by activating the e
 
 After a R package is installed, you can use it in your notebook by running ``library('<package name>')`` in a cell.
 
-.. note::
-   When you are asked to select a CRAN mirror while installing R packages, you can type the number that represents any USA mirror.
-
 Using Pre-installed Kernels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
