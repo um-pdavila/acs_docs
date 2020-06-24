@@ -67,7 +67,7 @@ create an environment at ``~/.conda/envs`` with Python 3.7.x and two packages
 numpy and scipy. You can also specify the package versions. 
 
 .. note::
-   You do not need to install all requried packages at the same time while creating the environment, 
+   You do not need to install all packages at the same time while creating the environment, 
    but doing so will resolve the dependencies altogether and avoid
    further conflicts, so this is the recommended way to create the environment.
 
@@ -83,11 +83,11 @@ Installing Conda packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to install more packages after creating the environment, you can run
-``conda install <package>`` after activating the environment.
+``conda install <package>`` in the activated environment.
 
 .. note::
    If the package is not found, you can do a search in the `Anaconda
-   Cloud <https://anaconda.org/>`__ and **choose Platform** ``linux-ppc64le`` 
+   Cloud <https://anaconda.org/>`__ and **choose Platform** ``linux-ppc64le``. 
    Click on the name of the found package, the detail page will show you
    how to install the package with a specific channel.
    
