@@ -42,12 +42,11 @@ Starting your Jupyter Notebook server
 Logout
 ~~~~~~
 
--  When using the JupyterHub, you need to be clear that there are three
-   things you need to turn off:
-   
-   1. Close Notebook File - After saving, press ``File`` in the menu bar and choose ``Close and Halt``.
-   2. Stop Notebook Server - Click the ``Control Panel`` button at the top-right corner and press ``Stop My Notebook Server``.
-   3. Logout from JupyterHub - Click the ``Logout from JupyterHub`` button at the top-right corner.
+When using the JupyterHub, you need to be clear that there are three things you need to turn off:
+
+1. Close Notebook File - After saving, press ``File`` in the menu bar and choose ``Close and Halt``.
+2. Stop Notebook Server - Click the ``Control Panel`` button at the top-right corner and press ``Stop My Notebook Server``.
+3. Logout from JupyterHub - Click the ``Logout from JupyterHub`` button at the top-right corner.
    
 .. warning::
    If you only Logout from JupyterHub without stopping the Notebook Server first, 
@@ -90,12 +89,13 @@ Here is an example:
     (myenv)$ conda install ipykernel
     (myenv)$ ipython kernel install --user --name my_py37_kernel --display-name "My Python 3.7 with NumPy and SciPy"
 
-Later on, you can install new packages to the kernel using ``conda install <package>`` after the environment is activated.
+Later on, you can still install new packages to the kernel using ``conda install <package>`` after activating the environment.
 
-If the package could not be found, you can search `Anaconda
-Cloud <https://anaconda.org/>`__ and **choose Platform ``linux-ppc64le``**. 
+.. note::
+   If the package could not be found, you can search `Anaconda
+   Cloud <https://anaconda.org/>`__ and **choose Platform** ``linux-ppc64le``. 
 
-If Anaconda Cloud does not have the package neither, you can try ``pip install``.
+   If Anaconda Cloud does not have the package neither, you can try ``pip install``.
 
 .. warning:: 
    Issues may arise when using pip and conda together.
@@ -116,7 +116,7 @@ Creating Your R kernel
 -  (inside R) > ``install.packages(c('repr', 'IRdisplay', 'IRkernel'))``
 -  (inside R) > ``IRkernel::installspec(name='<your r kernel name>', displayname='<display name of your kernel>')``
 
-Later on, you can install new R packages by activating the environment, entering R and running ``install.packages('<package name>')``.
+Later on, you can still install new R packages to the kernel by activating the environment, entering R and running ``install.packages('<package name>')``.
 The pacakge will be installed at ``/~/.conda/envs/<your r environment>/lib/R/library`` by default.
 
 After a R package is installed, you can use it in your notebook by running ``library('<package name>')`` in a cell.
