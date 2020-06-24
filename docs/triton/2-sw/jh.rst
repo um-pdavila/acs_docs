@@ -44,6 +44,7 @@ Logout
 
 -  When using the JupyterHub, you need to be clear that there are three
    things you need to turn off:
+   
    1. Close Notebook File - After saving, press ``File`` in the menu bar and choose ``Close and Halt``.
    2. Stop Notebook Server - Click the ``Control Panel`` button at the top-right corner and press ``Stop My Notebook Server``.
    3. Logout from JupyterHub - Click the ``Logout from JupyterHub`` button at the top-right corner.
@@ -64,8 +65,8 @@ using the ``New`` button at the top-right corner under the menu bar.
 Details can be found at the official `Jupyter Notebook User
 Documentation <https://jupyter-notebook.readthedocs.io/en/stable/notebook.html>`__.
 
-Creating Your IPython Kernel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating Your Python Kernel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  $ ``ssh <caneid>@triton.ccs.miami.edu`` to login to Triton
 -  $ ``ml anaconda3``
@@ -118,7 +119,7 @@ Creating Your R kernel
 Later on, you can install new R packages by activating the environment, entering R and running ``install.packages('<package name>')``.
 The pacakge will be installed at ``/~/.conda/envs/<your r environment>/lib/R/library`` by default.
 
-Then you can use the package in your notebook by running ``library('<package name>')`` in a cell.
+After a R package is installed, you can use it in your notebook by running ``library('<package name>')`` in a cell.
 
 .. note::
    When you are asked to select a CRAN mirror while installing R packages, you can type the number that represents any USA mirror.
