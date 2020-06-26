@@ -11,6 +11,27 @@ packages automatically installed (other 1,500+ packages could be
 downloaded and installed easily from the Anaconda repository). In order to use Anaconda on Triton, you need to have access to the UM network and the Triton system. 
 Please check the `CCS AC Policies <https://acs-docs.readthedocs.io/policies/README.html>`__.
 
+Conda General Commands
+----------------------
+
+-  $ ``conda create -n <environment name> python=<version>`` to create
+   an environment
+-  $ ``conda env list`` to list all available environments
+-  $ ``conda activate <environment name>`` to activate an environment
+
+Inside an environment (after activating the environment):
+
+-  $ ``conda list`` to list installed packages
+-  $ ``conda install <package name>`` to install a package
+-  $ ``conda install <package name>=<version>`` to install a package
+   with a specific version
+-  $ ``conda install -c <url> <package name>`` to install a package from
+   a specific channel (repository)
+-  $ ``conda remove <package name>`` to uninstall a package
+-  $ ``conda deactivate`` to deactivate the environment
+
+Please check the `official document <https://docs.conda.io/projects/conda/en/latest/commands.html#conda-general-commands>`__ for details. 
+
 Conda Environment
 -----------------
 
@@ -99,7 +120,7 @@ If you want to install more packages after creating the environment, you can run
    as possible should pip be used to install any remaining software. If
    modifications are needed to the environment, it is best to create a new
    environment rather than running conda after pip.
-
+   
 Different Anaconda Installed on Triton
 --------------------------------------
 
