@@ -40,8 +40,8 @@ A Conda environment contains a specific collection of application software, fram
 Using Conda environment on the command line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- $  ``ml anaconda3/<version>`` or ``ml wml_anaconda3/<version>`` if you need to install deep learning packages
-- $  ``conda activate <your environment or system installed environment>``
+- $  ``ml anaconda3/<version>`` or ``ml wml_anaconda3/<version>`` if you need to install `deep learning packages <https://acs-docs.readthedocs.io/triton/2-sw/wmlce.html>`__
+- $  ``conda activate <your environment or system pre-installed environment>``
 - Run test program (dependencies have been installed in the environment)
 - $  ``conda deactivate``
 
