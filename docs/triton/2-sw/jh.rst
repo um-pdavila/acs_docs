@@ -9,7 +9,7 @@ provides Jupyter Notebook for multiple users.
 
 Through JupyterHub on Triton, you can request and start a Jupyter
 Notebook server on one of Triton's compute nodes (using
-LSF job scheduler <https://acs-docs.readthedocs.io/triton/3-jobs/1-lsf.html>`__ 
+`LSF job scheduler <https://acs-docs.readthedocs.io/triton/3-jobs/1-lsf.html>`__ 
 behind the scenes). In this way, you can interactively test
 your Python or R programs through the Notebook with the supercomputer
 resources.
