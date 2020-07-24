@@ -122,7 +122,7 @@ Example script with MPI
     #BSUB -q normal
     #BSUB -n 32                             # Request 32 cores
     #BSUB -R "span[ptile=16]"               # Request 16 cores per node
-    #BSUB -R "rusage[mem=128]"              # Request 128MB per core
+    #BSUB -R "rusage[mem=2G]"               # Request 2G memory for the job
     #
 
     mpiexec foo.exe
