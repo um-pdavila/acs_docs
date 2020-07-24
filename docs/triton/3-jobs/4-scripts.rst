@@ -76,9 +76,9 @@ assigned values listed in this script:
     #BSUB -n 1
     specify number of processors. In this job, a single processor is requested.
 
-    #BSUB -R "rusage[mem=128]"
-    specify that this job requests 128 megabytes of RAM per core. Without this, a default RAM setting will be applied:  1500MB per core
-
+    #BSUB -R "rusage[mem=2G]"
+    specify that this job requests 2 gigabytes of RAM. You can use other units as well (K(kilobytes), M(megabytes), G(gigabytes), T(terabytes)).
+    
     #BSUB -B
     send mail to specified email when the job is dispatched and begins execution.
 
