@@ -309,7 +309,7 @@ Once both hdf5 and netcdfc are loaded, ``ml av`` shows the next set of dependent
 ::
 
 
-    [username@login1 ~]$ ml netcdf
+    [username@login1 ~]$ ml netcdfc
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
