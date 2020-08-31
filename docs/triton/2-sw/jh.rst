@@ -1,3 +1,7 @@
+.. warning:: 
+   We are experiencing some unexpected shutdowns on the JupyterHub service recently and are trying to fix the issue ASAP.
+   Please make sure to save your work frequently in case the shutdown happens.
+   
 JupyterHub on Triton User Menu
 ==============================
 
