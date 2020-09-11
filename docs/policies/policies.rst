@@ -49,7 +49,7 @@ Allocations
 - Active Pegasus users are allocated a logical **home** directory area ``/nethome/username``, limited to 250GB.
 - Active projects can be allocated scratch directories:  ``/scratch/projects/projectID``, intended for compiles and run-time input & output files. 
 - Disk allocations on Pegasus are only for data currently being processed.
-- Data for running jobs must be staged exclusively in the ``/scratch`` file system. CCS accounts staging job data in the ``/nethome`` filesystem may be suspended.
+- Data for running jobs must be staged exclusively in the ``/scratch`` file system. IDSC accounts staging job data in the ``/nethome`` filesystem may be suspended.
 - Both **home** and **scratch** are available on all nodes in the Pegasus cluster.
 - Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled in one business day.
 
