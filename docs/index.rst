@@ -50,4 +50,4 @@ first<vpn>`.
    Pegasus Cluster <pegasus/README>
    Linux on Clusters <linux/README> 
    ACS Services <services/README> 
-   CCS ACS Policies <policies/README>
+   IDSC ACS Policies <policies/README>
