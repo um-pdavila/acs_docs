@@ -1,4 +1,4 @@
-CCS ACS Policies
+IDSC ACS Policies
 ================
 
 .. toctree::
