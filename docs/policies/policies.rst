@@ -1,35 +1,35 @@
 .. _policies:
 
-CCS ACS Policies
+IDSC ACS Policies
 ================
 
-CCS Advanced Computing Services resources are available to all University of Miami employees and students. Use of CCS resources is governed by `University of Miami Acceptable Use Policies <http://it.miami.edu/about-umit/policies-and-procedures/>`_ in addition to CCS ACS policies, terms, and conditions.
+IDSC Advanced Computing Services resources are available to all University of Miami employees and students. Use of IDSC resources is governed by `University of Miami Acceptable Use Policies <http://it.miami.edu/about-umit/policies-and-procedures/>`_ in addition to IDSC ACS policies, terms, and conditions.
 
 
 Accounts
 --------
 
-- To qualify for a CCS account, you must be affiliated with the University of Miami.
-- All CCS accounts must be linked with a valid corresponding University of Miami account.
+- To qualify for an IDSC account, you must be affiliated with the University of Miami.
+- All IDSC accounts must be linked with a valid corresponding University of Miami account.
 - Suspended accounts cannot submit jobs to the Pegasus cluster. 
 - Suspended accounts will be disabled after 90 days.
 - Disabled accounts cannot log into the Pegasus cluster.
 - Disabled account data will be deleted after 30 days.
 
-CCS Portal Links
+IDSC (CCS) Portal Links
 ----------------
 
-- `CCS Account Registration <https://portal.ccs.miami.edu/accounts/new_account/>`_
-- `CCS Project Request <https://portal.ccs.miami.edu/accounts/new/group/>`_
-- `CCS Software Request <https://portal.ccs.miami.edu/resources/soft/new>`_
+- `IDSC Account Registration <https://portal.ccs.miami.edu/accounts/new_account/>`_
+- `IDSC Project Request <https://portal.ccs.miami.edu/accounts/new/group/>`_
+- `IDSC Software Request <https://portal.ccs.miami.edu/resources/soft/new>`_
 
 Pegasus Supercomputer
 ---------------------
 
-- All users of the Pegasus supercomputer are required to have a CCS account.
+- All users of the Pegasus supercomputer are required to have an IDSC account.
 - All SSH sessions are closed automatically after 30 minutes of inactivity.
 - No backups are performed on Pegasus file systems.
-- CCS does not alter user files.
+- IDSC does not alter user files.
 - Jobs running on the Pegasus cluster may be terminated for:
   
   - using excessive resources or exceeding 30 minutes of CPU time on Pegasus login nodes
@@ -38,9 +38,9 @@ Pegasus Supercomputer
   - running on inappropriate LSF queues
   - running from data on ``/nethome``
     
-  The CCS account responsible for those jobs may be suspended.
+  The IDSC account responsible for those jobs may be suspended.
 
-- Pegasus users with disabled CCS accounts must submit a request to `hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ for temporary account reactivation.
+- Pegasus users with disabled IDSC accounts must submit a request to `hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ for temporary account reactivation.
 
 
 Allocations
