@@ -19,7 +19,7 @@ Installing readr/tidyverse Packages
 -  Save and quit, go gack to your home directory and open a new .Rprofile file: $ ``vi .Rprofile``
 -  Include your library path in the .Rprofile: 
 
-    ``libPaths("/home/yourCaneID/.R_Library")``
+    ``.libPaths("/home/yourCaneID/.R_Library")``
 -  Save and quit, then login to rStudio or load & open the R module on your terminal: 
     rStudio: http://triton.ccs.miami.edu:8787/auth-sign-in
 
