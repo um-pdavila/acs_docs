@@ -22,16 +22,16 @@ IDSC Links
 - `IDSC Project Request Form <https://idsc.miami.edu/project_request>`_
 - `IDSC Software Requests : e-mail IDSC <mailto:hpc@ccs.miami.edu>`_
 
-Pegasus Supercomputer
+Supercomputers
 ---------------------
 
-- All users of the Pegasus supercomputer are required to have an IDSC account.
+- All users of IDSC supercomputers are required to have an IDSC account.
 - All SSH sessions are closed automatically after 30 minutes of inactivity.
-- No backups are performed on Pegasus file systems.
+- No backups are performed on cluster file systems.
 - IDSC does not alter user files.
-- Jobs running on the Pegasus cluster may be terminated for:
+- Jobs running on clusters may be terminated for:
   
-  - using excessive resources or exceeding 30 minutes of CPU time on Pegasus login nodes
+  - using excessive resources or exceeding 30 minutes of CPU time on login nodes
   - failing to reserve appropriate LSF resources
   - backgrounding LSF processes with the & operator
   - running on inappropriate LSF queues
@@ -53,7 +53,7 @@ Allocations
 - Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled.
 
 Software
---------
+----------
 
 - Users are free to install software in their home directories on IDSC clusters. More information about installing software onto ACS systems on `ReadTheDocs <https://acs-docs.readthedocs.io/>`_ : `https://acs-docs.readthedocs.io/ <https://acs-docs.readthedocs.io/>`_
 - Cluster software requests are reviewed quarterly. Global software packages are considered only when a minimum of 20 users require them.
@@ -67,7 +67,7 @@ Contact our IDSC cluster and system support team via email to `IDSC team hpc@ccs
 Suggestions:
 
 - computer and operating system you are using
-- your CCS account ID
+- your CCS account ID and the cluster you are using 
 - complete path to your job script file, program, or job submission
 - complete path to output files (if any)
 - error message(s) received
