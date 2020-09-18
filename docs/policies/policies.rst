@@ -20,8 +20,8 @@ IDSC (CCS) Portal Links
 ----------------
 
 - `IDSC Account Registration <https://portal.ccs.miami.edu/accounts/new_account/>`_
-- `IDSC Project Request <https://portal.ccs.miami.edu/accounts/new/group/>`_
-- `IDSC Software Request <https://portal.ccs.miami.edu/resources/soft/new>`_
+- `IDSC Project Request <https://idsc.miami.edu/project_request`_
+- `IDSC Software Request : e-mail IDSC <mailto:hpc@ccs.miami.edu>>`_
 
 Pegasus Supercomputer
 ---------------------
@@ -40,21 +40,21 @@ Pegasus Supercomputer
     
   The IDSC account responsible for those jobs may be suspended.
 
-- Pegasus users with disabled IDSC accounts must submit a request to `hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ for temporary account reactivation.
+- Users with disabled IDSC accounts must submit a request to `hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ for temporary account reactivation.
 
 
 Allocations
 -----------
 
-- Active Pegasus users are allocated a logical **home** directory area ``/nethome/username``, limited to 250GB.
+- Active cluster users are allocated a logical **home** directory area on the cluster, ``/nethome/username``, limited to 250GB. 
 - Active projects can be allocated scratch directories:  ``/scratch/projects/projectID``, intended for compiles and run-time input & output files. 
-- Disk allocations on Pegasus are only for data currently being processed.
+- Disk allocations are only for data currently being processed.
 - Data for running jobs must be staged exclusively in the ``/scratch`` file system. IDSC accounts staging job data in the ``/nethome`` filesystem may be suspended.
-- Both **home** and **scratch** are available on all nodes in the Pegasus cluster.
+- Both **home** and **scratch** are available on all nodes in their respective clusters.
 - Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled in one business day.
 
 Software
 --------
 
-- Users are free to install software in their home directories on Pegasus. More information about installing software onto ACS systems on `ReadTheDocs <https://acs-docs.readthedocs.io/>`_ : `https://acs-docs.readthedocs.io/ <https://acs-docs.readthedocs.io/>`_
-- Pegasus software requests are reviewed quarterly. Global software packages are considered only when a minimum of 20 users require them.
+- Users are free to install software in their home directories on IDSC clusters. More information about installing software onto ACS systems on `ReadTheDocs <https://acs-docs.readthedocs.io/>`_ : `https://acs-docs.readthedocs.io/ <https://acs-docs.readthedocs.io/>`_
+- Cluster software requests are reviewed quarterly. Global software packages are considered only when a minimum of 20 users require them.
