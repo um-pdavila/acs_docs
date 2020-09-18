@@ -21,7 +21,7 @@ IDSC (CCS) Portal Links
 
 - `IDSC Account Registration <https://portal.ccs.miami.edu/accounts/new_account/>`_
 - `IDSC Project Request <https://idsc.miami.edu/project_request`_
-- `IDSC Software Request : e-mail IDSC <mailto:hpc@ccs.miami.edu>>`_
+- `IDSC Software Request : e-mail IDSC <mailto:hpc@ccs.miami.edu>`_
 
 Pegasus Supercomputer
 ---------------------
