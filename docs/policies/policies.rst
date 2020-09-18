@@ -16,11 +16,11 @@ Accounts
 - Disabled accounts cannot log into the Pegasus cluster.
 - Disabled account data will be deleted after 30 days.
 
-IDSC (CCS) Portal Links
+IDSC Links
 ----------------
 
-- `IDSC Project Request <https://idsc.miami.edu/project_request>`_
-- `IDSC Software Request : e-mail IDSC <mailto:hpc@ccs.miami.edu>`_
+- `IDSC Project Request Form <https://idsc.miami.edu/project_request>`_
+- `IDSC Software Requests : e-mail IDSC <mailto:hpc@ccs.miami.edu>`_
 
 Pegasus Supercomputer
 ---------------------
