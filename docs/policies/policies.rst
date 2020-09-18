@@ -62,7 +62,7 @@ Software
 Support 
 --------
 
-Contact our IDSC cluster and system support team via email to `IDSC team hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ for help with connecting, software, jobs, data transfers, and more.  Please provide detailed descriptions, the paths to your job files and any outputs, the software modules you may have loaded, and your job ID when applicable.
+Contact our IDSC cluster and system support team via email to `IDSC team (hpc@ccs.miami.edu) <mailto:hpc@ccs.miami.edu>`_ for help with connecting, software, jobs, data transfers, and more.  Please provide detailed descriptions, the paths to your job files and any outputs, the software modules you may have loaded, and your job ID when applicable.
 
 Suggestions:
 
