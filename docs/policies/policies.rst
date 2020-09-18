@@ -58,3 +58,20 @@ Software
 
 - Users are free to install software in their home directories on IDSC clusters. More information about installing software onto ACS systems on `ReadTheDocs <https://acs-docs.readthedocs.io/>`_ : `https://acs-docs.readthedocs.io/ <https://acs-docs.readthedocs.io/>`_
 - Cluster software requests are reviewed quarterly. Global software packages are considered only when a minimum of 20 users require them.
+
+
+Support 
+--------
+
+Contact our IDSC cluster and system support team via email to `IDSC team hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ for help with connecting, software, jobs, data transfers, and more.  Please provide detailed descriptions, the paths to your job files and any outputs, the software modules you may have loaded, and your job ID when applicable.
+
+Suggestions:
+
+- computer and operating system you are using
+- your CCS account ID
+- complete path to your job script file, program, or job submission
+- complete path to output files (if any)
+- error message(s) received
+- module(s) loaded ($ module list)
+- whether this job ran previously and what has changed since it last worked
+- steps you may have already taken to address your issues
