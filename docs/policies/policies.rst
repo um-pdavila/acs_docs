@@ -51,7 +51,7 @@ Allocations
 - Disk allocations are only for data currently being processed.
 - Data for running jobs must be staged exclusively in the ``/scratch`` file system. IDSC accounts staging job data in the ``/nethome`` filesystem may be suspended.
 - Both **home** and **scratch** are available on all nodes in their respective clusters.
-- Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled in one business day.
+- Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled.
 
 Software
 --------
