@@ -12,7 +12,7 @@ University of Miami faculty member or Principal Investigator (PI) can
 request a new project. All members of a project share that project’s
 resource allocations.
 
-To join a project, contact the project owner. 
+To join a project, contact the project owner. PIs and faculty, request new `IDSC Projects here <https://idsc.miami.edu/project_request>`_ (https://idsc.miami.edu/project_request)
 
 Using projects in computing jobs
 --------------------------------
