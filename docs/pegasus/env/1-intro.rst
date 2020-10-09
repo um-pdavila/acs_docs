@@ -38,7 +38,7 @@ running smoothly for everyone.
    therefore slower-access. Using /nethome while running jobs degrades
    the performance of the entire system and the CCS account responsible
    may be suspended.
--  **Include your projectID in your job submissions.** Access to IDSC Advanced Computing resources is managed on a project basis. This allows us to better support interaction between teams (including data sharing) at the University of Miami regardless of group, school, or campus.  Project-based resource allocation also gives researchers the ability to request resources for short-term work. Any University of Miami faculty member or Principal Investigator (PI) can request a new project. All members of a project share that project’s resource allocations.  More on :ref:`Projects here <projects>`.
+-  **Include your projectID in your job submissions.** Access to IDSC Advanced Computing resources is managed on a project basis. This allows us to better support interaction between teams (including data sharing) at the University of Miami regardless of group, school, or campus.  Any University of Miami faculty member or Principal Investigator (PI) can request a new project. All members of a project share that project’s resource allocations.  More on :ref:`Projects here <projects>`.
 
 :ref:`Connecting to Pegasus <ssh>`: To access the Pegasus
 supercomputer, open a secure shell (SSH) connection to
