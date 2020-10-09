@@ -3,7 +3,7 @@
 Pegasus Projects & Resources
 ============================
 
-Access to CCS Advanced Computing resources is managed on a **project**
+Access to IDSC Advanced Computing resources is managed on a **project**
 basis. This allows us to better support interaction between teams
 (including data sharing) at the University of Miami regardless of group,
 school, or campus. Project-based resource allocation also gives
@@ -12,8 +12,7 @@ University of Miami faculty member or Principal Investigator (PI) can
 request a new project. All members of a project share that project’s
 resource allocations.
 
-To join a project, contact the project owner. Details can be found on
-the `CCS Portal <https://portal.ccs.miami.edu/forms-access/>`__.
+To join a project, contact the project owner. 
 
 Using projects in computing jobs
 --------------------------------
@@ -46,4 +45,4 @@ information will be printed on the screen.
     Job <11234> is submitted to default queue <general>.
 
 The cluster scheduler will only accept job submissions to active
-projects. The CCS user must be a current member of that project.
+projects. The IDSC user must be a current member of that project.
