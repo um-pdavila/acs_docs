@@ -329,7 +329,7 @@ output to ``less``:
     [username@triton ~]$ bjobs -u all | less
     JOBID     USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
     5990529   axt651  RUN   interactiv login4.pega n002        bash       Feb 13 15:23
-    6010636   zxh69   RUN   noraml    login4.pega 16*n178     *acsjob-01 Feb 23 11:36
+    6010636   zxh69   RUN   normal    login4.pega 16*n178     *acsjob-01 Feb 23 11:36
                                                    16*n180
                                                    16*n203
                                                    16*n174
