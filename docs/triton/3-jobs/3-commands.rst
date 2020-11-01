@@ -294,7 +294,7 @@ id which can be used to keep track of your job.
 
 ::
 
-    [username@triton ~]$ bsub -J jobname -o %J.out -e %J.err -q general -P myproject myprogram
+    [username@triton ~]$ bsub -J jobname -o %J.out -e %J.err -q normal -P myproject myprogram
     Job <2607> is submitted to general queue .
 
 The Job Scripts section has more information about organizing multiple
@@ -313,7 +313,7 @@ running, and suspended jobs.
 
     [username@triton ~]$ bjobs
     JOBID  USER   STAT  QUEUE    FROM_HOST  EXEC_HOST   JOB_NAME  SUBMIT_TIME
-    4225   usernam   RUN   general  m1       16*n060     testjob   Mar  2 11:53
+    4225   usernam   RUN   normal  m1       16*n060     testjob   Mar  2 11:53
                                              16*n061
                                              16*n063
                                              16*n064
@@ -329,7 +329,7 @@ output to ``less``:
     [username@triton ~]$ bjobs -u all | less
     JOBID     USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
     5990529   axt651  RUN   interactiv login4.pega n002        bash       Feb 13 15:23
-    6010636   zxh69   RUN   general    login4.pega 16*n178     *acsjob-01 Feb 23 11:36
+    6010636   zxh69   RUN   noraml    login4.pega 16*n178     *acsjob-01 Feb 23 11:36
                                                    16*n180
                                                    16*n203
                                                    16*n174
