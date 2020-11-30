@@ -65,7 +65,7 @@ _OS X versions 10.5 through 10.7 include X11 and do not require XQuartz._
 Connect with X11 forwarding
 ---------------------------
 
-Launch the appropriate X Window server **before** connecting to CCS servers via SSH.
+Launch the appropriate X Window server **before** connecting to IDSC servers via SSH.
 
 
 **Windows: Configure PuTTY for X11 display forwarding**
