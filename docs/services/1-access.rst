@@ -11,7 +11,7 @@ Windows
 Connect using a terminal emulator like PuTTY
 (`www.putty.org <http://www.putty.org>`__)
 
-Log into CCS ACS servers with the appropriate account credentials.  Pegasus example::
+Log into IDSC servers with the appropriate account credentials.  Pegasus example::
 
     username@pegasus.ccs.miami.edu (optional username @ host)
     22 (port)
@@ -27,7 +27,7 @@ Mac and Linux
 
 Connect with the Terminal program, included with the Operating Systems.
 
-Log into CCS ACS servers with the approprite acount credentials.  Pegasus example::
+Log into IDSC servers with the approprite acount credentials.  Pegasus example::
 
     bash-4.1$ ssh username@pegasus.ccs.miami.edu
     username@pegasus.ccs.miami.edu’s password:
@@ -113,9 +113,9 @@ allowing continued use of the terminal.
 Connecting to CCS Systems from offsite
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Triton, Pegasus, and other CCS resources are only available from within the
+Triton, Pegasus, and other IDSC resources are only available from within the
 University’s secure campus networks (wired or SecureCanes wireless). To
-access CCS resources while offsite, open a VPN connection first. CCS does not
+access IDSC resources while offsite, open a VPN connection first. IDSC does not
 administer VPN accounts.
 
 University of Miami VPN:
