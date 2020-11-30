@@ -7,7 +7,7 @@ Linux system. Files have three distinct permission sets:  one for the
 and one for all **other** system users (o). Recall that directories are
 types of files in Linux. 
 
-.. note:: As policy, CCS does not alter user files on our systems. 
+.. note:: As policy, IDSC does not alter user files on our systems. 
 
 To view file permissions, list directory contents in long listing format
 with ``ls -l``. To check directory permissions, add the ``-d``
