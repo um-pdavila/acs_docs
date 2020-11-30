@@ -3,9 +3,7 @@
 Pegasus Application Development
 ===============================
 
-A list of software modules installed on Pegasus, including MP libraries,
-is available on the `CCS Portal <https://portal.ccs.miami.edu>`__. MPI
-and OpenMP modules are listed under Intel and GCC compilers. These MP
+MPI and OpenMP modules are listed under Intel and GCC compilers. These MP
 libraries have been compiled and built with either the `Intel compiler
 suite <http://software.intel.com/en-us/intel-compilers/>`__ or the `GNU
 compiler suite <http://www.gnu.org/software/gcc/>`__.
