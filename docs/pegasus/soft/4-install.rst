@@ -31,10 +31,9 @@ pre-requisites.
 We suggest keeping downloaded source files separate from compiled files
 (and any downloaded binary files).
 
-CCS does not install user software. Request cluster software
-installations or updates via the `Software
-Request <https://portal.ccs.miami.edu/portal/resources/soft/new>`__
-form.
+ACS does not install user software. Request cluster software
+installations from hpc@ccs.miami.edu 
+
 
 Downloading and extracting files
 --------------------------------
