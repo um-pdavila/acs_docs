@@ -6,11 +6,7 @@ Detailed information for FAQ topics is available here and on our :ref:`IDSC ACS 
 How do I reset my IDSC / CCS password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| Via the IDSC / CCS Portal: https://portal.ccs.miami.edu 
-| Click on "Login" (upper right menu), then "Reset Password" (under textbox)
-
-
-.. note :: The CCS Portal is accessible from secure University of Miami networks only (wired on campus, SecureCanes wireless, or VPN).
+| Via the IDSC Password Reset page : https://idsc.miami.edu/ccs-account
 
 
 How do I access IDSC cluster resources?
