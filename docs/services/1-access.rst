@@ -110,8 +110,8 @@ allowing continued use of the terminal.
 .. _vpn: 
 
 
-Connecting to CCS Systems from offsite
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connecting to IDSC Systems from offsite
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Triton, Pegasus, and other IDSC resources are only available from within the
 University’s secure campus networks (wired or SecureCanes wireless). To
