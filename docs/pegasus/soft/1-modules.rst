@@ -31,9 +31,6 @@ modules are loaded automatically upon login:
     Currently Loaded Modulefiles:
       1) perl/5.18.1(default)    2) python/2.7.3(default)   3) gcc/4.4.7(default)      4) share-rpms65            5) R/3.1.2(default)
 
-Available software modules can also be viewed on the `CCS
-Portal <https://portal.ccs.miami.edu>`__ including description, version,
-and update date.
 
 The table below lists commonly used modules commands.
 
