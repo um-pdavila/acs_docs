@@ -17,7 +17,7 @@ Everything in Linux is either a **file** (a collection of data) or a
 **process** (an executing program). Directories in Linux are types of
 files.
 
-In the below examples, ``username`` represents your CCS Account.
+In the below examples, ``username`` represents your access account. 
 
 
 .. toctree::
