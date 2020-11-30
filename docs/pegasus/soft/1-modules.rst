@@ -3,9 +3,9 @@
 Pegasus Software Modules
 ========================
 
-CCS continually updates applications, compilers, system libraries, etc.
+IDSC ACS continually updates applications, compilers, system libraries, etc.
 To facilitate this task and to provide a uniform mechanism for accessing
-different revisions of software, CCS uses the modules utility. At login,
+different revisions of software, ACS uses the modules utility. At login,
 modules commands set up a basic environment for the default compilers,
 tools, and libraries such as:  the ``$PATH``, ``$MANPATH``, and
 ``$LD_LIBRARY_PATH`` environment variables. There is no need to set them
@@ -59,7 +59,4 @@ The table below lists commonly used modules commands.
      - displays location and library information about a module
 
 
-Request new global software for Pegasus using our `Software
-Request <https://portal.ccs.miami.edu/resources/soft/new>`__ form. See
-our :ref:`Policies <policies>` page for minimum
-requirements and more information.
+See our :ref:`Policies <policies>` page for minimum requirements and more information.
