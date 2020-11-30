@@ -13,7 +13,7 @@ compute nodes) and system software are shared by all users.
 ::
 
     Details:              Pegasus Supercomputer
-    Credentials:          CCS Account
+    Credentials:          IDSC Account
     Access & Allocations: Policies 
     Operating System:     CentOS 6.5 supporting up to GLIBC 2.12
     Default Shell:        Bash
@@ -29,20 +29,20 @@ running smoothly for everyone.
    Submit your production jobs to LSF, and use the :ref:`interactive
    queue <p-queues>` and :ref:`LSF Job
    Scripts <lsf-scripts>` below. Jobs with insufficient
-   resource allocations interfere with cluster performance and the CCS
+   resource allocations interfere with cluster performance and the IDSC
    account responsible for those jobs may be suspended.
 -  **Stage data for running jobs exclusively in the** ``/scratch`` **file
    system,** which is optimized for fast data access. Any files used as
    input for your jobs must first be transferred to /scratch. The
    /nethome file system is optimized for mass data storage and is
    therefore slower-access. Using /nethome while running jobs degrades
-   the performance of the entire system and the CCS account responsible
+   the performance of the entire system and the IDSC account responsible
    may be suspended.
 -  **Include your projectID in your job submissions.** Access to IDSC Advanced Computing resources is managed on a project basis. This allows us to better support interaction between teams (including data sharing) at the University of Miami regardless of group, school, or campus.  Any University of Miami faculty member or Principal Investigator (PI) can request a new project. All members of a project share that project’s resource allocations.  More on :ref:`Projects here <projects>`.
 
 :ref:`Connecting to Pegasus <ssh>`: To access the Pegasus
 supercomputer, open a secure shell (SSH) connection to
-``pegasus.ccs.miami.edu`` and log in with your active CCS account. Once
+``pegasus.ccs.miami.edu`` and log in with your active IDSC account. Once
 authenticated, you should see the Pegasus welcome message – ***which
 includes links to Pegasus documentation*** and information about your
 disk quotas – then the Pegasus command prompt.
@@ -97,7 +97,7 @@ Pegasus Environment Links
 
 :ref:`Resource allocations <projects>` : Cluster resources,
 including CPU hours and scratch space, are allocated to projects. To
-access resources, all CCS accounts must belong to a project with active
+access resources, all IDSC accounts must belong to a project with active
 resource allocations. Join projects by contacting Principal
 Investigators (PIs) directly.
 
