@@ -1,13 +1,12 @@
 Pegasus FAQs - Frequently Asked Questions
 =========================================
 
-Detailed information for FAQ topics is available here and in our `ACS
-Policies <https://ccs.miami.edu/ac/policies>`__ webpage.
+Detailed information for FAQ topics is available here and in :ref:`IDSC ACS Policies<policies>`
 
 If you are new to Pegasus and HPC clusters, review this documentation on
 the Pegasus system, the job scheduler, and modularized software. 
 
-.. note :: CCS ACS does not install, provide support for, or provide documentation on how to code in your preferred software. ACS documentation contains information on using software in a Linux cluster environment.
+.. note :: IDSC ACS does not install, provide support for, or provide documentation on how to code in your preferred software. ACS documentation contains information on using software in a Linux cluster environment.
 
 
 Pegasus Projects
@@ -18,40 +17,26 @@ Pegasus Projects
 How do I join a project?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Contact the project owner. Details can be found on the CCS Portal:
-https://portal.ccs.miami.edu/forms-access/
+Contact the project owner. 
 
 How do I request a new project?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Any PI or faculty member may request a new project via the CCS Portal:
-https://portal.ccs.miami.edu/accounts/new/group/
+Any PI or faculty member may request a new project : https://idsc.miami.edu/project_request
 
 When will my project be created?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When the allocations committee has reviewed and approved it. Check your
-request status via the CCS Portal under My Pegasus -> My Requests.
+When the allocations committee has reviewed and approved it. 
 
 Scratch requests over 2TB can take a month for the allocations committee
 to review as availability is limited.
 
-How do projects work?
-~~~~~~~~~~~~~~~~~~~~~
-
-:ref:`Projects on Pegasus <projects>`, `CCS Portal
-Projects <https://portal.ccs.miami.edu/forms-access/>`__
 
 How can I manage my Projects and Groups?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Manage owned Projects and Groups via the CCS Portal:
-https://portal.ccs.miami.edu
-
-Click on My Pegasus -> My Projects or My Groups
-
-See `CCS Portal Projects <https://portal.ccs.miami.edu/forms-access/>`__
-for more information.
+Contact IDSC ACS at hpc@ccs.miami.edu 
 
 Pegasus Software
 ----------------
@@ -60,9 +45,6 @@ Pegasus Software
 
 What software is available?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Software Modules list on the CCS Portal:
-https://portal.ccs.miami.edu/resources/software/
 
 Software Modules from the command line: ``$ module avail``
 
@@ -85,14 +67,13 @@ local installation instructions. See our :ref:`Software
 Installation <soft-install>` guide for more information.
 
 
-.. note :: CCS ACS does not install user software. For global installations on Pegasus, submit a Software Request via the CCS Portal (below).
+.. note :: IDSC ACS does not install user software. For global installations on Pegasus, submit a Software Request to hpc@ccs.miami.edu 
 
 
 How do I request global software installation on Pegasus?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Request new global software via the CCS Portal:
-https://portal.ccs.miami.edu/resources/soft/new
+Submit your request to hpc@ccs.miami.edu 
 
 We only globally install software when we receive multiple requests for
 the software.
