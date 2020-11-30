@@ -3,11 +3,11 @@
 Transferring Files
 ==================
 
-CCS systems support multiple file transfer programs such as FileZilla and
+IDSC systems support multiple file transfer programs such as FileZilla and
 PSFTP, and common command line utilities such as ``scp`` and ``rsync``.
 Use cluster head nodes (login nodes) for these types of file transfers.
 For transferring large amounts of data from systems outside the
-University of Miami, CCS ACS also offers a gateway server that supports
+University of Miami, IDSC ACS also offers a gateway server that supports
 SFTP and Globus.
 
 Using command line utilities
@@ -105,7 +105,7 @@ SFTP
     pw:  [UM caneid passwd]  
     Folder: download/<projectname>
 
-Open an SFTP session to the gateway server using your CCS account
+Open an SFTP session to the gateway server using your IDSC account
 credentials: ``xfer.ccs.miami.edu``
 
 ::
