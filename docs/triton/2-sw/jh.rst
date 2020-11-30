@@ -27,7 +27,7 @@ Using JupyterHub on Triton
 Login
 ~~~~~
 
--  First you need to have access to Triton. Please check the `CCS AC Policies <https://ccs.miami.edu/ac/policies/>`__.
+-  First you need to have access to Triton. Please check the :ref:`IDSC ACS Policies<policies>`
 -  Connect with the UM network on campus or via
    `VPN <https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html>`__.
 -  Open the Login page https://jupyter.ccs.miami.edu:8000 on your
