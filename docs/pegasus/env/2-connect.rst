@@ -3,7 +3,7 @@ Connecting to Pegasus
 
 | **DNS** : pegasus.ccs.miami.edu 
 | **Access** : :ref:`SSH <ssh>` over secure UM networks, :ref:`x11 <x11>` 
-| **Credentials** : CCS Account 
+| **Credentials** : IDSC Account 
 
 
 Pegasus Welcome Message
@@ -36,4 +36,4 @@ information about your disk quotas.
 Transferring files
 ~~~~~~~~~~~~~~~~~~
 
-:ref:`Transferring files to CCS systems <transfer>`
+:ref:`Transferring files to IDSC systems <transfer>`
