@@ -16,7 +16,7 @@ If you do not know the resources your jobs need, use the
 **debug** queue to benchmark your jobs. More on :ref:`Pegasus
 Queues <p-queues>` and :ref:`LSF Job Scripts <lsf-scripts>` 
 
-.. warning:: Jobs with insufficient resource allocations interfere with cluster performance and the CCS account responsible for those jobs may be suspended (`Policies <https://ccs.miami.edu/ac/policies>`__).
+.. warning:: Jobs with insufficient resource allocations interfere with cluster performance and the IDSC account responsible for those jobs may be suspended (`Policies <https://ccs.miami.edu/ac/policies>`__).
 
 .. tip:: **Stage data for running jobs exclusively in the** ``/scratch`` **file system,** which is optimized for fast data access. 
 
@@ -25,14 +25,14 @@ Resource Allocations <projects>` for more information. The
 /nethome file system is optimized for mass data storage and is therefore
 slower-access. 
 
-.. warning:: Using /nethome while running jobs degrades the performance of the entire system and the CCS account responsible may be suspended*** (`Policies <https://ccs.miami.edu/ac/policies>`__).
+.. warning:: Using /nethome while running jobs degrades the performance of the entire system and the IDSC account responsible may be suspended*** (`Policies <https://ccs.miami.edu/ac/policies>`__).
 
 .. tip:: **Do not background processes with the** ``&`` **operator in LSF.** 
 
 These spawned processes cannot be killed with **bkill** after the parent is
 gone. 
 
-.. warning:: Using the & operator while running jobs degrades the performance of the entire system and the CCS account responsible may be suspended (`Policies <https://ccs.miami.edu/ac/policies>`__).
+.. warning:: Using the & operator while running jobs degrades the performance of the entire system and the IDSC account responsible may be suspended (`Policies <https://ccs.miami.edu/ac/policies>`__).
 
 LSF Batch Jobs
 --------------
