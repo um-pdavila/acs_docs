@@ -3,7 +3,7 @@ Advanced Computing Guides
 
 Detailed information for FAQ topics is available here and on our :ref:`IDSC ACS Policies<policies>`
 
-How do I reset my IDSC / CCS password?
+How do I reset my IDSC password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | Via the IDSC Password Reset page : https://idsc.miami.edu/ccs-account
