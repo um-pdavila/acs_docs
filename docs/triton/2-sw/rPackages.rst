@@ -16,7 +16,7 @@ Installing readr/tidyverse Packages
     ``CC = gcc -std=c99``
 
     ``CFLAGS += -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L``
--  Save and quit, go gack to your home directory and open a new .Rprofile file: $ ``vi .Rprofile``
+-  Save and quit, go back to your home directory and open a new .Rprofile file: $ ``vi .Rprofile``
 -  Include your library path in the .Rprofile: 
 
     ``.libPaths("/home/yourCaneID/.R_Library")``
