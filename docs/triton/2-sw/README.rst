@@ -1,5 +1,5 @@
-Triton user guides
-==================
+Triton Software Suites
+======================
 
 .. toctree::
    :maxdepth: 5
