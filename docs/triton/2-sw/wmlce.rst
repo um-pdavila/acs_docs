@@ -29,7 +29,7 @@ On Triton, we have pre-installed Anaconda that is configured to point to the rep
 After logging to the system with ``ssh <your caneid>@triton.ccs.miami.edu``, you can do ``ml wml_anaconda3`` to load the default version of 
 the WML-configured Anaconda `module <https://acs-docs.readthedocs.io/triton/1-env/3-modules.html>`__. 
 
-We recommend using the pre-installed Anaconda since it will be easier for us to track down the problem if you need assistance. However, you can also install Anaconda or Miniconda in your home directory following `the WML CE system setup guide <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.6.2/navigation/wmlce_setupAnaconda.html>`__, and handle it by yourself.
+We recommend using the pre-installed Anaconda since it will be easier for us to track down the problem if you need assistance. However, you can also install Anaconda or Miniconda in your home directory following `the WML CE system setup guide <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.7.0/navigation/wmlce_setupAnaconda.html>`__, and handle it by yourself.
 
 
 Installing WML CE packages
