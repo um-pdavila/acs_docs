@@ -9,23 +9,23 @@ execution. However, sometimes users do need to interact with the
 application. For example, the application needs the input from the
 command line or waits for a mouse event in X windows. Use
 ``bsub -Is -q interactive command`` to launch interactive work on
-Pegasus.
+Pegasus.  Remember to include your Pegasus cluster project ID in your job submissions with the ``-P`` flag.  
 
 ::
 
-    [username@pegasus ~]$ bsub -Is -q interactive bash
+    [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID bash
 
 or
 
 ::
 
-    [username@pegasus ~]$ bsub -Is -q interactive matlab -nodisplay
+    [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID matlab -nodisplay
 
 or
 
 ::
 
-    [username@pegasus ~]$ bsub -Is -q interactive -XF $(java -jar ~/.local/apps/ImageJ/ij.jar -batch ~/.local/apps/ImageJ/macros/screenmill.txt)
+    [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID -XF $(java -jar ~/.local/apps/ImageJ/ij.jar -batch ~/.local/apps/ImageJ/macros/screenmill.txt)
 
 Upon exiting the interactive job, you will be returned to one of the
 login nodes.
@@ -38,7 +38,7 @@ option is used for X11 jobs, for example:
 
 ::
 
-    [username@pegasus ~]$ bsub -Is -q interactive -XF matlab
+    [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID -XF matlab
     Job <50274> is submitted to queue <interactive>.
     <<ssh X11 forwarding job>>
     <<Waiting for dispatch ...>>
