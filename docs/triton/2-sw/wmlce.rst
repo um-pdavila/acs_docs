@@ -133,7 +133,7 @@ Using DDL (Testing)
  `Getting started with DDL <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.7.0/navigation/wmlce_getstarted_ddl.html>`__.
 
 .. warning::
-   ddl-tensorflow operator and pytorch DDL are DEPRECATED and will be REMOVED in next release. Please start using `horovod <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.7.0/navigation/wmlce_getstarted_horovod.html>`__ with NCCL backend.
+   ddl-tensorflow operator and pytorch DDL are DEPRECATED and will be REMOVED in the next WML CE release. Please start using `horovod <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.7.0/navigation/wmlce_getstarted_horovod.html>`__ with NCCL backend.
 
 A job script example:
 
