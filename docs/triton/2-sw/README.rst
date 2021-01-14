@@ -7,6 +7,7 @@ Triton Software Suites
    Anaconda <anaconda>
    IBM WML CE (Deep Learning) <wmlce>
    JupyterHub <jh>
+   Modules <modules>
    R Packages <rPackages>
  
    
