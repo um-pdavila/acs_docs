@@ -5,6 +5,7 @@ Pegasus Environment
 .. toctree::
    :maxdepth: 2
 
+   p-env-intro
    Connecting <2-connect>
    Pegasus Projects & Resources <3-projects>
 
