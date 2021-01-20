@@ -1,4 +1,4 @@
-contents moved to parent README 
+.. _p-env-intro: 
 
 Pegasus Environment Introduction
 ================================
