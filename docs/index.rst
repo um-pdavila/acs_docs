@@ -19,7 +19,7 @@ Resources on Triton and Pegasus are allocated by project.  Contact your PI for a
 How do I use cluster resources? 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Submit "job" requests to the cluster's job scheduler/resource manager.  See the menus for more information about each cluster's job scheduler.  
+Submit "job" requests to the cluster's job scheduler/resource manager, with your project ID.  See the menus for more information about each cluster's job scheduler.  
 
 
 How do I connect to IDSC resources from off-site?
