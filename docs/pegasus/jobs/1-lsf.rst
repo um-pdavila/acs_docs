@@ -48,7 +48,7 @@ found later in this guide.
 
 1. **Create a job scriptfile**
 
-   Include a job name ``-J``, the information LSF needs to allocate
+   Include your project ID ``-P``, a job name ``-J``, the information LSF needs to allocate
    resources to your job, and names for your output and error files.
 
    ::
@@ -63,11 +63,12 @@ found later in this guide.
 2. **Submit your job to the appropriate project and queue with**
    ``bsub < scriptfile``
 
-   Upon submission, a ``jobID`` and the queue name are returned.
+   Upon submission, the project is returned along with a ``jobID`` and the queue name.
 
    ::
 
        [username@pegasus ~]$ bsub < scriptfile 
+       Job is submitted to <my_project> project.
        Job <6021006> is submitted to queue <general>.
 
 3. **Monitor your jobs with** ``bjobs``
