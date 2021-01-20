@@ -1,5 +1,5 @@
-Pegasus Cluster
-===============
+Pegasus user guides
+====================
 
 
 .. toctree::
