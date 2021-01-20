@@ -7,11 +7,19 @@ How do I reset my IDSC password?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | Via the IDSC Password Reset page : https://idsc.miami.edu/ccs-account
+| More Quick Links : https://idsc.miami.edu/quick-links/
 
-How do I access IDSC cluster resources?
+
+How do I get IDSC cluster resources?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Resources on Triton and Pegasus are allocated by project.  Contact your PI for access to their project's resources. 
+
+
+How do I use cluster resources? 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Submit "job" requests to the cluster's job scheduler/resource manager.  See the menus for more information about each cluster's job scheduler.  
 
 
 How do I connect to IDSC resources from off-site?
@@ -27,6 +35,7 @@ first<vpn>`.
 | Call: (305) 284-6565
 | Email: help@miami.edu
 | URL: http://miami.edu/vpn
+
 
 
 --------------
