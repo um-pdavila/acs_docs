@@ -27,6 +27,6 @@ Here,  you can submit jobs to Centos7 test queue:
 
 .. code-block:: bash
 
-   -bash-4.2$ bsub -q Centos7 -P myprojectname -Is /bin/bash
+   -bash-4.2$ bsub -q centos7 -P myprojectname -Is /bin/bash
 
 Please contact us at hpc@ccs.miami.edu to report any problems.
