@@ -5,7 +5,7 @@ On Feb 12th at 5pm Pegasus compute nodes in the parallel,  general and bigmem qu
 
 We encourage you to test your applications on Centos 7 prior to the update.
 
-On Pegasus, a queue named 'Centos7' has been created.  You may submit jobs to this queue for the purpose of testing and validation on Centos7 prior to the scheduled upgrade.
+On Pegasus, a queue named 'centos7' has been created.  You may submit jobs to this queue for the purpose of testing and validation on Centos7 prior to the scheduled upgrade.
 
 .. important:: As a courtesy to others, please do not run jobs for more than 24 hours or use more than 64 cores in the Centos7 queue. 
 
