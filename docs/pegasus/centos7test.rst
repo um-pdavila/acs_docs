@@ -1,3 +1,5 @@
+.. _centos7test:
+
 Testing Centos 7 on Pegasus
 ===========================
 
