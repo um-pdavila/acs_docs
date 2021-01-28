@@ -34,6 +34,11 @@ bigmem queue.
      - Memory
      - Wall time default \/ max 
      - Description 
+   * - centos7 
+     - see desc. 
+     - 25GB max 
+     - see desc.
+     - test queue for Pegasus cluster CentOS 7 upgrade <br/> for 16+ cores, use resource distribution -R "span[ptile=16]"      
    * - general 
      - 15- 
      - 25GB max 
