@@ -49,7 +49,7 @@ bigmem queue.
      - 16+ 
      - 25GB max 
      - 1 day \/ 7 days 
-     - parallel jobs requiring 16 or more cores, up to 25GB memory.  **requires resource distribution -R "span[ptile=16]"**
+     - parallel jobs requiring 16 or more cores, up to 25GB memory. :raw-html:`<br />` **requires resource distribution -R "span[ptile=16]"**
    * - bigmem 
      - 64 max 
      - 250GB max 
