@@ -42,7 +42,7 @@ It is important that you test your software under CentOS 7 prior to the upgrade 
    * - centos7 
      - 64 max
      - 25GB max 
-     - see desc.
+     - 1 day
      - test queue for Pegasus cluster CentOS 7 upgrade. :raw-html:`<br />` **for 16+ cores, use resource distribution -R "span[ptile=16]"**      
    * - general 
      - 15- 
