@@ -10,7 +10,7 @@ It is important that you test your software under CentOS 7 prior to the upgrade 
    :maxdepth: 2
 
    Pegasus Environment <env/README>
-   Pegasus Software <soft/README>
-   Pegasus Job Scheduling <jobs/README>
-   Pegasus FAQ <p_faqs>
    Pegasus CentOS 7 Testing <centos7test>
+   Pegasus Job Scheduling <jobs/README>
+   Pegasus Software <soft/README>
+   Pegasus FAQ <p_faqs>
