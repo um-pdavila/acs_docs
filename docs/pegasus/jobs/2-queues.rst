@@ -24,7 +24,8 @@ bigmem queue.
 
 .. warning:: Jobs using less than 1.5G of memory per core on the bigmem queue are in violation of acceptable use policies and the IDSC account responsible for those jobs may be suspended (:ref:`Policies <policies>`).
 
-
+.. role:: raw-html(raw)
+    :format: html
 
 .. list-table:: Pegasus Job Queues  
    :header-rows: 1
@@ -38,7 +39,7 @@ bigmem queue.
      - see desc. 
      - 25GB max 
      - see desc.
-     - test queue for Pegasus cluster CentOS 7 upgrade <br/> for 16+ cores, use resource distribution -R "span[ptile=16]"      
+     - test queue for Pegasus cluster CentOS 7 upgrade. :raw-html:`<br />` **for 16+ cores, use resource distribution -R "span[ptile=16]"**      
    * - general 
      - 15- 
      - 25GB max 
@@ -48,7 +49,7 @@ bigmem queue.
      - 16+ 
      - 25GB max 
      - 1 day \/ 7 days 
-     - parallel jobs requiring 16 or more cores, up to 25GB memory <br/> requires resource distribution -R "span[ptile=16]" 
+     - parallel jobs requiring 16 or more cores, up to 25GB memory.  **requires resource distribution -R "span[ptile=16]"**
    * - bigmem 
      - 64 max 
      - 250GB max 
