@@ -11,7 +11,7 @@ Accounts
 
 - To qualify for an IDSC account, you must be affiliated with the University of Miami.
 - All IDSC accounts must be linked with a valid corresponding University of Miami account.
-- Suspended accounts cannot submit jobs to the Pegasus cluster. 
+- Suspended accounts cannot submit jobs to IDSC clusters. 
 - Suspended accounts will be disabled after 90 days.
 - Disabled accounts cannot log into the Pegasus cluster.
 - Disabled account data will be deleted after 30 days.
