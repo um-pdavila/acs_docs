@@ -40,7 +40,7 @@ It is important that you test your software under CentOS 7 prior to the upgrade 
      - Wall time default \/ max 
      - Description 
    * - centos7 
-     - see desc. 
+     - 64 max
      - 25GB max 
      - see desc.
      - test queue for Pegasus cluster CentOS 7 upgrade. :raw-html:`<br />` **for 16+ cores, use resource distribution -R "span[ptile=16]"**      
