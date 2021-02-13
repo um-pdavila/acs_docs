@@ -15,7 +15,7 @@ compute nodes) and system software are shared by all users.
     Details:              Pegasus Supercomputer
     Credentials:          IDSC Account
     Access & Allocations: Policies 
-    Operating System:     CentOS 6.5 supporting up to GLIBC 2.12
+    Operating System:     CentOS 7.6
     Default Shell:        Bash
     Data Transfer:        SCP and SFTP
 
