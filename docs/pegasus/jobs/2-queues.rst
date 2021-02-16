@@ -63,7 +63,7 @@ It is important that you test your software under CentOS 7 prior to the upgrade 
      - 15- 
      - 250GB max 
      - 6 hours \/ 1 day 
-     - interactive jobs :raw-html:`<br />` only max 1 job per user
+     - interactive jobs :raw-html:`<br />` max 1 job per user
    * - gpu 
      - xx
      - 320 max 
