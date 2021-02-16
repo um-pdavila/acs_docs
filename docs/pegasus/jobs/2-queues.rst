@@ -24,9 +24,6 @@ bigmem queue.
 
 .. warning:: Jobs using less than 1.5G of memory per core on the bigmem queue are in violation of acceptable use policies and the IDSC account responsible for those jobs may be suspended (:ref:`Policies <policies>`).
 
-We are planning to perform a system upgrade on the Pegasus cluster to CentOS 7 on **Feb 12th, 2021** at 5pm.
-
-It is important that you test your software under CentOS 7 prior to the upgrade on Feb 12th, to ensure compatibility in the new environment. You will find instruction for testing on CentOS 7 here : :ref:`Pegasus CentOS 7 test queue <centos7test>`
 
 .. role:: raw-html(raw)
     :format: html
@@ -41,14 +38,14 @@ It is important that you test your software under CentOS 7 prior to the upgrade 
      - Description 
    * - general 
      - 15- 
-     - 25GB max 
+     - 24GB max 
      - 1 day \/ 7 days 
-     - jobs up to 15 cores, up to 25GB memory 
+     - jobs up to 15 cores, up to 24GB memory 
    * - parallel 
      - 16+ 
-     - 25GB max 
+     - 24GB max 
      - 1 day \/ 7 days 
-     - parallel jobs requiring 16 or more cores, up to 25GB memory. :raw-html:`<br />` **requires resource distribution -R "span[ptile=16]"**
+     - parallel jobs requiring 16 or more cores, up to 24GB memory. :raw-html:`<br />` **requires resource distribution -R "span[ptile=16]"**
    * - bigmem 
      - 64 max 
      - 250GB max 
@@ -56,7 +53,7 @@ It is important that you test your software under CentOS 7 prior to the upgrade 
      - jobs requiring nodes with expanded memory 
    * - debug 
      - 64 max 
-     - 25GB max 
+     - 24GB max 
      - 30 mins \/ 30 mins 
      - job debugging 
    * - interactive 
