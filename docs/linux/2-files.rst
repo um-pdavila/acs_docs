@@ -298,11 +298,14 @@ Other useful flags:
 -  ``-n`` do not overwrite an existing file
 -  ``-p`` preserve attributes (mode, ownership, and timestamps)
 
-Edit files with ``vi``:
------------------------
+Edit files : ``nano``, ``emacs``, ``vi``:
+---------------------------------------------
 
-``vi`` is a modal text editor available on Pegasus and most Linux
-systems. It can be launched with the command ``vi`` (plain) or ``vim``
+``nano`` and ``emacs`` are simple text editors available on the cluster and most Linux systems, while ``vi`` is a modal text editor with a bit of a learning curve.  
+
+For a quick comparison of these text editors, see : https://www.linuxtrainingacademy.com/nano-emacs-vim/
+
+``vi`` can be launched with the command ``vi`` (plain) or ``vim``
 (syntax-highlighted based on file extension). ``vi`` has two main modes:
 **Insert** and **Command**.
 
@@ -336,10 +339,11 @@ mode and exit saving changes.
     This is example_file0.
     It contains two lines of text.
 
-Some ``vi`` tutorials and commands:
+Some ``vi`` tutorials, commands, and comparisons :
 
 -  https://www.ccsf.edu/Pub/Fac/vi.html
 -  http://www.cs.colostate.edu/helpdocs/vi.html
+-  https://www.linuxtrainingacademy.com/nano-emacs-vim/
 
 View file contents by page with ``more`` and ``less``:
 ------------------------------------------------------
