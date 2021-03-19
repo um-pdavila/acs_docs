@@ -1,7 +1,7 @@
 Access Control Lists – ACL
 ==========================
 
-**Access Control Lists** (ACL) are available on Pegasus file systems.
+**Access Control Lists** (ACL) are available on Pegasus and Triton file systems.
 They allow file owners to grant permissions to specific users and
 groups. When combining standard Linux permissions and ACL permissions,
 **effective permissions** are the intersection (or overlap) of the two.
