@@ -5,10 +5,12 @@ Pegasus Cluster Software Installation
 
 Pegasus users are free to compile and install software in their own home
 directories, by following the software’s source code or local
-installation instructions.
+installation instructions.  
+
+To install personal software on the Pegasus cluster, navigate to an interactive node by submitting an interactive shell job to the Pegasus cluster LSF scheduler.  More on :ref:`Pegasus interactive jobs <p-interactive>`.
 
 Source code software installations ("compilations") can only be
-performed ***in your local directories***. Users of Pegasus are not
+performed **in your local directories**. Users of Pegasus are not
 administrators of the cluster, and therefore cannot install software
 with the ``sudo`` command (or with package managers like ``yum`` /
 ``apt-get``). If the software publisher does not provide compilation
@@ -17,10 +19,10 @@ instructions, look for non-standard location installation instructions.
 In general, local software installation involves:
 
 1. confirming pre-requisite software & library availability, versions
-2. ***downloading and extracting files***
-3. ***configuring the installation prefix to a local directory***
+2. **downloading and extracting files**
+3. **configuring the installation prefix to a local directory**
    (compile only)
-4. ***compiling the software*** (compile only)
+4. **compiling the software** (compile only)
 5. updating PATH and creating symbolic links (optional)
 
 Confirm that your software’s pre-requisites are met, either in your
@@ -90,7 +92,7 @@ Extract pre-compiled software and move to local software directory:
 
 The newly-extracted Firefox executable should now be located in
 ``~/local/firefox/36/firefox`` Pre-compiled binaries, skip to
-***Updating PATH and creating symbolic links***.
+**Updating PATH and creating symbolic links**.
 
 Extract source code and ``cd`` to new directory:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
