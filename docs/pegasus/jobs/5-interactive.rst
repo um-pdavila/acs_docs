@@ -11,27 +11,26 @@ command line or waits for a mouse event in X windows. Use
 ``bsub -Is -q interactive command`` to launch interactive work on
 Pegasus.  Remember to include your Pegasus cluster project ID in your job submissions with the ``-P`` flag.  
 
-::
+To compile or install personal software on the Pegasus cluster, submit an "interactive" shell job to the Pegasus LSF scheduler and proceed with your compilations ::
 
     [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID bash
 
-or
 
-::
+To run a non-graphical interactive Matlab session on the Pegasus cluster, submit an interactive job ::
 
     [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID matlab -nodisplay
 
-or
 
-::
+To run an graphical interactive job, add ``-XF`` to your bsub flags (more on x11 below) ::
 
     [username@pegasus ~]$ bsub -Is -q interactive -P myProjectID -XF $(java -jar ~/.local/apps/ImageJ/ij.jar -batch ~/.local/apps/ImageJ/macros/screenmill.txt)
 
 Upon exiting the interactive job, you will be returned to one of the
 login nodes.
 
+
 Interactive Job Utilizing X11 client
-------------------------------------
+-------------------------------------
 
 Additionally, the interactive queue can run X11 jobs. The bsub ``-XF``
 option is used for X11 jobs, for example:
