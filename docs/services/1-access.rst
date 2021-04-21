@@ -120,3 +120,10 @@ administer VPN accounts.
 
 University of Miami VPN:
 https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html
+
+Send access range requests (for Vendor VPN applications) to : `IDSC ACS, hpc@ccs.miami.edu <mailto:hpc@ccs.miami.edu>`_ 
+
+
+
+
+
