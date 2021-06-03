@@ -119,7 +119,7 @@ access IDSC resources while offsite, open a VPN connection first. IDSC does not
 administer VPN accounts.
 
 University of Miami VPN:
-https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html
+https://my.it.miami.edu/wda/a-z/virtual-private-network/
 
 Send access range requests (for Vendor VPN applications) to : `IDSC ACS <mailto:hpc@ccs.miami.edu>`_  
 
