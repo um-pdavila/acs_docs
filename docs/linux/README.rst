@@ -4,7 +4,7 @@ Linux Guides
 Introduction to Linux on Pegasus
 --------------------------------
 
-Pegasus is currently running the CentOS 6.5 operating system, a
+Pegasus is currently running the CentOS 7.6 operating system, a
 distribution of Linux. Linux is a UNIX-like kernel, though in this
 document it will generally refer to the entire CentOS distribution. The
 three basic components of UNIX-like operating systems are the
