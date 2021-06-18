@@ -118,7 +118,7 @@ To obtain a list of your conda environments, use the following command:
     
     
 
-Running jobs using R within a Conda environment 
+Running jobs
 -------
 
 In order to properly run a job using R within a conda environment you will need to 
