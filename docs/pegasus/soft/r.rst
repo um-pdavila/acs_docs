@@ -59,6 +59,8 @@ Load an R module, then submit an interactive R session with
 R packages
 ----------
 
+Confirm that your R package's pre-requisites are met, either in your local environment or as a module on the cluster. You will need to load any cluster modules that are pre-requisites, and install locally any other pre-requisites.  See :ref:`Pegasus Cluster Software Installation <4-install>` for help with complex requirements.
+
 From the R prompt, install any R package to your personal R library with
 the standard ``install.package()`` R command. Choose ``y`` when asked
 about using a personal library, and ``y`` again if asked to create one.
