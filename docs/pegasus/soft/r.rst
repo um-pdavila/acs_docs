@@ -74,6 +74,9 @@ about using a personal library, and ``y`` again if asked to create one.
     to install packages into?  (y/n) y
     ...
 
+Contact `IDSC ACS <mailto:hpc@ccs.miami.edu>`_ to review any core library pre-requisites & dependencies, for cluster-wide installation.  
+
+
 R file examples
 ~~~~~~~~~~~~~~~
 
