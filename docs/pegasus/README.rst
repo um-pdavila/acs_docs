@@ -10,7 +10,6 @@ If you encounter issues running your jobs, let our IDSC cluster support team kno
    :maxdepth: 2
 
    Pegasus Environment <env/README>
-   Pegasus CentOS 7 Testing <centos7test>
    Pegasus Job Scheduling <jobs/README>
    Pegasus Software <soft/README>
    Pegasus FAQ <p_faqs>
