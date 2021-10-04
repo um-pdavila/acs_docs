@@ -9,5 +9,5 @@ Triton Software Suites
    JupyterHub <jh>
    Modules <modules>
    R Packages <rPackages>
- 
+   Installing R via Anaconda <R_Through_Anaconda.rst>
    
