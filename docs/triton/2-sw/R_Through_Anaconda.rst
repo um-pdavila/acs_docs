@@ -138,7 +138,7 @@ version of R. Please see the example job script below:
     #BSUB -n 1
     #BSUB -u youremail@miami.edu
 
-    . “/nethome/caneid/anaconda3/etc/profile.d/conda.sh” 
+    . “/home/caneid/anaconda3/etc/profile.d/conda.sh” 
     conda activate r4_MyEnv
 
     cd /path/to/your/R_file.R
