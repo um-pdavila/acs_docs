@@ -22,7 +22,7 @@ home directory vs. scratch directory (scratch space)
 Each user will have a home directory on Triton located at
 ``/home/<caneid>`` as the working directory for submitting and running
 jobs. It is also for installing user software and libraries that are not
-provided as system utilities.
+provided as system utilities. Home directory contains an allocation of 250GB per user. 
 
 Each project group will have a scratch directory located at
 ``/scratch/<project_name>`` for holding the input and output data. You
