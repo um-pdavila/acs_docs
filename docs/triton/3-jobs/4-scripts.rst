@@ -91,6 +91,13 @@ assigned values listed in this script:
 Example scripts for parallel jobs
 ---------------------------------
 
+We recommend using IBM Advance Toolchain and SMPI unless you have specific reason for using OpenMP or OpenMPI. IBM's SMPI scales better and has better performance than both OpenMP or OpenMPI on Triton.
+
+For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires the LSF job scheduler to allocate 40 processors per host, ensuring all processors on a single host are used by that job.
+
+**Reserve enough memory for your jobs.** Memory reservations are per core. Parallel job performance may be affected, or even interrupted, by other badly-configured jobs running on the same host.
+
+
 ``mpi_hello_world.job``
 
 --------------
@@ -107,8 +114,11 @@ Example scripts for parallel jobs
     #BSUB -R "span[ptile=4]"
     #BSUB -q normal
 
-    ml gcc/8.3.1
-    ml openmpi/4.0.5
+    # Use gcc/8.3.1 and openmpi/4.0.5
+    # ml gcc/8.3.1 openmpi/4.0.5
+    
+    # Use the optimized IBM Advance Toolkit (gcc 8.3.1) and smpi
+    ml at smpi
 
     echo "Testing the gcc/8.3.1 openmpi/4.0.5 module: \n" >> mpi_hello_world.log
 
@@ -254,8 +264,11 @@ Thu Oct  7 11:25:07: Done successfully. The CPU time used is 9.7 seconds.
   #BSUB -R "span[ptile=4]"
   #BSUB -q normal
   
-  ml gcc/8.3.1
-  ml openmpi/4.0.5
+  # Use openmpi
+  # ml gcc/8.3.1 openmpi/4.0.5
+
+  # Use the optimized IBM Advance Toolkit (gcc 8.3.1) and smpi
+  ml at smpi
   
   echo "Testing the gcc/8.3.1 openmpi/4.0.5 module: \n" >> logs/mpi_hello_world.log
   
