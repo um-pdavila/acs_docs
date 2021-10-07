@@ -194,7 +194,7 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
   Job <981431>, Job Name <openmpi_test>, User <pdavila>, Project <default>, Status <DONE> 
   ...                   
 
-Thu Oct  7 11:25:07: Done successfully. The CPU time used is 9.7 seconds.
+  Thu Oct  7 11:25:07: Done successfully. The CPU time used is 9.7 seconds.
                      HOST: t088; CPU_TIME: 0 seconds
                      HOST: t061; CPU_TIME: 0 seconds
                      HOST: t042; CPU_TIME: 0 seconds
