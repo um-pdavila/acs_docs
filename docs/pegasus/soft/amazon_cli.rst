@@ -130,7 +130,7 @@ Using AWS s3 buckets from the cli
      b. use the '--recursive' flag to upload all objects 
 5. Delete objects from AWS s3 buckets with rm 
      a. list & test with '--dryrun' flag 
-     b. the remove with rm 
+     b. then remove with rm 
 6. Sync between your local directory and an AWS s3 bucket with sync
      a. recursive 
      b. copies changes & new files only 
