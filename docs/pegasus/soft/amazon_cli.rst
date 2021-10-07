@@ -106,7 +106,7 @@ Examples, ::
 
 ---> The default retry mode for AWS CLI version 2 is “standard” 
 
-These module settings will override user “aws configure” settings (below).  You can override module settings by using aws command-line options.
+These module settings will override user “aws configure” settings.  You can override module settings by using aws command-line options.
 
 
 
