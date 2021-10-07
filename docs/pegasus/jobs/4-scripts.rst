@@ -60,7 +60,7 @@ assigned values listed in this script:
     specifies the shell to be used when executing the command portion of the script.
     The default is Bash shell.
 
-    BSUB -J serialjob
+    #BSUB -J serialjob
     assign a name to job. The name of the job will show in the bjobs output.
 
     #BSUB -P myproject
