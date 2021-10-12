@@ -275,3 +275,20 @@ Get help with AWS s3 commands ::
 	aws s3 ls help 
 	aws s3 cp help 
 
+
+
+
+AWS s3 Include and Exclude filters
+--------------------------------------
+
+The following pattern symbols are supported 
+
+- ``*`` Matches everything 
+- ``?`` Matches any single character 
+- ``[sequence]`` Matches any character in ``sequence`` 
+- ``[!sequence]`` Matches any character not in ``sequence`` 
+
+Filters that appear later in the command take precedence.  Put ``--exclude`` filters first, then add ``--include`` filters after to re-include specifics.  See command examples above.  
+
+More on filters : https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#use-of-exclude-and-include-filters
+
