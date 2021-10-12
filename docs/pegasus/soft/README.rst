@@ -10,6 +10,7 @@ Pegasus Software
    Parallel Computing <3-parallel>
    Installing Software on a Cluster <4-install>
    Allinea <allinea>
+   Amazon Web Services CLI <amazon_cli>
    MATLAB <matlab>
    Perl <perl>
    Python <python>
