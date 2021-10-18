@@ -51,6 +51,7 @@ Allocations
 - Data for running jobs must be staged exclusively in the ``/scratch`` file system. IDSC accounts staging job data in the ``/nethome`` filesystem may be suspended.
 - Both **home** and **scratch** are available on all nodes in their respective clusters.
 - Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled.
+- Data on /scratch may be purged after 21 days if necessary to maintain adaquate space for all accounts.
 
 Software
 ----------
