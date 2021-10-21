@@ -41,7 +41,7 @@ AWS s3 "IAM" User Accounts :  https://docs.aws.amazon.com/IAM/latest/UserGuide/i
 
 
 AWS CLI, User Overview
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Note that your AWS IAM web login & password are different from your access key credentials.  For help with your IAM web login account, contact your AWS Administrator. 
 
@@ -51,7 +51,7 @@ Note that your AWS IAM web login & password are different from your access key c
 
 
 Getting your AWS IAM access keys (from web) 
-----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your AWS Administrator may have already provided you with IAM access keys for your Amazon instance.  If you need to generate new access keys, log into the AWS web interface.  Generating new keys will inactivate any old keys. 
 
@@ -75,7 +75,7 @@ Reminder, your AWS IAM web login & password are different from your access key c
 
 
 Configuring your AWS access (cli) 
---------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Have your IAM access key credentials, from ‘credentials.csv’ (from AWS web or your AWS Administrator).  
 
