@@ -5,9 +5,8 @@ For accessing your AWS services from the Pegasus cluster.  Note, IDSC does not a
 
 - **load the cluster's aws-cli module** 
 - configure aws with your IAM user account credentials (one-time) 
-  
-  - aws user credentails file : **~/.aws/credentials**
-  - aws user configurations file : **~/.aws/config** 
+   - aws user credentails file : **~/.aws/credentials**
+   - aws user configurations file : **~/.aws/config** 
 - **check your aws configurations** 
 
 ::
@@ -60,15 +59,12 @@ Your AWS Administrator may have already provided you with IAM access keys for yo
 Reminder, your AWS IAM web login & password are different from your access key credentials.  For help with your IAM web login account, contact your AWS Administrator.
 
 1. Log into your AWS Management Console, with your IAM web login & password 
-
     a. If you forgot your IAM web login, contact the AWS administrator that provided you with your IAM user name. 
     b. ”IAM users, only your administrator can reset your password.” 
     c. More on IAM account logins : https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_sign-in.html
 2. From your IAM account drop-down menu, choose “My security credentials” 
-
     a. If needed, update your password
 3. Under the “Access keys” heading, create & download your access key credentials `credentials.csv`
-
     a. ‘credentials.csv’ contains both your Access Key & your Secret Access Key 
     b. “If you lose or forget your secret key, you cannot retrieve it. Instead, create a new access key and make the old key inactive.” 
     c. More about access keys : http://docs.aws.amazon.com/console/iam/self-accesskeys
@@ -82,14 +78,12 @@ Have your IAM access key credentials, from ‘credentials.csv’ (from AWS web o
 AWS CLI quickstart : https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config
 
 1. On the Pegasus cluster, 
-
-   a. Load the cluster “aws-cli” module
-   b. (optional) Check the module’s default settings 
+    a. Load the cluster “aws-cli” module
+    b. (optional) Check the module’s default settings 
 2. Run the command “aws configure” 
 3. Enter your AWS IAM credentials (from ‘credentials.csv’) 
-
-   a. These settings will save to your home directory 
-   b. More about aws configuration files : https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+    a. These settings will save to your home directory 
+    b. More about aws configuration files : https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 
 
 Examples, ::
@@ -114,32 +108,26 @@ Using AWS s3 buckets from the cli
 --------------------------------------------------------
 
 1. Create a bucket 
-
-   a. bucket names must be globally unique (e.g. two different AWS users can not have the same bucket name)
-   b. bucket names cannot contain spaces 
-   c. More on bucket naming requirements : https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html
+    a. bucket names must be globally unique (e.g. two different AWS users can not have the same bucket name)
+    b. bucket names cannot contain spaces 
+    c. More on bucket naming requirements : https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html
 2. List your s3 bucket contents 
-
-   a. buckets are collections of objects 
-   b. “objects” behave like files 
-   c. “objects/” (with a trailing slash) behave like folders 
+    a. buckets are collections of objects 
+    b. “objects” behave like files 
+    c. “objects/” (with a trailing slash) behave like folders 
 3. Download objects from AWS s3 buckets with cp
-
-   a. specify directories, or use current local  
-   b. use the '--recursive' flag to download all objects 
+    a. specify directories, or use current local  
+    b. use the '--recursive' flag to download all objects 
 4. Upload files to an AWS s3 bucket with cp
-
-   a. specify AWS bucket paths 
-   b. use the '--recursive' flag to upload all objects 
+    a. specify AWS bucket paths 
+    b. use the '--recursive' flag to upload all objects 
 5. Delete objects from AWS s3 buckets with rm
-
-   a. list & test with '--dryrun' flag 
-   b. then remove with rm 
+    a. list & test with '--dryrun' flag 
+    b. then remove with rm 
 6. Sync between your local directory and an AWS s3 bucket with sync
-
-   a. recursive 
-   b. copies changes & new files only 
-   c. doesn’t delete missing files 
+    a. recursive 
+    b. copies changes & new files only 
+    c. doesn’t delete missing files 
 
 | More on using s3 : https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3.html
 | AWS s3 command examples : https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html
