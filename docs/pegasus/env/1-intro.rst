@@ -88,7 +88,7 @@ and **scratch**.
      - directories should be used for compiles and run-time input & output files 
 
 
-.. warning:: **Do not** stage job data in the ``/nethome`` file system. If your jobs read files from Pegasus, put those files exclusively in the ``/scratch`` file system.
+.. warning:: **Do not** stage job data in the ``/nethome`` file system. If your jobs writes or read files from Pegasus, put those files exclusively in the ``/scratch`` file system.
 
 
 
