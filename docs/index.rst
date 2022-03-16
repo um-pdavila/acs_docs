@@ -43,7 +43,7 @@ first<vpn>`.
 .. toctree::
    :maxdepth: 2
 
-   Triton Cluster (in development) <triton/README>
+   Triton Cluster  <triton/README>
    Pegasus Cluster <pegasus/README>
    Linux on Clusters <linux/README> 
    ACS Services <services/README> 
