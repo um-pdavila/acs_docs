@@ -16,5 +16,6 @@ Pegasus Software
    Python <python>
    Python Virtual Environments <python-ve>
    R <r>
+   RStudio <RStudio>
    SAS <sas>
    Using R through Anaconda <RInstallation_via_conda>
