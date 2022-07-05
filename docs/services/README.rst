@@ -5,6 +5,6 @@ Advanced Computing Systems Services
    :maxdepth: 2
 
    Access (SSH, x11, VPN) <1-access>
-   Storage <storage.tst>
+   Storage <storage>
    File Transfers <2-transfer>
    IDSC Onboarding Training Videos <3-IDSC_Onboarding_Videos>
