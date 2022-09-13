@@ -61,14 +61,9 @@ option). Consult the Linux man pages for more information on rsync.
 rclone 
 ~~~~~~
 
-The rclone a command-line program that can be used to manage your file over SFTP. Rclone supports over 40 cloud storage backends, as well as standard transfer protocols [like SFTP].  IDSC supports the rclone SFTP backend.
+The rclone a command-line program that can be used to manage your file over SFTP. Rclone supports over 40 cloud storage backends, as well as standard transfer protocols like SFTP.  This is a use case using rclone to migrate data from legacy storage to **IDSC CES** on **apex.idsc.miami.edu** using the default rclone on Pegasus, **rclone v1.39**.
 
 Source: https://rclone.org/sftp/
-
-rclone - SFTP Use Case 1
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-This is a use case using rclone to migrate data from legacy storage to **IDSC CES** on **apex.idsc.miami.edu**.  This use case uses default rclone on Pegasus, **rclone v1.39**.
 
 ::
 
@@ -148,9 +143,8 @@ This is a use case using rclone to migrate data from legacy storage to **IDSC CE
       -1 2022-06-13 17:25:44        -1 schurerlab
  
     [pdavila@login4 rclone]$ rclone mkdir apex:/schurerlab/pdavila
-    
 
-**Note:** Because ``rclone copy`` command can take hours to complete, we recommend you use screen when running rclone interactively.  This way the sync will not terminate prematurally, should your ssh session end.
+**Note:** Because ``rclone copy`` command can take hours to complete, we recommend you use the ``screen`` command when running rclone interactively.  This way the sync will not terminate prematurally, should your ssh session end.
 
 ::
     
@@ -161,11 +155,11 @@ This is a use case using rclone to migrate data from legacy storage to **IDSC CE
       -1 2022-06-23 10:36:21        -1 ffmpeg
       -1 2022-06-23 10:36:21        -1 firefox
       -1 2022-06-23 10:36:21        -1 wget
-        
-rclone - SFTP Use Case 2
-~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this second use case, we will install the latetest version of rclone to our home directory and then use the new arguments like ``--sftp-host`` to migrate data from legacy storage to **IDSC CES**. This assumes you have already **configured** your rclone SFTP as instructed above in the first rclone use case.
+Latest rclone
+~~~~~~~~~~~~~
+
+You can also install your preffered sftp program.  In this second use case, we will install the latetest version of rclone in our Pegasus home directory so we can use the ``--sftp-host`` argument to migrate data from legacy storage to **IDSC CES**. This assumes you have already **configured** your rclone SFTP as instructed above.
 
 Sources: https://rclone.org/install/
 
@@ -178,15 +172,6 @@ Sources: https://rclone.org/install/
       Usage:
         rclone copy source:path dest:path [flags]
       ... # Pegasus's default rclone, v1.39, does not support --sftp-host argument
-    
-    # Install latest rclone
-    [pdavila@login4 ~]$ which rclone
-      /usr/local/bin/rclone
-      
-    [pdavila@login4 ~]$ rclone -V
-      rclone v1.39
-      - os/arch: linux/386
-      - go version: go1.9.2
  
  Install latest rclone.
  
