@@ -20,9 +20,12 @@ CES storage
 * Usage above 10T requires review by the allocations committee.
 * Fee for 10T of CES project storage is charged annually. ($300)
 * CES storage is restricted to SFTP access through apex.idsc.miami.edu.
+* You will only have access to your lab's directory.  
+
+Contact your PI or hpc@ccs.miami.edu if you have any questions or concerns.
 
 You can access your CES storage using any SFTP client.  We recommend FileZilla.  Please see Using Filezilla use case in URL below.
 
   https://acs-docs.readthedocs.io/services/2-transfer.html
 
-Please note that CES storage is currently **only** accessible through apex.idsc.miami.edu.  It is not accessible through any other IDSC server. 
+Please note that CES storage is currently **only** accessible through apex.idsc.miami.edu.  It is not accessible through any other IDSC server.  You will also only have access to your projects directory.
