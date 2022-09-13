@@ -239,7 +239,7 @@ Launch FileZilla and open **File : Site Manager**.
 
 Click the "New Site" button and name the entry.  Pegasus example::
 
-    Host:       pegasus.ccs.miami.edu  or triton.ccs.miami.edu
+    Host:       pegasus.ccs.miami.edu | triton.ccs.miami.edu | apex.idsc.miami.edu (CES)
     Protocol:   SFTP
     Logon Type: Normal
     enter your username and password
