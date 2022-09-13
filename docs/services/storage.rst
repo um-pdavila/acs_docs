@@ -16,6 +16,7 @@ GPFS storage
 CES storage
 -----------
 * Projects may also request 10T of CES storage.
+* PI of project must contact hpc@ccs.miami.edu for access to CES Storage.
 * Usage above 10T requires review by the allocations committee.
 * Fee for 10T of CES project storage is charged annually. ($300)
 * CES is restricted to SFTP access through apex.idsc.miami.edu.
