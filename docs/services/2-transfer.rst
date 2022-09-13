@@ -1,5 +1,3 @@
-.. _transfer: 
-
 Transferring Files
 ==================
 
@@ -59,8 +57,6 @@ using rsync. For directory transfers, the options ``-atvr`` will
 transfer the files recursively (``-r`` option) along with the
 modification times (``-t`` option) and in the archive mode (``-a``
 option). Consult the Linux man pages for more information on rsync.
-
-.. _rclone:
 
 rclone 
 ~~~~~~
@@ -225,7 +221,6 @@ Sources: https://rclone.org/install/
     [pdavila@login4 rclone]$ 
     
 
-.. _using_filezilla:
 Using FileZilla
 ---------------
 
