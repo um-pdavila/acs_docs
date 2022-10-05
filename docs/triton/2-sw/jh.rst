@@ -115,6 +115,7 @@ Creating Your R kernel
 -  $ ``ml anaconda3``
 -  $ ``conda create -n <your r environemnt> -c conda-forge r-base``
 -  $ ``conda activate <your r environemnt>``
+-  $ ``conda install -c conda-forge jupyter_client``
 -  (<your r environemnt>)$ ``R``
 -  (inside R) > ``install.packages(c('repr', 'IRdisplay', 'IRkernel'))``
 -  (inside R) > ``IRkernel::installspec(name='<your r kernel name>', displayname='<display name of your kernel>')``
