@@ -88,22 +88,22 @@ The StdEnv on Triton contains the default configurations for the cluster.
 -  show loaded modules with ``module list`` or ``ml``
 -  show StdEnv settings with ``module show StdEnv`` or
    ``ml show StdEnv`` 
-
+   
 ::
 
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
-	  1) gcc/4.8.5   2) StdEnv
+	  1) gcc/8.3.1   2) StdEnv
 
     [username@login1 ~]$ ml show StdEnv
-    ----------------------------------------------------------------------------
-       /share/mfiles/Core/StdEnv.lua:
-    ----------------------------------------------------------------------------
-    help([[  Lua Help for the Standard Environment module configurations on Triton
-    ]])
-    whatis("Description: loads standard environment modules")
-    load("gcc/4.8.5")
+	----------------------------------------------------------------------------
+	   /share/mfiles/Core/StdEnv.lua:
+	----------------------------------------------------------------------------
+	help([[  Lua Help for the Standard Environment module configurations on Triton 
+	]])
+	whatis("Description: loads standard environment modules")
+	load("gcc/8.3.1")
 
 
 Triton available modules
@@ -126,68 +126,107 @@ Available modules at login include the compilers under “Compilers”, compiler
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
-	  1) gcc/4.8.5   2) StdEnv
+	  1) gcc/8.3.1   2) StdEnv
 
 
     [username@login1 ~]$ ml help gcc
 
-	--------------------- Module Specific Help for "gcc/4.8.5" ---------------------
-	Lua Help for Triton system gcc module
+	--------------------- Module Specific Help for "gcc/8.3.1" ---------------------
+	The GNU Compiler Collection includes front ends for C, C++, Objective-C,
+	Fortran, Ada, and Go, as well as libraries for these languages.
 
 
 
     [username@login1 ~]$ ml whatis gcc
-	gcc/4.8.5           : GNU compiler suite
-	gcc/4.8.5           : Version: 4.8.5
-	gcc/4.8.5           : Category: compiler suite
-	gcc/4.8.5           : Description: C, C++ and Fortran compilers
+	gcc/8.3.1           : Name : gcc
+	gcc/8.3.1           : Version : 8.3.1
+	gcc/8.3.1           : Target : power9le
 
 
     [username@login1 ~]$ ml av
+	----------------------- /share/mfiles/Compiler/gcc/8.3.1 -----------------------
+	   R/3.6.3                libxsmm/1.16.1         (E)
+	   R/4.0.3                ncview/2.1.8           (D)
+	   R/4.0.5         (D)    netcdf-c/4.8.0
+	   R/4.1.0                netcdf-fortran/4.5.3
+	   cmake/3.19.2           openbabel/3.0.0
+	   cmake/3.20.2    (D)    openblas/0.3.13
+	   ffmpeg/4.3.2           openblas/0.3.14        (D)
+	   fftw/3.3.9      (D)    openfoam/2012          (D)
+	   gdal/2.4.4             openmpi/4.0.5
+	   gdal/3.3.0      (D)    openssl/1.1.1k
+	   gromacs/2021.1         pandoc/2.7.3
+	   gsl/2.6                parallel-netcdf/1.12.2
+	   hdf5/1.10.7            perl/5.32.1
+	   jags/4.3.0             plumed/2.8.0
+	   lammps/20200721        python/3.8.10
+	   lammps/20210310 (D)    smpi/10.02
+	   libgit2/1.1.0          wrf/4.2
+	   libicov/1.16
 
-	----------------------- /share/mfiles/Compiler/gcc/4.8.5 -----------------------
-	   hdf5/1.8.16   (E)    myGCCdependentProgram/1.0 (S)    openmpi/3.1.4
-	   hwloc/1.11.11        openBLAS/0.3.7                   smpi/10.02
+	------------------------ /usr/share/Modules/modulefiles ------------------------
+	   dot    module-info    modules    null    use.own
 
-    --------------------------- /share/mfiles/Core ----------------------------
-       R/3.6.1                              (E)      anaconda3/2019.07 (E,D)
-       Single-Cell-Analysis/Cellranger-atac (E)      cp2k-gpu/7.0
-       Single-Cell-Analysis/Cellranger-dna  (E)      cp2k/7.0
-       Single-Cell-Analysis/Cellranger      (E,D)    cuda/10.1
-       StdEnv                               (L)      java/8.0
-       anaconda2/2019.07                    (E)      lammps/2019.08
-       anaconda3/ccs-bio                    (E)
+	------------------------------ /share/mfiles/Core ------------------------------
+	   StdEnv                (L)      lammps/2019.08
+	   anaconda2/2019.07     (E)      libiconv/1.16
+	   anaconda3/biohpc      (E)      libpciaccess/0.13.5
+	   anaconda3/2019.07     (E)      libxml2/2.9.9
+	   anaconda3/2019.10     (E,D)    ncl/6.3.0
+	   anaconda3/2020.11     (E)      ncview/2.1.2
+	   cellranger-atac/3.0.2 (E)      netlib-scalapack/2.0.2
+	   cellranger-dna/3.0.2  (E)      numactl/2.0.12
+	   cellranger/3.0.2      (E)      openblas/0.3.7
+	   cmake/3.20.2                   openfoam/2006
+	   cp2k/6.1                       vmd/1.9.4              (E)
+	   cuda/10.1                      wml/1.6.1              (E)
+	   cuda/10.2             (D)      wml/1.6.2              (E)
+	   fftw/3.3.8                     wml/1.7.0              (E,D)
+	   gaussian/16                    wml_anaconda3/2019.10  (E)
+	   java/8.0              (D)      xz/5.2.4
+	   java/8.0-6.5                   zlib/1.2.11
 
-    ------------------------- /share/mfiles/Compilers -------------------------
-       at/12.0    gcc/4.8.5 (L)   xl/16.1.1.4 (E)
+	--------------------------- /share/mfiles/Compilers ----------------------------
+	   at/12.0          gcc/7.4.0        gcc/8.4.0
+	   gcc/4.8.5 (D)    gcc/8.3.1 (L)    xl/16.1.1.4 (E)
+
+	  Where:
+	   D:  Default Module
+	   E:  Experimental
+	   L:  Module is loaded
+
+	Use "module spider" to find all possible modules.
+	Use "module keyword key1 key2 ..." to search for all possible modules matching
+	any of the "keys".
 
     ..
 
 
     [username@login1 ~]$ ml show gcc
 	----------------------------------------------------------------------------
-	   /share/mfiles/Compilers/gcc/4.8.5.lua:
+	   /share/mfiles/Compilers/gcc/8.3.1.lua:
 	----------------------------------------------------------------------------
-	help([[Lua Help for Triton system gcc module
-	]])
-	whatis("GNU compiler suite")
-	whatis("Version: 4.8.5")
-	whatis("Category: compiler suite")
-	whatis("Description: C, C++ and Fortran compilers")
-	setenv("CC","gcc")
-	setenv("CXX","g++")
-	setenv("FC","gfortran")
-	prepend_path("LD_LIBRARY_PATH","/usr/lib")
-	prepend_path("MANPATH","/usr/man")
-	prepend_path("PATH","/usr/bin")
-	prepend_path("MODULEPATH","/share/mfiles/Compiler/gcc/4.8.5")
+	whatis("Name : gcc")
+	whatis("Version : 8.3.1")
+	whatis("Target : power9le")
+	help([[The GNU Compiler Collection includes front ends for C, C++, Objective-C,
+	Fortran, Ada, and Go, as well as libraries for these languages.]])
+	prepend_path("MODULEPATH","/share/mfiles/Compiler/gcc/8.3.1")
 	family("compiler")
+	prepend_path("INFOPATH","/opt/rh/devtoolset-8/root/usr/share/info")
+	prepend_path("LD_LIBRARY_PATH","/opt/rh/devtoolset-8/root/usr/lib64:/opt/rh/devtoolset-8/root/usr/lib:/opt/rh/devtoolset-			8/root/usr/lib64/dyninst:/opt/rh/devtoolset-8/root/usr/lib/dyninst:/opt/rh/devtoolset-8/root/usr/lib64:/opt/rh/devtoolset-8/root/usr/lib")
+	prepend_path("MANPATH","/opt/rh/devtoolset-8/root/usr/share/man")
+	prepend_path("PATH","/opt/rh/devtoolset-8/root/usr/bin")
+	prepend_path("PKG_CONFIG_PATH","/opt/rh/devtoolset-8/root/usr/lib64/pkgconfig")
+	prepend_path("PYTHONPATH","/opt/rh/devtoolset-8/root/usr/lib64/python2.7/site-packages:/opt/rh/devtoolset-8/root/usr/lib/python2.7/site-packages")
+	setenv("PCP_DIR","/opt/rh/devtoolset-8/root")
+	setenv("PERL5LIB","/opt/rh/devtoolset-8/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-8/root/usr/lib/perl5:/opt/rh/devtoolset-8/root//usr/share/perl5/vendor_perl")
 
     [username@login1 ~]$ ml smpi
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
-	  1) gcc/4.8.5   2) StdEnv   3) smpi/10.02
+	  1) gcc/8.3.1   2) StdEnv   3) smpi/10.02
 
 
 Triton module hierarchies
@@ -211,15 +250,17 @@ Switch to a different compiler with the ``module swap`` command. Any dependent m
     [username@login1 ~]$ ml
 
     Currently Loaded Modules:
-      1) StdEnv   2) gcc/4.8.5   3) smpi/10.02
+      1) StdEnv   2) gcc/8.3.1   3) smpi/10.02
 	  
 	  
 	[username@login1 ~]$ ml help smpi
-
+	
 	-------------------- Module Specific Help for "smpi/10.02" ---------------------
-	  Lua Help file for IBM smpi 10.02 with Triton system gcc 4.8.5
+	  Lua Help file for IBM smpi 10.02 with devtoolset-8 GCC suite 
 
-	 sets OMPI_CC, OMPI_FC, and OMPI_CXX to GNU / gcc suite
+	  gcc version 8.3.1
+
+	  sets OMPI_CC, OMPI_FC, and OMPI_CXX to AT gcc suite
 
 
     [username@login1 ~]$ ml -gcc at
@@ -249,7 +290,7 @@ Switch to a different compiler with the ``module swap`` command. Any dependent m
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
-	  1) gcc/4.8.5   2) StdEnv
+	  1) gcc/8.3.1   2) StdEnv
 
 
 More hierarchies and dependencies
@@ -261,7 +302,10 @@ Example : cdo, nco, and netcdff depend on "netcdfc".  Netcdfc depends on "hdf5".
 
 ::
 
-    [username@login1 ~]$ ml hdf5 netcdfc netcdff cdo nco
+    [username@login1 ~]$ ml gcc/4.8.5 hdf5 netcdfc netcdff cdo nco
+        The following have been reloaded with a version change:
+  	1) gcc/8.3.1 => gcc/4.8.5
+	
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
