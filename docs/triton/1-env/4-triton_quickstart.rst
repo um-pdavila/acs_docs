@@ -274,131 +274,132 @@ If the job has finished you will see:
 
     No unfinished job found
 
-User Usage: bacct
-~~~~~~~~~~~~~~~~~
+.. COMMENTING OUT BACCT SECTION 
+   User Usage: bacct
+   ~~~~~~~~~~~~~~~~~
 
-The bacct command displays accounting statistics about finished jobs.  All times are in seconds.
+   The bacct command displays accounting statistics about finished jobs.  All times are in seconds.
 
-To get summary statistics about jobs that were dispatched/completed/submitted between 2020/10/01/00:00 and 2020/11/01/00:00, for user abc123 you can use:
+   To get summary statistics about jobs that were dispatched/completed/submitted between 2020/10/01/00:00 and 2020/11/01/00:00, for user abc123 you can use:
 
-::
+   ::
 
-  bacct -D 2020/10/01/00:00,2020/11/01/00:00 -u abc123
-  bacct -C 2020/10/01/00:00,2020/11/01/00:00 -u abc123
-  bacct -S 2020/10/01/00:00,2020/11/01/00:00 -u abc123
-    
-  
-Statistics about jobs submitted to a project project123:
-
-::
-
-  bacct -P project123
-  
-Statistics about JOBID 123456:
-
-::
-
- [abc123@login ~]$ bacct -l 123456
-
-Example of dispatched jobs between 2020/10/01/00:00 and 2020/11/01/00:00, for user abc123:
-
-::
-
- [abc123@login1 ~]$ bacct -D 2020/10/01/00:00,2020/11/01/00:00 -u abc123
- 
- Accounting information about jobs that are: 
-  - submitted by users abc123, 
-  - accounted on all projects.
-  - completed normally or exited
-  - dispatched between  Thu Oct  1 00:00:00 2020
-                  ,and   Sun Nov  1 00:00:00 2020
-  - executed on all hosts.
-  - submitted to all queues.
-  - accounted on all service classes.
- ------------------------------------------------------------------------------
-
- SUMMARY:      ( time unit: second ) 
-  Total number of done jobs:       8      Total number of exited jobs:     2
-  Total CPU time consumed:       7.8      Average CPU time consumed:     0.8
-  Maximum CPU time of a job:     1.9      Minimum CPU time of a job:     0.0
-  Total wait time in queues:     8.0
-  Average wait time in queue:    0.8
-  Maximum wait time in queue:    2.0      Minimum wait time in queue:    0.0
-  Average turnaround time:       500 (seconds/job)
-  Maximum turnaround time:      2513      Minimum turnaround time:         7
-  Average hog factor of a job:  0.03 ( cpu time / turnaround time )
-  Maximum hog factor of a job:  0.09      Minimum hog factor of a job:  0.00
-  Average expansion factor of a job:  13.81 ( turnaround time / run time )
-  Maximum expansion factor of a job:  114.00
-  Minimum expansion factor of a job:  1.00
-  Total Run time consumed:      4873      Average Run time consumed:     487
-  Maximum Run time of a job:    2513      Minimum Run time of a job:       0
-  Total throughput:             0.03 (jobs/hour)  during  384.74 hours
-  Beginning time:       Oct 14 12:23      Ending time:          Oct 30 13:08
-
-Example of "long form" output of dispatched jobs between 2020/10/01/00:00 and 2020/11/01/00:00, for project123:  
-
-::
-
-  $ bacct -l -D 2020/10/01/00:00,2020/11/01/00:00 -P project123
+     bacct -D 2020/10/01/00:00,2020/11/01/00:00 -u abc123
+     bacct -C 2020/10/01/00:00,2020/11/01/00:00 -u abc123
+     bacct -S 2020/10/01/00:00,2020/11/01/00:00 -u abc123
 
 
-  Accounting information about jobs that are: 
-    - submitted by users abc123, 
-    - accounted on projects project123, 
-    - completed normally or exited
-    - dispatched between  Thu Oct  1 00:00:00 2020
-                    ,and   Sun Nov  1 00:00:00 2020
-    - executed on all hosts.
-    - submitted to all queues.
-    - accounted on all service classes.
-  ------------------------------------------------------------------------------
-  
-  Job <1234568>, Job Name <email-test>, User <abc123>, Project <project123>, Mail
-                      <abc123@miami.edu>, Status <DONE>, Queue <normal>, Command
-                      <#!/bin/bash;#BSUB -J email-test;#BSUB -P acprojects ;#BS
-                      UB -o %J.out;#BSUB -e %J.err;#BSUB -W 1:00;#BSUB -q normal
-                      ;#BSUB -n 1;#BSUB -R "rusage[mem=128M]";#BSUB -B;#BSUB -N;
-                      #BSUB -u pedro@miami.edu;#;# cd /path/to/scratch/directory
-                      ;date;sleep 100;date>, Share group charged </abc123>
-  Wed Oct 14 20:33:28: Submitted from host <login1>, CWD <$HOME>, Output File <%J
-                     .out>, Error File <%J.err>;
-  Wed Oct 14 20:33:28: Dispatched 1 Task(s) on Host(s) <t077>, Allocated 1 Slot(s
-                       ) on Host(s) <t077>, Effective RES_REQ <select[((type == L
-                     INUXPPC64LE ) && (type == any))] order[r15s:pg] rusage[mem
-                     =128.00] >;
-  Wed Oct 14 20:35:09: Completed <done>.
-   
-  Accounting information about this job:
-        Share group charged </abc123>
-        CPU_T     WAIT     TURNAROUND   STATUS     HOG_FACTOR    MEM    SWAP
-         0.10        0            101     done         0.0010     7M      0M
-  ------------------------------------------------------------------------------
+   Statistics about jobs submitted to a project project123:
 
-  Job <1234569>, Job Name <email-test>, User <abc123>, Project <project123>, Mail
-  ...
+   ::
 
-  ------------------------------------------------------------------------------
-  SUMMARY:      ( time unit: second ) 
-  Total number of done jobs:       8      Total number of exited jobs:     0
-  Total CPU time consumed:       1.0      Average CPU time consumed:     0.1
-  Maximum CPU time of a job:     0.5      Minimum CPU time of a job:     0.0
-  Total wait time in queues:     2.0
-  Average wait time in queue:    0.2
-  Maximum wait time in queue:    1.0      Minimum wait time in queue:    0.0
-  Average turnaround time:       168 (seconds/job)
-  Maximum turnaround time:      1002      Minimum turnaround time:        10
-  Average hog factor of a job:  0.00 ( cpu time / turnaround time )
-  Maximum hog factor of a job:  0.00      Minimum hog factor of a job:  0.00
-  Average expansion factor of a job:  1.01 ( turnaround time / run time )
-  Maximum expansion factor of a job:  1.10
-  Minimum expansion factor of a job:  1.00
-  Total Run time consumed:      1347      Average Run time consumed:     168
-  Maximum Run time of a job:    1002      Minimum Run time of a job:      10
-  Total throughput:             0.02 (jobs/hour)  during  349.72 hours
-  Beginning time:       Oct 14 20:35      Ending time:          Oct 29 10:18
-  
-If you do not provide the "-u CaneID" argument, command defaults to the user running the command.  The long form output "-l" displays detailed information for each job in a multiline format, followed by a summary.
+     bacct -P project123
+
+   Statistics about JOBID 123456:
+
+   ::
+
+    [abc123@login ~]$ bacct -l 123456
+
+   Example of dispatched jobs between 2020/10/01/00:00 and 2020/11/01/00:00, for user abc123:
+
+   ::
+
+    [abc123@login1 ~]$ bacct -D 2020/10/01/00:00,2020/11/01/00:00 -u abc123
+
+    Accounting information about jobs that are: 
+     - submitted by users abc123, 
+     - accounted on all projects.
+     - completed normally or exited
+     - dispatched between  Thu Oct  1 00:00:00 2020
+                     ,and   Sun Nov  1 00:00:00 2020
+     - executed on all hosts.
+     - submitted to all queues.
+     - accounted on all service classes.
+    ------------------------------------------------------------------------------
+
+    SUMMARY:      ( time unit: second ) 
+     Total number of done jobs:       8      Total number of exited jobs:     2
+     Total CPU time consumed:       7.8      Average CPU time consumed:     0.8
+     Maximum CPU time of a job:     1.9      Minimum CPU time of a job:     0.0
+     Total wait time in queues:     8.0
+     Average wait time in queue:    0.8
+     Maximum wait time in queue:    2.0      Minimum wait time in queue:    0.0
+     Average turnaround time:       500 (seconds/job)
+     Maximum turnaround time:      2513      Minimum turnaround time:         7
+     Average hog factor of a job:  0.03 ( cpu time / turnaround time )
+     Maximum hog factor of a job:  0.09      Minimum hog factor of a job:  0.00
+     Average expansion factor of a job:  13.81 ( turnaround time / run time )
+     Maximum expansion factor of a job:  114.00
+     Minimum expansion factor of a job:  1.00
+     Total Run time consumed:      4873      Average Run time consumed:     487
+     Maximum Run time of a job:    2513      Minimum Run time of a job:       0
+     Total throughput:             0.03 (jobs/hour)  during  384.74 hours
+     Beginning time:       Oct 14 12:23      Ending time:          Oct 30 13:08
+
+   Example of "long form" output of dispatched jobs between 2020/10/01/00:00 and 2020/11/01/00:00, for project123:  
+
+   ::
+
+     $ bacct -l -D 2020/10/01/00:00,2020/11/01/00:00 -P project123
+
+
+     Accounting information about jobs that are: 
+       - submitted by users abc123, 
+       - accounted on projects project123, 
+       - completed normally or exited
+       - dispatched between  Thu Oct  1 00:00:00 2020
+                       ,and   Sun Nov  1 00:00:00 2020
+       - executed on all hosts.
+       - submitted to all queues.
+       - accounted on all service classes.
+     ------------------------------------------------------------------------------
+
+     Job <1234568>, Job Name <email-test>, User <abc123>, Project <project123>, Mail
+                         <abc123@miami.edu>, Status <DONE>, Queue <normal>, Command
+                         <#!/bin/bash;#BSUB -J email-test;#BSUB -P acprojects ;#BS
+                         UB -o %J.out;#BSUB -e %J.err;#BSUB -W 1:00;#BSUB -q normal
+                         ;#BSUB -n 1;#BSUB -R "rusage[mem=128M]";#BSUB -B;#BSUB -N;
+                         #BSUB -u pedro@miami.edu;#;# cd /path/to/scratch/directory
+                         ;date;sleep 100;date>, Share group charged </abc123>
+     Wed Oct 14 20:33:28: Submitted from host <login1>, CWD <$HOME>, Output File <%J
+                        .out>, Error File <%J.err>;
+     Wed Oct 14 20:33:28: Dispatched 1 Task(s) on Host(s) <t077>, Allocated 1 Slot(s
+                          ) on Host(s) <t077>, Effective RES_REQ <select[((type == L
+                        INUXPPC64LE ) && (type == any))] order[r15s:pg] rusage[mem
+                        =128.00] >;
+     Wed Oct 14 20:35:09: Completed <done>.
+
+     Accounting information about this job:
+           Share group charged </abc123>
+           CPU_T     WAIT     TURNAROUND   STATUS     HOG_FACTOR    MEM    SWAP
+            0.10        0            101     done         0.0010     7M      0M
+     ------------------------------------------------------------------------------
+
+     Job <1234569>, Job Name <email-test>, User <abc123>, Project <project123>, Mail
+     ...
+
+     ------------------------------------------------------------------------------
+     SUMMARY:      ( time unit: second ) 
+     Total number of done jobs:       8      Total number of exited jobs:     0
+     Total CPU time consumed:       1.0      Average CPU time consumed:     0.1
+     Maximum CPU time of a job:     0.5      Minimum CPU time of a job:     0.0
+     Total wait time in queues:     2.0
+     Average wait time in queue:    0.2
+     Maximum wait time in queue:    1.0      Minimum wait time in queue:    0.0
+     Average turnaround time:       168 (seconds/job)
+     Maximum turnaround time:      1002      Minimum turnaround time:        10
+     Average hog factor of a job:  0.00 ( cpu time / turnaround time )
+     Maximum hog factor of a job:  0.00      Minimum hog factor of a job:  0.00
+     Average expansion factor of a job:  1.01 ( turnaround time / run time )
+     Maximum expansion factor of a job:  1.10
+     Minimum expansion factor of a job:  1.00
+     Total Run time consumed:      1347      Average Run time consumed:     168
+     Maximum Run time of a job:    1002      Minimum Run time of a job:      10
+     Total throughput:             0.02 (jobs/hour)  during  349.72 hours
+     Beginning time:       Oct 14 20:35      Ending time:          Oct 29 10:18
+
+   If you do not provide the "-u CaneID" argument, command defaults to the user running the command.  The long form output "-l" displays detailed information for each job in a multiline format, followed by a summary.
 
 6. Checking the job output
 --------------------------
