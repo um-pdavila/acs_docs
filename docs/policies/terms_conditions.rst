@@ -6,7 +6,6 @@ Use of IDSC systems means that you agree to all `University of Miami Acceptable 
 - No PHI or PII may be stored on the systems
 - IDSC is not responsible for any data loss or data compromise
 - IDSC will make a best effort to recover lost data but assumes no responsibility for any data
-- IDSC personnel will not change, access, or manipulate any user data
 - IDSC will gather aggregate usage and access statistics for research purposes
 - IDSC will perform unscheduled audits to ensure compliance with IDSC and UM acceptable use policies
 
