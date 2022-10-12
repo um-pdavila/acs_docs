@@ -19,8 +19,10 @@ Accounts
 IDSC Links
 ----------------
 
+- `IDSC Account Registration Form <https://idsc.miami.edu/IDSC_Account_Registration>`_
 - `IDSC Project Request Form <https://idsc.miami.edu/project_request>`_
 - `IDSC Software Requests : e-mail IDSC <mailto:hpc@ccs.miami.edu>`_
+
 
 Supercomputers
 ---------------------
@@ -45,19 +47,20 @@ Supercomputers
 Allocations
 -----------
 
-- Active cluster users are allocated a logical **home** directory area on the cluster, ``/nethome/username``, limited to 250GB. 
-- Active projects can be allocated scratch directories:  ``/scratch/projects/projectID``, intended for compiles and run-time input & output files. 
+- Active cluster users are allocated a logical **home** directory area on the cluster, PEGASUS: ``/nethome/username``, TRITON: ``/home/username`` , limited to 250GB. 
+- Active projects can be allocated scratch directories:  PEGASUS: ``/scratch/projects/projectID``, TRITON: ``/scratch/projectID``, intended for compiles and run-time input & output files. 
 - Disk allocations are only for data currently being processed.
 - Data for running jobs must be staged exclusively in the ``/scratch`` file system. IDSC accounts staging job data in the ``/nethome`` filesystem may be suspended.
 - Both **home** and **scratch** are available on all nodes in their respective clusters.
 - Accounts exceeding the 250GB home limit will be suspended. Once usage is under 250GB, the account will be enabled.
-- Data on /scratch may be purged after 21 days if necessary to maintain adaquate space for all accounts.
+- Data on /scratch may be purged after 21 days if necessary to maintain adaquate space for all accounts. 
+- For both the above exceeded allocation scenarios, a member of IDSC will send a notification before this occurs. This will give you the opporutnity to move your data if needed. 
 
 Software
 ----------
 
 - Users are free to install software in their home directories on IDSC clusters. More information about installing software onto ACS systems on `ReadTheDocs <https://acs-docs.readthedocs.io/>`_ : `https://acs-docs.readthedocs.io/ <https://acs-docs.readthedocs.io/>`_
-- Cluster software requests are reviewed quarterly. Global software packages are considered only when a minimum of 20 users require them.
+- Cluster software requests are reviewed quarterly. Global software packages are evaluated per request. 
 
 
 Support 
