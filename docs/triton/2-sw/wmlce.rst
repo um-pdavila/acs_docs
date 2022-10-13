@@ -4,11 +4,6 @@ IBM WML CE on Triton User Menu
 Introduction
 ------------
 
-Triton cluster consists of 96 `IBM POWER System AC922 <https://www.ibm.com/us-en/marketplace/power-systems-ac922>`__
-compute nodes, each of which is equiped with two
-NVIDIA Tesla V100 GPUs and engineered to be "the most powerful
-training platform".
-
 To release the power of the advanced hardware, IBM provides
 Watson Machine Learning Community Edition (WML CE) which is a set of
 software packages for deep learning and machine learning development and
