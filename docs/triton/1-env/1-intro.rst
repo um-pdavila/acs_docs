@@ -2,11 +2,10 @@ Triton Environment Introduction
 ===============================
 
 
-The Triton cluster is the University of Miami’s 96 gpu-enabled -node
-high-performance supercomputer, available to all University of Miami
-employees and students. Triton resources such as hardware (login and
-compute nodes) and system software are shared by all users. Triton 
-utilizes the Power9 architecture which specializes in data intensive
+Triton cluster consists of 96 `IBM POWER System AC922 <https://www.ibm.com/us-en/marketplace/power-systems-ac922>`__
+compute nodes, each of which is equiped with two
+NVIDIA Tesla V100 GPUs and engineered to be "the most powerful
+training platform". Triton utilizes the Power9 architecture which specializes in data intensive
 workloads. 
 
 The Triton cluster is the University of Miami's newest supercomputer cluster.  
