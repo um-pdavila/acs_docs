@@ -27,6 +27,19 @@ The RStudio module is dependent on the gcc/8.3.0 and R/4.1.0 software modules. T
      Currently Loaded Modulefiles:
        1) perl/5.18.1(default)   3) gcc/8.3.0
        2) R/4.1.0                4) rstudio/2022.05.999
+       
+First Time configurations
+-------
+If this is the first time you are using the RStudio module you will need to configure the rendering engine to run in software mode by editing /nethome/caneid/.config/RStudio/desktop.ini
+
+::
+
+    [nra20@login4 ~]$ vi /nethome/nra20/.config/RStudio/desktop.ini
+    
+Add the following line under [General]
+
+    desktop.renderingEngine=software
+
 
 
 Launching RStudio jobs through LSF 
