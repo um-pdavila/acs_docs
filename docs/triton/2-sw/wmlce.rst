@@ -143,8 +143,10 @@ A job script example:
    #BSUB -q "normal"
    #BSUB -W 00:10
 
-
-   ml wml_anaconda3   
+   module unload gcc
+   ml wml_anaconda3
+   ml xl
+   ml smpi
    conda activate <your environment>
    
    # Workaround for GPU selection issue
