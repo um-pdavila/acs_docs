@@ -7,7 +7,6 @@ Triton Software Suites
    Anaconda <anaconda>
    IBM WML CE (Deep Learning) <wmlce>
    JupyterHub <jh>
-   Modules <modules>
    R Packages <rPackages>
    Installing R via Anaconda <R_Through_Anaconda.rst>
    
