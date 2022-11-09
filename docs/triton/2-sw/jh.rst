@@ -1,6 +1,5 @@
 .. warning:: 
-   We are experiencing some unexpected shutdowns on the JupyterHub service recently and are trying to fix the issue ASAP.
-   Please make sure to save your work frequently in case the shutdown happens.
+   Please make sure to save your work frequently in case a shutdown happens.
    
 JupyterHub on Triton User Menu
 ==============================
@@ -54,7 +53,7 @@ When using the JupyterHub, you need to be clear that there are three things you 
    
 .. warning::
    If you only logout from JupyterHub without stopping the Notebook Server first, 
-   the Notebook Server will run until the time you set up when starting it.
+   the Notebook Server will run until the time you set up when starting it. This could result in unintended increased SU usage. 
    
 Using Jupyter Notebook
 ----------------------
@@ -124,6 +123,16 @@ Later on, you can still install new R packages to the kernel by activating the e
 (The pacakge will be installed at ``/~/.conda/envs/<your r environment>/lib/R/library``)
 
 After a R package is installed, you can use it in your notebook by running ``library('<package name>')`` in a cell.
+
+Removing Personal Kernels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can view a list of all your kernels at the following path:
+
+``/home/<your_caneid>/.local/share/jupyter/kernels``
+
+From this directory you can delete kernels using Linux **rm kernel_name** command. 
+
+
 
 Using Pre-installed Kernels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
