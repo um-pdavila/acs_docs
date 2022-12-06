@@ -122,7 +122,7 @@ Running jobs
 -------
 
 In order to properly run a job using R within a conda environment you will need to 
-intiate & activate the conda environment within the job script, otherwise the job may fail to find your
+initiate & activate the conda environment within the job script, otherwise the job may fail to find your
 version of R. Please see the example job script below:
 
 ::
