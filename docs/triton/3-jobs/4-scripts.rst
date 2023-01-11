@@ -106,23 +106,21 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
 
     $ cat mpi_hello_world.job
     #!/bin/sh
-    #BSUB -n 80
+    #BSUB -n 20
     #BSUB -J mpi_hello_world
-    #BSUB -o logs/%J.out
-    #BSUB -e logs/%J.err
+    #BSUB -o %J.out
+    #BSUB -e %J.err
     #BSUB -a openmpi
     #BSUB -R "span[ptile=4]"
     #BSUB -q normal
 
     # Use gcc/8.3.1 and openmpi/4.0.5
-    # ml gcc/8.3.1 openmpi/4.0.5
+    ml gcc/8.3.1 openmpi/4.0.5
     
     # Use the optimized IBM Advance Toolkit (gcc 8.3.1) and smpi
-    ml at smpi
+    # ml at smpi
 
-    echo "Testing the gcc/8.3.1 openmpi/4.0.5 module: \n" >> mpi_hello_world.log
-
-    mpirun -n 80 ./mpi_hello_world >> logs/mpi_hello_world.log
+    mpirun -n 20 ./mpi_hello_world 
 
 
 ``mpi_hello_world.c``
@@ -189,32 +187,17 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
 
 .. code:: bash
 
-  $ bjobs -l 981431
+  $ bjobs -l 284204
   
-  Job <981431>, Job Name <openmpi_test>, User <pdavila>, Project <default>, Status <DONE> 
+  Job <284204>, Job Name <mpi_hello_world>, User <nra20>, Project <default>, Status <DONE> 
   ...                   
 
-  Thu Oct  7 11:25:07: Done successfully. The CPU time used is 9.7 seconds.
-                     HOST: t088; CPU_TIME: 0 seconds
-                     HOST: t061; CPU_TIME: 0 seconds
-                     HOST: t042; CPU_TIME: 0 seconds
-                     HOST: t052; CPU_TIME: 0 seconds
-                     HOST: t029; CPU_TIME: 0 seconds
-                     HOST: t077; CPU_TIME: 1 seconds
-                     HOST: t072; CPU_TIME: 0 seconds
-                     HOST: t058; CPU_TIME: 0 seconds
+  Wed Jan  11 11:251:07: Done successfully. The CPU time used is 9.7 seconds.
                      HOST: t039; CPU_TIME: 0 seconds
-                     HOST: t041; CPU_TIME: 0 seconds
-                     HOST: t065; CPU_TIME: 0 seconds
-                     HOST: t036; CPU_TIME: 1 seconds
-                     HOST: t087; CPU_TIME: 0 seconds
-                     HOST: t048; CPU_TIME: 0 seconds
-                     HOST: t081; CPU_TIME: 0 seconds
-                     HOST: t054; CPU_TIME: 0 seconds
-                     HOST: t073; CPU_TIME: 1 seconds
-                     HOST: t070; CPU_TIME: 0 seconds
-                     HOST: t083; CPU_TIME: 1 seconds
-                     HOST: t047.triton; CPU_TIME: 0 seconds
+                     HOST: t072; CPU_TIME: 0 seconds
+                     HOST: t059; CPU_TIME: 0 seconds
+                     HOST: t047; CPU_TIME: 0 seconds
+                     HOST: t017; CPU_TIME: 0 seconds
 
    MEMORY USAGE:
    MAX MEM: 14 Mbytes;  AVG MEM: 9 Mbytes
@@ -224,31 +207,17 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
 
 .. code:: bash
   
-  $ cat logs/981431.out
+  $ cat 284204.out
   Sender: LSF System <hpc@ccs.miami.edu>
-  Subject: Job 981431: <openmpi_test> in cluster <triton> Done
+  Subject: Job 284204: <mpi_hello_world> in cluster <triton> Done
   
-  Job <openmpi_test> was submitted from host <login1> by user <pdavila> in cluster <triton> at Thu Oct  7 11:25:03 2021
-  Job was executed on host(s) <4*t047>, in queue <normal>, as user <pdavila> in cluster <triton> at Thu Oct  7 11:25:03 2021
-                              <4*t083>
-                              <4*t087>
-                              <4*t036>
-                              <4*t065>
-                              <4*t081>
-                              <4*t054>
-                              <4*t061>
-                              <4*t029>
-                              <4*t039>
-                              <4*t088>
-                              <4*t052>
-                              <4*t070>
-                              <4*t072>
-                              <4*t073>
-                              <4*t042>
-                              <4*t058>
-                              <4*t077>
-                              <4*t048>
-                              <4*t041>
+  Job <mpi_hello_world> was submitted from host <login1> by user <nra20> in cluster <triton> at Wed Jan  11 11:25:03 2021
+  Job was executed on host(s) <4*t039>, in queue <normal>, as user <nra20> in cluster <triton> at Wed Jan  11 11:25:03 2021
+                              <4*t071>
+                              <4*t059>
+                              <4*t047>
+                              <4*t017>
+                
   ...
   
   Your job looked like:
@@ -256,23 +225,22 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
   ------------------------------------------------------------
   # LSBATCH: User input
   #!/bin/sh
-  #BSUB -n 80
-  #BSUB -J openmpi_test
-  #BSUB -o logs/%J.out
-  #BSUB -e logs/%J.err
+  #BSUB -n 20
+  #BSUB -J mpi_hello_world
+  #BSUB -o %J.out
+  #BSUB -e %J.err
   #BSUB -a openmpi
   #BSUB -R "span[ptile=4]"
   #BSUB -q normal
   
   # Use openmpi
-  # ml gcc/8.3.1 openmpi/4.0.5
+  ml gcc/8.3.1 openmpi/4.0.5
 
   # Use the optimized IBM Advance Toolkit (gcc 8.3.1) and smpi
-  ml at smpi
+  # ml at smpi
+ 
   
-  echo "Testing the gcc/8.3.1 openmpi/4.0.5 module: \n" >> logs/mpi_hello_world.log
-  
-  mpirun -n 80 ./mpi_hello_world >> logs/mpi_hello_world.log
+  mpirun -n 20 ./mpi_hello_world 
   
   ------------------------------------------------------------
   
@@ -280,19 +248,41 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
   
   Resource usage summary:
   
-    CPU time :                                   9.71 sec.
-    Max Memory :                                 17 MB
-    Average Memory :                             11.00 MB
+    CPU time :                                   2.49 sec.
+    Max Memory :                                 53 MB
+    Average Memory :                             35.67 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
-    Max Swap :                                   -
-    Max Processes :                              5
-    Max Threads :                                9
-    Run time :                                   4 sec.
-    Turnaround time :                            5 sec.
+    Max Swap :                                   1 MB
+    Max Processes :                              8
+    Max Threads :                                20
+    Run time :                                   3 sec.
+    Turnaround time :                            6 sec.
 
   The output (if any) follows:
+  
+  Hello world from processor t047, rank 14 out of 20 processors
+  Hello world from processor t039, rank 3 out of 20 processors
+  Hello world from processor t039, rank 0 out of 20 processors
+  Hello world from processor t039, rank 1 out of 20 processors
+  Hello world from processor t039, rank 2 out of 20 processors
+  Hello world from processor t017, rank 17 out of 20 processors
+  Hello world from processor t047, rank 15 out of 20 processors
+  Hello world from processor t017, rank 18 out of 20 processors
+  Hello world from processor t047, rank 12 out of 20 processors
+  Hello world from processor t017, rank 19 out of 20 processors
+  Hello world from processor t047, rank 13 out of 20 processors
+  Hello world from processor t017, rank 16 out of 20 processors
+  Hello world from processor t072, rank 5 out of 20 processors
+  Hello world from processor t059, rank 8 out of 20 processors
+  Hello world from processor t072, rank 6 out of 20 processors
+  Hello world from processor t072, rank 7 out of 20 processors
+  Hello world from processor t072, rank 4 out of 20 processors
+  Hello world from processor t059, rank 9 out of 20 processors
+  Hello world from processor t059, rank 10 out of 20 processors
+  Hello world from processor t059, rank 11 out of 20 processors
+  
 
   PS:
 
-  Read file <logs/981431.err> for stderr output of this job.
+  Read file <284204.err> for stderr output of this job.
