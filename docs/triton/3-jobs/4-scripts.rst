@@ -160,7 +160,7 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
 
 
 
-``Compile mpi_hello_world.c``
+``Compile the mpi_hello_world.c file``
 
 --------------
 
@@ -171,7 +171,7 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
   $ mpicc -o mpi_hello_world mpi_hello_world.c
   
   
-``Run mpi_hello_world.job``
+``Run the mpi_hello_world.job file``
 
 --------------
 
