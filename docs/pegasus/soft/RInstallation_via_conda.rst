@@ -34,13 +34,6 @@ Activate conda with the new Anaconda3 folder in your home directory (Depending o
     [username@pegasus ~]$ source <path to conda>/bin/activate
     [username@pegasus ~]$ conda init
     
-
-Configure & prioritize the conda-forge channel. This will be useful for downloading library dependencies for your R packages in your conda environment.
-
-::
-
-    [username@pegasus ~]$ conda config --add channels conda-forge
-    [username@pegasus ~]$ conda config --set channel_priority strict
     
     
 Create a conda environment that contains R 
