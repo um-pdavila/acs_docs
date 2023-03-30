@@ -39,7 +39,7 @@ If this is the first time you are using the RStudio module you will need to conf
 Add the following line under [General]
 
     desktop.renderingEngine=software
-
+    
 
 
 Launching RStudio jobs through LSF 
@@ -57,6 +57,20 @@ To launch RStudio jobs to the LSF scheduler, you will need to pass the X11 **-XF
     <<Starting on n131>>
 
 The RStudio graphical interface will then appear, from which you can utilize and install any needed packages. 
+
+Changing Graphical Backend
+-------
+In order to utilize the graphical features of RStudio, please change the graphical backend to AGG format. You can do after lauching the graphical
+UI from the previous step. 
+
+1. Navigate to "Tools > Global Optios"
+2. Navigate to the "Graphics" tab located towards the top of the menu
+3. Switch the "Backend" option to "AGG"
+
+This option only has to be configured once. Subsequent RStudio sessions will now have the AGG backend enabled and your sessions can 
+now utilize graphical features. 
+
+
 
 More information on submitting graphical interactive jobs: https://acs-docs.readthedocs.io/pegasus/jobs/5-interactive.html
 
