@@ -27,7 +27,7 @@ Login
 -  First you need to have access to Pegasus. Please check the :ref:`IDSC ACS Policies<policies>`
 -  Connect with the UM network on campus or via
    `VPN <https://www.it.miami.edu/a-z-listing/virtual-private-network/index.html>`__.
--  Open the Login page https://pegasus.ccs.miami.edu:8000 on your
+-  Open the Login page http://pegasus.ccs.miami.edu:8000 on your
    browser.
 -  Log in using your UM CaneID and Pegasus password.
 
