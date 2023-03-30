@@ -17,8 +17,8 @@ behind the scenes). In this way, you can interactively test
 your Python or R programs through the Notebook with the supercomputer
 resources.
 
-Currently all requested Notebook servers are running in only one compute
-node. It is recommended to use the Notebook as a testing tool and submit formal jobs via LSF.
+Currently all requested Notebook servers are running in only two compute
+nodes. It is recommended to use the Notebook as a testing tool and submit formal jobs via LSF.
 
 Using JupyterHub on Triton
 --------------------------
