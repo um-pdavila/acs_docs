@@ -19,3 +19,4 @@ Pegasus Software
    RStudio <RStudio>
    SAS <sas>
    Using R through Anaconda <RInstallation_via_conda>
+   Jupyterhub <Jupyterhub>
