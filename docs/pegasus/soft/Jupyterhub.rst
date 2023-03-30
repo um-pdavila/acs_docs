@@ -16,7 +16,7 @@ your Python or R programs through the Notebook with the supercomputer
 resources.
 
 Currently all requested Notebook servers are running in only two compute
-node. It is recommended to use the Notebook as a testing tool and submit formal jobs via LSF.
+nodes. It is recommended to use the Notebook as a testing tool and submit formal jobs via LSF.
 
 Using JupyterHub on Pegasus
 --------------------------
