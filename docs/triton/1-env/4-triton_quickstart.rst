@@ -466,7 +466,7 @@ Logging out from Triton on the command-line interface
 
     [abc123@login ~]$ exit
 
-Disconnecting from Trion on ``FileZilla``
+Disconnecting from Triton on ``FileZilla``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On FileZilla, you can click on the ``x`` icon in the menu bar to
