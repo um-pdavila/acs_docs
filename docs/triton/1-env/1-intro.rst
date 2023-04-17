@@ -2,8 +2,8 @@ Triton Environment Introduction
 ===============================
 
 
-Triton cluster consists of 96 `IBM POWER System AC922 <https://www.ibm.com/us-en/marketplace/power-systems-ac922>`__
-compute nodes, each of which is equiped with two
+The Triton cluster consists of 96 `IBM POWER System AC922 <https://www.ibm.com/us-en/marketplace/power-systems-ac922>`__
+compute nodes, each of which is equipped with two
 NVIDIA Tesla V100 GPUs and engineered to be "the most powerful
 training platform". Triton utilizes the Power9 architecture which specializes in data intensive
 workloads. 
