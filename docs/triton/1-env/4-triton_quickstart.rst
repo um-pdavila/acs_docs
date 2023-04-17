@@ -150,7 +150,7 @@ project name.
 Logging in to Triton
 ~~~~~~~~~~~~~~~~~~~~
 
-You can use ``Terminal`` on Mac or installing ``PuTTY`` on Windows
+You can use ``Terminal`` on a Mac or ``PuTTY`` on a Windows
 machine to log in to Triton via SSH Protocol.
 
 If using ``Terminal`` on Mac, you can run the command
