@@ -110,10 +110,11 @@ Triton home directory by default. Then, you can change the
 transfer the file by dragging it from left to right.
 
 If using ``scp``, you need to type ``scp $location_on_local_computer 
-abc123@triton.ccs.miami.edu:/home/abc123``, and then 
+abc123@triton.ccs.miami.edu:/home/abc123``, not forgetting to put 
+your CaneID in place of ``abc123``, and then 
 press return. You will be prompted to provide the password associated with
 your CaneID, and after entering the password and pressing return, the
-file will be transferred from your local computer to ``/home/abc123``
+file will be transferred from your local computer to ``/home/$your_CaneID``
 on Triton.
 
 After that, the file will be located at ``/home/abc123/example.py`` on
