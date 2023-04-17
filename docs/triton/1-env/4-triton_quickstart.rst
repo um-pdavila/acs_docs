@@ -464,10 +464,8 @@ You can view the output plot using any image viewer software on your
 local computer. To transfer the output file from Triton to your local 
 computer, you can use ``FileZilla`` to drag the file from right to
 left, which transfers it, or you can use ``scp`` by typing in the terminal
-on your local computer ``scp 
-$your_CaneID@triton.ccs.miami.edu:/scratch/xyz/data_plot.png
-$location_on_local_computer`` and following the prompt to 
-provide a password.
+on your local computer ``scp $your_CaneID@triton.ccs.miami.edu:/scratch/xyz/data_plot.png
+$location_on_local_computer`` and following the prompt to provide a password.
 
 7. Chao
 -------
