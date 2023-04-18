@@ -111,7 +111,7 @@ transfer the file by dragging it from left to right.
 
 If using ``scp``, you need to type, assuming ``origin`` is the absolute 
 path that specifies the directory on your local computer containing 
-``example.py``. ``scp ``origin``/example.py 
+``example.py``,  ``scp origin/example.py 
 abc123@triton.ccs.miami.edu:/home/abc123``, not forgetting to put 
 your CaneID in place of ``abc123``, and then following the prompt for 
 the associated password. After entering the password, the
