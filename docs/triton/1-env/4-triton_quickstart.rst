@@ -110,7 +110,7 @@ Triton home directory by default. Then, you can change the
 transfer the file by dragging it from left to right.
 
 If using ``scp``, you need to type, assuming ``origin`` is the absolute 
-path that specifies the directory on your local computer containing 
+path that specifies the directory on your local computer holding 
 ``example.py``,  ``scp origin/example.py 
 abc123@triton.ccs.miami.edu:/home/abc123``, not forgetting to put 
 your CaneID in place of ``abc123``, and then following the prompt for 
@@ -465,10 +465,10 @@ You can view the output plot using any image viewer software on your
 local computer. To transfer the output file from Triton to your local 
 computer, you can use ``FileZilla`` to drag the file from right to
 left, which transfers it, or you can use ``scp`` by typing, in the terminal
-on your local computer (assuming your CaneID is ``abc123``, and $destination is 
+on your local computer (assuming your CaneID is ``abc123``, and ``destination`` is 
 the absolute path that specifies the directory on the local computer to 
 which you intend to move the file),
-``scp abc123@triton.ccs.miami.edu:/scratch/xyz/data_plot.png $destination`` 
+``scp abc123@triton.ccs.miami.edu:/scratch/xyz/data_plot.png destination`` 
 and following the prompt to provide a password.
 
 7. Chao
