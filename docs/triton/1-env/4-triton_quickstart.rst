@@ -102,19 +102,20 @@ such as ``FileZilla`` GUI application and ``scp`` command-line utility.
 
 If using ``FileZilla``, you need to put ``sftp://triton.ccs.miami.edu``
 in the ``Host`` field, fill in the ``Username`` and ``Password`` fields
-with your CaneID and the assocated password, and leave the ``Port``
+with your CaneID and the associated password, and leave the ``Port``
 field blank. By clicking the check mark icon in the menu bar, you will
 connect to Triton and the ``Remote site`` on the right will be your
 Triton home directory by default. Then, you can change the
 ``Local site`` on the left to the directory holding ``example.py`` and
 transfer the file by dragging it from left to right.
 
-If using ``scp``, you need to type ``scp $location_on_local_computer 
+If using ``scp``, you need to type, assuming ``origin`` is the absolute 
+path that specifies the directory on your local computer containing 
+``example.py``. ``scp ``origin``/example.py 
 abc123@triton.ccs.miami.edu:/home/abc123``, not forgetting to put 
-your CaneID in place of ``abc123``, and then 
-press return. You will be prompted to provide the password associated with
-your CaneID, and after entering the password and pressing return, the
-file will be transferred from your local computer to ``/home/$your_CaneID``
+your CaneID in place of ``abc123``, and then following the prompt for 
+the associated password. After entering the password, the
+file will be transferred from your local computer to ``/home/abc123``
 on Triton.
 
 After that, the file will be located at ``/home/abc123/example.py`` on
@@ -463,9 +464,11 @@ Transferring output file to local computer
 You can view the output plot using any image viewer software on your
 local computer. To transfer the output file from Triton to your local 
 computer, you can use ``FileZilla`` to drag the file from right to
-left, which transfers it, or you can use ``scp`` by typing in the terminal
-on your local computer (assuming your CaneID is ``abc123``) ``scp 
-abc123@triton.ccs.miami.edu:/scratch/xyz/data_plot.png $location_on_local_computer`` 
+left, which transfers it, or you can use ``scp`` by typing, in the terminal
+on your local computer (assuming your CaneID is ``abc123``, and $destination is 
+the absolute path that specifies the directory on the local computer to 
+which you intend to move the file),
+``scp abc123@triton.ccs.miami.edu:/scratch/xyz/data_plot.png $destination`` 
 and following the prompt to provide a password.
 
 7. Chao
