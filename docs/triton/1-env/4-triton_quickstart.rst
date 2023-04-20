@@ -26,7 +26,7 @@ provided as system utilities. Home directory contains an allocation of 250GB per
 
 Each project group will have a scratch directory located at
 ``/scratch/<project_name>`` for holding the input and output data. You
-can have some small and intermediate data in your home directoy, but
+can have some small and intermediate data in your home directory, but
 there are benefits to put data in the scratch directory: 1. everyone in
 the group can share the data; 2. the scratch directory is larger
 (usually 2T, and you can require more); 3. the scratch directory will be
@@ -114,9 +114,7 @@ path that specifies the directory on your local computer holding
 ``example.py``,  ``scp origin/example.py 
 abc123@triton.ccs.miami.edu:/home/abc123``, not forgetting to put 
 your CaneID in place of ``abc123``, and then following the prompt for 
-the associated password. After entering the password, the
-file will be transferred from your local computer to ``/home/abc123``
-on Triton.
+the associated password. 
 
 After that, the file will be located at ``/home/abc123/example.py`` on
 Triton for user abc123.
@@ -223,8 +221,8 @@ on a Triton compute node.
    the standard output file. It contains the job report and any text you
    print out to the standard output. ``%J`` in the name of the file will
    be replaced by the unique job id.
--  ``#BSUB -P xyz`` specifies the project. (remember to replace xyz with
-   your project name)
+-  ``#BSUB -P xyz`` specifies the project (remember to replace xyz with
+   your project name).
 -  ``#BSUB -q normal`` specifies which queue you are submitting the job
    to. Most of the "normal" jobs running on Triton will submit to the
    ``normal`` queue.
