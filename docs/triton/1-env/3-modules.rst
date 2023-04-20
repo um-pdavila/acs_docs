@@ -286,7 +286,7 @@ Switch to a different compiler with the ``module swap`` command. Any dependent m
 
 
     [username@login1 ~]$ ml reset
-    Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+    Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
     [username@login1 ~]$ ml
 
 	Currently Loaded Modules:
@@ -298,7 +298,7 @@ More hierarchies and dependencies
 
 Dependency modules can be loaded in the same command, without waiting for them to appear in the output for module list (``ml av``).
 
-Example : cdo, nco, and netcdff depend on "netcdfc".  Netcdfc depends on "hdf5".  They can be loaded in sequence, starting with the first dependency, "hdf5". 
+Example: cdo, nco, and netcdff depend on "netcdfc".  Netcdfc depends on "hdf5".  They can be loaded in sequence, starting with the first dependency, "hdf5". 
 
 ::
 
