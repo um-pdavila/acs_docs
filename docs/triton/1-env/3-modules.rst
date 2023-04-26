@@ -152,7 +152,7 @@ Available modules at login include the compilers under “Compilers”, compiler
 	   cmake/3.19.2           openbabel/3.0.0
 	   cmake/3.20.2    (D)    openblas/0.3.13
 	   ffmpeg/4.3.2           openblas/0.3.14        (D)
-	   fftw/3.3.9      (D)    openfoam/2012          (D)
+	   fftw/3.3.9             openfoam/2012          (D)
 	   gdal/2.4.4             openmpi/4.0.5
 	   gdal/3.3.0      (D)    openssl/1.1.1k
 	   gromacs/2021.1         pandoc/2.7.3
@@ -168,23 +168,23 @@ Available modules at login include the compilers under “Compilers”, compiler
 	   dot    module-info    modules    null    use.own
 
 	------------------------------ /share/mfiles/Core ------------------------------
-	   StdEnv                (L)      lammps/2019.08
-	   anaconda2/2019.07     (E)      libiconv/1.16
-	   anaconda3/biohpc      (E)      libpciaccess/0.13.5
-	   anaconda3/2019.07     (E)      libxml2/2.9.9
-	   anaconda3/2019.10     (E,D)    ncl/6.3.0
-	   anaconda3/2020.11     (E)      ncview/2.1.2
-	   cellranger-atac/3.0.2 (E)      netlib-scalapack/2.0.2
-	   cellranger-dna/3.0.2  (E)      numactl/2.0.12
-	   cellranger/3.0.2      (E)      openblas/0.3.7
-	   cmake/3.20.2                   openfoam/2006
-	   cp2k/6.1                       vmd/1.9.4              (E)
-	   cuda/10.1                      wml/1.6.1              (E)
-	   cuda/10.2             (D)      wml/1.6.2              (E)
-	   fftw/3.3.8                     wml/1.7.0              (E,D)
+	   StdEnv                (L)      libiconv/1.16
+	   anaconda2/2019.07     (E)      libpciaccess/0.13.5
+	   anaconda3/biohpc      (E)      libxml2/2.9.9
+	   anaconda3/2019.07     (E)      ncl/6.3.0
+	   anaconda3/2019.10     (E,D)    ncview/2.1.2
+	   anaconda3/2020.11     (E)      netlib-scalapack/2.0.2
+	   anaconda3/2023.03     (E)      numactl/2.0.12
+	   cellranger-atac/3.0.2 (E)      openblas/0.3.7
+	   cellranger-dna/3.0.2  (E)      openfoam/2006
+	   cellranger/3.0.2      (E)      vmd/1.9.4              (E)
+	   cmake/3.20.2                   wml/1.6.1              (E)
+	   cuda/10.1                      wml/1.6.2              (E)
+	   cuda/10.2             (D)      wml/1.7.0              (E,D)
 	   gaussian/16                    wml_anaconda3/2019.10  (E)
 	   java/8.0              (D)      xz/5.2.4
 	   java/8.0-6.5                   zlib/1.2.11
+	   lammps/2019.08
 
 	--------------------------- /share/mfiles/Compilers ----------------------------
 	   at/12.0          gcc/7.4.0        gcc/8.4.0
