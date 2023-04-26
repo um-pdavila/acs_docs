@@ -20,16 +20,19 @@ modules are loaded automatically upon login:
 
     [username@pegasus ~]$ module list
     Currently Loaded Modulefiles:
-      1) perl/5.18.1(default)    2) python/2.7.3(default)   3) gcc/4.4.7(default)      4) share-rpms65
+      1) perl/5.18.1(default)    
     [username@pegasus ~]$ module avail R
+    
+    ----------------------------- /share/Modules/hihg ------------------------------
+    ROOT/5.34.32
 
-    ---------------------- /share/Modules/general ----------------------
-    R/2.15.2         R/3.1.2(default) R/3.3.1
+    ----------------------- /share/mfiles/Compiler/gcc/8.3.0 -----------------------
+    R/3.6.3          R/4.0.3          R/4.1.0(default)
 
     [username@pegasus ~]$ module load R
     [username@pegasus ~]$ module list
     Currently Loaded Modulefiles:
-      1) perl/5.18.1(default)    2) python/2.7.3(default)   3) gcc/4.4.7(default)      4) share-rpms65            5) R/3.1.2(default)
+      1) perl/5.18.1(default)    2) R/4.1.0(default)
 
 
 The table below lists commonly used modules commands.
