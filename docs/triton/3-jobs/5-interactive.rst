@@ -13,11 +13,6 @@ Triton.
 
     [username@triton ~]$ bsub -Is -q interactive bash
 
-or
-
-::
-
-    [username@triton ~]$ bsub -Is -q interactive -XF $(java -jar ~/.local/apps/ImageJ/ij.jar -batch ~/.local/apps/ImageJ/macros/screenmill.txt)
 
 Upon exiting the interactive job, you will be returned to one of the
 login nodes.
