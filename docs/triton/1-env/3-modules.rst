@@ -7,6 +7,9 @@ Triton software versions (and dependencies) are deployed through Lmod, an upgrad
 
 https://lmod.readthedocs.io/en/latest/010_user.html
 
+Please note, different modules will be shown/hidden depending on the compiler that is loaded. The below examples are performed with
+the gcc/8.3.1 compiler loaded.
+
 Module Commands
 ---------------
 
