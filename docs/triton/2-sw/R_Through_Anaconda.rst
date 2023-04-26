@@ -15,13 +15,13 @@ First you will need to download and install Anaconda in your home directory.
 
 ::
 
-    [username@pegasus ~]$ wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-ppc64le.sh
+    [username@triton ~]$ wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-ppc64le.sh
 
 Unpack and install the downloaded Anaconda bash script
 
 ::
 
-    [username@pegasus ~]$ bash https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-ppc64le.sh
+    [username@triton ~]$ bash https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-ppc64le.sh
     
 
 Configuring Anaconda environment 
@@ -31,31 +31,31 @@ Activate conda with the new Anaconda3 folder in your home directory (Depending o
 
 ::
 
-    [username@pegasus ~]$ source <path to conda>/bin/activate
-    [username@pegasus ~]$ conda init
+    [username@triton ~]$ source <path to conda>/bin/activate
+    [username@triton ~]$ conda init
     
 
 Configure & prioritize the conda-forge channel. This will be useful for downloading library dependencies for your R packages in your conda environment.
 
 ::
 
-    [username@pegasus ~]$ conda config --add channels conda-forge
-    [username@pegasus ~]$ conda config --set channel_priority strict
+    [username@triton ~]$ conda config --add channels conda-forge
+    [username@triton ~]$ conda config --set channel_priority strict
     
     
 Create a conda environment that contains R 
 
 ::
 
-    [username@pegasus ~]$ conda create -n r4_MyEnv r-base=4.1.0 r-essentials=4.1
+    [username@triton ~]$ conda create -n r4_MyEnv r-base=4.1.0 r-essentials=4.1
     
     
 Activate your new conda environment  
 
 ::
 
-    [username@pegasus ~]$ conda activate r4_MyEnv
-    (r4_MyEnv) [username@pegasus ~]$ 
+    [username@triton ~]$ conda activate r4_MyEnv
+    (r4_MyEnv) [username@triton ~]$ 
     
 Note: the syntax to the left of your command line (r4_MyEnv) will indicate which conda environment 
 is currently active, in this case the R conda environment you just created. 
@@ -70,7 +70,7 @@ need for your R packages, you can use the following command:
 
 ::
 
-    (r4_MyEnv) [username@pegasus ~]$ conda install -c conda-forge <library_name>
+    (r4_MyEnv) [username@triton ~]$ conda install -c conda-forge <library_name>
     
 To check if a library depenency is availabe through the conda-forge channel, use the
 following link: https://anaconda.org/conda-forge
@@ -80,10 +80,10 @@ Below is an example of installing library dependencies needed for 'tidycensus', 
 
 ::
 
-    (r4_MyEnv) [username@pegasus ~]$ conda install -c conda-forge udunits2
-    (r4_MyEnv) [username@pegasus ~]$ conda install -c conda-forge gdal
-    (r4_MyEnv) [username@pegasus ~]$ conda install -c conda-forge r-rgdal
-    (r4_MyEnv) [username@pegasus ~]$ R
+    (r4_MyEnv) [username@triton ~]$ conda install -c conda-forge udunits2
+    (r4_MyEnv) [username@triton ~]$ conda install -c conda-forge gdal
+    (r4_MyEnv) [username@triton ~]$ conda install -c conda-forge r-rgdal
+    (r4_MyEnv) [username@triton ~]$ R
     > install.packages('tidycensus') 
     
 
@@ -96,7 +96,7 @@ To avoid this, you can edit your .bashrc file in your home directory
 
 ::
 
-    [username@pegasus ~]$ vi ~/.bashrc
+    [username@triton ~]$ vi ~/.bashrc
     
 Place the following lines in the .bashrc file:
     
@@ -108,13 +108,13 @@ If you would like to deactivate your conda environment at any time, use the foll
 
 ::
 
-    (r4_MyEnv) [username@pegasus ~]$ conda deactivate r4_MyEnv
+    (r4_MyEnv) [username@triton ~]$ conda deactivate r4_MyEnv
     
 To obtain a list of your conda environments, use the following command:
 
 ::
 
-    [username@pegasus ~]$ conda env list
+    [username@triton ~]$ conda env list
     
     
 
