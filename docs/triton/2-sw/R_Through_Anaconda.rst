@@ -21,7 +21,7 @@ Unpack and install the downloaded Anaconda bash script
 
 ::
 
-    [username@triton ~]$ bash https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-ppc64le.sh
+    [username@triton ~]$ bash Anaconda3-2021.05-Linux-ppc64le.sh
     
 
 Configuring Anaconda environment 
