@@ -5,6 +5,10 @@ Profile and Debug with Allinea Forge, the new name for the unified
 Allinea MAP and Allinea DDT tools. See the user guide PDFs below for
 Allinea Forge and Performance Reports, available as modules on Pegasus.
 
-`Allinea 6.1-Forge guide [PDF download] <assets/userguide-forge.pdf>`__
+Allinea 7.0-Forge guide:
 
-`Allinea 6.1-PR guide [PDF download] <assets/userguide-reports.pdf>`__
+https://www.osc.edu/sites/default/files/documentation/allinea_manual.pdf
+
+Allinea 7.0-PR Guide:
+
+https://www.osc.edu/sites/default/files/documentation/userguide-reports.pdf
