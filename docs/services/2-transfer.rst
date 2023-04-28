@@ -61,9 +61,30 @@ option). Consult the Linux man pages for more information on rsync.
 rclone 
 ~~~~~~
 
-The rclone a command-line program that can be used to manage your file over SFTP. Rclone supports over 40 cloud storage backends, as well as standard transfer protocols like SFTP.  This is a use case using rclone to migrate data from legacy storage to **IDSC CES** on **apex.idsc.miami.edu** using the default rclone on Pegasus, **rclone v1.39**.
+The rclone a command-line program that can be used to manage your file over SFTP. Rclone supports over 40 cloud storage backends, as well as standard transfer protocols like SFTP.  This is a use case using rclone to migrate data from legacy storage to **IDSC CES** on **apex.idsc.miami.edu** using the default rclone on Pegasus, **rclone v1.39**.  You can install the latest version to your $HOME directory.
 
 Source: https://rclone.org/sftp/
+
+**Installation**
+
+::
+
+    [pdavila@login4 ~]$ curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
+      $ unzip rclone-current-linux-amd64.zip
+      $ mv rclone-v1.58.1-linux-amd64/ 1.58.1
+      $ export PATH=/nethome/pdavila/apps/rclone/1.58.1/:$PATH
+      $ which rclone
+      ~/apps/rclone/1.58.1/rclone
+
+      $ rclone -V
+      rclone v1.58.1
+      - os/version: centos 7.6.1810 (64 bit)
+      - os/kernel: 3.10.0-957.el7.x86_64 (x86_64)
+      - os/type: linux
+      - os/arch: amd64
+      - go/version: go1.17.9
+      - go/linking: static 
+      - go/tags: none
 
 ::
 
