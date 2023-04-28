@@ -86,6 +86,8 @@ Source: https://rclone.org/sftp/
       - go/linking: static 
       - go/tags: none
 
+**Configuration**
+
 ::
 
     $ ssh pegasus.ccs.miami.edu
