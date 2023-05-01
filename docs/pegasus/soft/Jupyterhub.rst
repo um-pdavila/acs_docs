@@ -90,6 +90,21 @@ Here is an example:
 
 Later on, you can still install new packages to the kernel using ``conda install <package>`` after activating the environment.
 
+**If you run into the following error:**
+ImportError: cannot import name 'secure_write' from 'jupyter_core.paths' (/nethome/nalbe007/.conda/envs/newtest/lib/python3.7/site-packages/jupyter_core/paths.py)
+
+You will need to pip install jupyter_client upgrade like so:
+
+::
+
+    (myenv)$ pip install --upgrade jupyter_client
+    
+**Then try installing your python kernel once more.**
+
+
+
+
+
 .. note::
    If the package could not be found, you can search `Anaconda
    Cloud <https://anaconda.org/>`__ and **choose Platform** ``x64_64``
