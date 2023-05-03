@@ -1,4 +1,4 @@
-Pegasus LSF Commands
+Triton LSF Commands
 ====================
 
 `LSF 9.1.1 Documentation <https://ccs.maimi.edu/ac/lsf/9.1.1/>`__
