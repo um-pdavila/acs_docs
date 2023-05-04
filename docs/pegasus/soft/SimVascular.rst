@@ -22,7 +22,7 @@ The SimVascular module is dependent on the gcc/8.3.1 software module. This will 
 
 ::
 
-    [nra20@login4 ~]$ module load SimVascular
+    [nra20@login4 ~]$ module load simvascular
     [nra20@login4 ~]$ module list
      Currently Loaded Modulefiles:
        1) perl/5.18.1(default)   3) simvascular/2021.6.10.lua
