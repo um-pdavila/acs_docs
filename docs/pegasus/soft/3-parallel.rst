@@ -1,7 +1,7 @@
 .. _p-para:
 
-Parallel Computing on Pegasus
-=============================
+Parallel Computing
+==================
 
 We recommend using Intel MPI unless you have a specific reason for using
 other implementations of MPI such as OpenMPI. We recommend Intel MPI over 
@@ -13,7 +13,7 @@ performance.
 Sample parallel programs:
 -------------------------
 
-C++ source and compilation
+C++ source code and compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``mpi_example1.cpp``
@@ -91,7 +91,7 @@ C source code and compilation:
 
     [username@pegasus ~]$ mpicc -o mpi_example1.x mpi_example1.c
 
-Fortran 90 program and compilation:
+Fortran 90 source code and compilation:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                    
 
@@ -131,7 +131,7 @@ Fortran 90 program and compilation:
 
     [username@pegasus ~]$ mpif90 -o mpi_example1.x mpi_example1.f90
 
-Fortran 77 program and compilation:
+Fortran 77 source code and compilation:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                    
 
@@ -171,8 +171,8 @@ Fortran 77 program and compilation:
 
     [username@pegasus ~]$ mpif77 -o mpi_example1.x mpi_example1.f
 
-LSF script example
-~~~~~~~~~~~~~~~~~~
+The LSF script to run parallel jobs
+-----------------------------------
 
 This batch script mpi_example1.job instructs LSF to reserve
 computational resources for your job. Change the ``-P`` flag argument to
@@ -185,7 +185,7 @@ your project before running.
 .. code:: bash
 
     #!/bin/sh
-    #BSUB -n 16
+    #BSUB -n 32
     #BSUB -J test
     #BSUB -o test.out
     #BSUB -e test.err
