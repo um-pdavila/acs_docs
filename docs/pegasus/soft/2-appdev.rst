@@ -1,7 +1,7 @@
 .. _p-appdev:
 
-Pegasus Application Development
-===============================
+Application Development on Pegasus
+==================================
 
 MPI and OpenMP modules are listed under Intel and GCC compilers. These MP
 libraries have been compiled and built with either the `Intel compiler
@@ -35,8 +35,39 @@ Pegasus has Intel and GCC compilers.
 | gnu    | gcc            | ``module load gcc``   | gfortran -o foo.exe foo.f90 |
 +--------+----------------+-----------------------+-----------------------------+
 
-Configuring MPI on Pegasus
---------------------------
+
+Compiling Parallel Programs with MPI
+------------------------------------
+
+The **Message Passing Interface** (MPI) library allows processes in
+a parallel application to communicate with one another. There is no
+default MPI library in your Pegasus environment. Choose the desired MPI
+implementation for your applications by loading an appropriate MPI
+module. Recall that only one MPI module should be loaded at a time.
+
+Pegasus supports Intel MPI and OpenMP for Intel and GCC compilers.
+
+How to load MPI libraries in your Pegasus environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++----------+-----------+-------------------------------+---------------------------+
+| Compiler | MPI       | Module Command                | Example                   |
++==========+===========+===============================+===========================+
+| intel    | Intel MPI | ``module load intel impi``    | mpif90 -o foo.exe foo.f90 |
++----------+-----------+-------------------------------+---------------------------+
+| intel    | Intel MPI | ``module load intel impi``    | mpicc -o foo.exe foo.c    |
++----------+-----------+-------------------------------+---------------------------+
+| intel    | OpenMP    | ``module load intel openmpi`` | mpif90 -o foo.exe foo.f90 |
++----------+-----------+-------------------------------+---------------------------+
+| intel    | OpenMP    | ``module load intel openmpi`` | mpicc -o foo.exe foo.c    |
++----------+-----------+-------------------------------+---------------------------+
+| gcc      | OpenMP    | ``module load openmpi-gcc``   | mpif90 -o foo.exe foo.f90 |
++----------+-----------+-------------------------------+---------------------------+
+| gcc      | OpenMP    | ``module load openmpi-gcc``   | mpicc -o foo.exe foo.c    |
++----------+-----------+-------------------------------+---------------------------+
+
+Configuration options of MPI on Pegasus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are three ways to configure MPI on Pegasus. Choose the option that
 works best for your job requirements.
@@ -55,30 +86,3 @@ works best for your job requirements.
    for different jobs. Ensure your script can execute the
    ``module command`` properly. For job script information, see
    :ref:`Scheduling Jobs on Pegasus <p-jobs>`.
-
-Compiling Parallel Programs with MPI
-------------------------------------
-
-Pegasus supports Intel MPI and OpenMP for Intel and GCC compilers.
-
-The **Message Passing Interface** (MPI) library allows processes in
-parallel application to communicate with one another. There is no
-default MPI library in your Pegasus environment. Choose the desired MPI
-implementation for your applications by loading an appropriate MPI
-module. Recall that only one MPI module should be loaded at a time.
-
-+----------+-----------+-------------------------------+---------------------------+
-| Compiler | MPI       | Module Command                | Example                   |
-+==========+===========+===============================+===========================+
-| intel    | Intel MPI | ``module load intel impi``    | mpif90 -o foo.exe foo.f90 |
-+----------+-----------+-------------------------------+---------------------------+
-| intel    | Intel MPI | ``module load intel impi``    | mpicc -o foo.exe foo.c    |
-+----------+-----------+-------------------------------+---------------------------+
-| intel    | OpenMP    | ``module load intel openmpi`` | mpif90 -o foo.exe foo.f90 |
-+----------+-----------+-------------------------------+---------------------------+
-| intel    | OpenMP    | ``module load intel openmpi`` | mpicc -o foo.exe foo.c    |
-+----------+-----------+-------------------------------+---------------------------+
-| gcc      | OpenMP    | ``module load openmpi-gcc``   | mpif90 -o foo.exe foo.f90 |
-+----------+-----------+-------------------------------+---------------------------+
-| gcc      | OpenMP    | ``module load openmpi-gcc``   | mpicc -o foo.exe foo.c    |
-+----------+-----------+-------------------------------+---------------------------+
