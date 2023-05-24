@@ -1,7 +1,9 @@
-Amazon Web Services CLI on Pegasus Cluster 
-==============================================
+Amazon Web Services CLI on Pegasus
+==================================
 
-For accessing your AWS services from the Pegasus cluster.  Note, IDSC does not administer or manage AWS services.  
+Note, IDSC does not administer or manage AWS services.  
+
+In order to access your AWS services from the Pegasus cluster: 
 
 - **load the cluster's aws-cli module** 
 - configure aws with your IAM user account credentials (one-time) 
@@ -49,7 +51,7 @@ Note that your AWS IAM web login & password are different from your access key c
 3. Access & use your AWS s3 instance  
 
 
-Getting your AWS IAM access keys (from web) 
+Getting your AWS IAM access keys (from the web) 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your AWS Administrator may have already provided you with IAM access keys for your Amazon instance.  If you need to generate new access keys, log into the AWS web interface.  Generating new keys will inactivate any old keys. 
