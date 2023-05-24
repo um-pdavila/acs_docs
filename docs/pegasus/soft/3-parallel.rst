@@ -1,15 +1,20 @@
 .. _p-para:
 
-Pegasus Parallel
-================
+Parallel Computing on Pegasus
+=============================
 
-We recommend using Intel MPI unless you have specific reason for using
-OpenMP.  Intel MPI scales better and has better performance than OpenMP.
+We recommend using Intel MPI unless you have a specific reason for using
+other implementations of MPI such as OpenMPI. We recommend Intel MPI over 
+other implementations because it results in better scaling and 
+performance.
 
 .. note:: Only **one** MPI module should be loaded at a time.
 
-C++ program and compilation:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sample parallel programs:
+-------------------------
+
+C++ source and compilation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``mpi_example1.cpp``
 
@@ -48,7 +53,8 @@ C++ program and compilation:
 
 .. _c-program-and-compilation-1:
 
-C program and compilation:
+C source code and compilation:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                           
 
 ``mpi_example1.c``
@@ -86,6 +92,7 @@ C program and compilation:
     [username@pegasus ~]$ mpicc -o mpi_example1.x mpi_example1.c
 
 Fortran 90 program and compilation:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                    
 
 ``mpi_example1.f90``
@@ -125,6 +132,7 @@ Fortran 90 program and compilation:
     [username@pegasus ~]$ mpif90 -o mpi_example1.x mpi_example1.f90
 
 Fortran 77 program and compilation:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                    
 
 ``mpi_example1.f``
