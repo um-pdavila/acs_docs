@@ -1,13 +1,15 @@
 .. _soft-install: 
 
-Pegasus Cluster Software Installation
-=====================================
+Software Installation on Pegasus
+================================
 
 Pegasus users are free to compile and install software in their own home
 directories, by following the software’s source code or local
 installation instructions.  
 
-To install personal software on the Pegasus cluster, navigate to an interactive node by submitting an interactive shell job to the Pegasus cluster LSF scheduler.  More on :ref:`Pegasus interactive jobs <p-interactive>`.
+To install personal software on the Pegasus cluster, navigate to an interactive 
+node by submitting an interactive shell job to the Pegasus cluster LSF scheduler. 
+More on :ref:`Pegasus interactive jobs <p-interactive>`.
 
 Source code software installations ("compilations") can only be
 performed **in your local directories**. Users of Pegasus are not
@@ -38,7 +40,7 @@ installations from hpc@ccs.miami.edu
 
 
 Downloading and extracting files
---------------------------------
+---------------------------------
 
 If necessary, create software directories under your home directory:
 
@@ -106,7 +108,7 @@ Extract source code and ``cd`` to new directory:
 Source code, proceed to ***Configuring installation and compiling
 software***.
 
-Configuring installation and compiling software
+Configuring installation and compilation
 -----------------------------------------------
 
 We suggest using subdirectories with application names and version
@@ -173,7 +175,7 @@ Version flags may be software-dependent. Some common flags include
     autoconf (GNU Autoconf) 2.69
     ...
 
-Creating symbolic links
+Create symbolic links
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 To maintain multiple different versions of a program, use soft symbolic
