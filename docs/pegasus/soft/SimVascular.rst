@@ -37,5 +37,5 @@ the tk gui.
 
     [nra20@login4 ~]$ bsub -Is -q interactive -P <projectID> -XF sv -tk
     
-The Graphical display will take a few seconds to load up. You are free to save projects into your home directory or your project's scratch directory. 
+The graphical display will take a few seconds to load up. You are free to save projects into your home directory or your project's scratch directory. 
 Saving in any directory you do not have access to may result in an error. 
