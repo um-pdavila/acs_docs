@@ -139,7 +139,7 @@ From this directory you can delete kernels using Linux **rm kernel_name** comman
 Using Pre-installed Kernels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Several kernels have been pre-installed on Pegasys. You can use them to test your code if you do not need
+Several kernels have been pre-installed on Pegasus. You can use them to test your code if you do not need
 additional packages. On the Notebook Dashboard page, you can create a
 new notebook file (.ipynb) with a selected kernel by clicking on the
 ``New`` button at the top-right corner under the menu bar. On the
