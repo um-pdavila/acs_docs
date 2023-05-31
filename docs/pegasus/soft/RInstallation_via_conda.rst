@@ -95,7 +95,7 @@ Place the following lines in the .bashrc file:
     
     conda activate r4_MyEnv
     
-Then ':wq!' to write, quite and save the file. Upon logging in again your R conda environment will automatically be active.
+Then ':wq!' to write, quit and save the file. Upon logging in again your R conda environment will automatically be active.
 
 If you would like to deactivate your conda environment at any time, use the following command:
 
