@@ -198,7 +198,7 @@ as following:
 This command only needs to be run once. It imports the cluster profile
 named ‘LSF1’ that is configured to use up to 32 MatlabWorkers and to
 submit MATLAB jobs to the **parallel** Pegasus queue. This profile does
-not have a ``projetID`` associated with the job, and you may need to
+not have a ``projectID`` associated with the job, and you may need to
 coordinate the project name for the LSF job submission. This can be done
 by running the following script (only once!) during your matlab session:
 
@@ -222,7 +222,7 @@ by running the following script (only once!) during your matlab session:
 
 The above script also reviews your current settings of the cluster
 profiles. You can now use the cluster profile for distributed
-calculations on up to 32 cpus, for example, to create a pool of
+calculations on up to 32 CPUs, for example, to create a pool of
 MatlabWorkers for a ``parfor`` loop:
 
 .. code:: matlab
