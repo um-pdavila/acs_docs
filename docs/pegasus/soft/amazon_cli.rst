@@ -7,7 +7,7 @@ In order to access your AWS services from the Pegasus cluster:
 
 - **load the cluster's aws-cli module** 
 - configure aws with your IAM user account credentials (one-time) 
-   - aws user credentails file : **~/.aws/credentials**
+   - aws user credentials file : **~/.aws/credentials**
    - aws user configurations file : **~/.aws/config** 
 - **check your aws configurations** 
 
