@@ -14,7 +14,7 @@ To run MATLAB using graphical interface mode, connect with display
 forwarding. For more information about display forwarding, see
 :ref:`Forwarding the Display <x11>`.
 
-Load and launch matlab on one of the interactive compute nodes as shown
+Load and launch MATLAB on one of the interactive compute nodes as shown
 below. If you belong to more than one project, specify the ``projectID``
 as well.
 
@@ -197,7 +197,7 @@ as following:
 
 This command only needs to be run once. It imports the cluster profile
 named ‘LSF1’ that is configured to use up to 32 MatlabWorkers and to
-submit MATLAB jobs to the **parallel** pegasus queue. This profile does
+submit MATLAB jobs to the **parallel** Pegasus queue. This profile does
 not have a ``projetID`` associated with the job, and you may need to
 coordinate the project name for the LSF job submission. This can be done
 by running the following script (only once!) during your matlab session:
