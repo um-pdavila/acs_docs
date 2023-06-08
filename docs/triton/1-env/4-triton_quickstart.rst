@@ -2,7 +2,7 @@ Triton QuickStart Guide
 =======================
 
 Before you get started:
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 -  Make sure you understand our `core
    Policies <https://acs-docs.readthedocs.io/policies/policies.html>`__.
@@ -56,10 +56,9 @@ project ``xyz``. You need to replace these with your own CaneID and
 Triton project name.
 
 1. Preparing the code you would like to run
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Editing the code
-~~~~~~~~~~~~~~~~
+**Editing the code**
 
 You can edit the code written in any programming language on your local
 computer. The ``example.py`` here is written in Python.
@@ -93,8 +92,8 @@ computer. The ``example.py`` here is written in Python.
 
     print(f"The program lasts for {elapsed} seconds.")
 
-Transfering the code to your Triton home directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Transfering the code to your Triton home directory**
+
 
 After editing the code, you need to transfer it from the local computer
 to your Triton home directory. You can do it with a file transfer tool
@@ -120,10 +119,9 @@ After that, the file will be located at ``/home/abc123/example.py`` on
 Triton for user abc123.
 
 2. Preparing the input data
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Getting the input data
-~~~~~~~~~~~~~~~~~~~~~~
+**Getting the input data**
 
 In this example, you prepare the ``data.txt`` file as your input data on
 the local computer.
@@ -137,18 +135,16 @@ the local computer.
     5 25
     6 36
 
-Transferring the input data to your project scratch directory on Triton
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Transferring the input data to your project scratch directory on Triton**
 
 You can use ``FileZilla`` or ``scp`` to transfer the input data to
 ``/scratch/xyz/data.txt`` on Triton. You need to replace xyz with your
 project name.
 
 3. Installing dependent libraries on Triton
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Logging in to Triton
-~~~~~~~~~~~~~~~~~~~~
+**Logging in to Triton**
 
 You can use ``Terminal`` on a Mac or ``PuTTY`` on a Windows
 machine to log in to Triton via SSH Protocol.
@@ -169,8 +165,7 @@ login node and at the home directory ``~``.
 If you are new to Linux, you can check our `Linux
 Guides <https://acs-docs.readthedocs.io/linux/README.html>`__.
 
-Installing software/libraries needed for the code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Installing software/libraries needed for the code**
 
 In the example, you will need the Python interpreter and Python packages
 to run the code. Also, for Python it is better to set up different
@@ -186,10 +181,9 @@ to do the Python environment set up:
     [abc123@login ~]$ conda create -n example_env python=3.8 matplotlib
 
 4. Preparing the job script
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Editing the job script
-~~~~~~~~~~~~~~~~~~~~~~
+**Editing the job script**
 
 The `job
 script <https://acs-docs.readthedocs.io/triton/3-jobs/4-scripts.html>`__
@@ -242,25 +236,22 @@ on a Triton compute node.
 -  ``cd ~`` goes to the home directory where ``example.py`` is located.
 -  ``python example.py`` runs ``example.py``
 
-Transferring the job script to your Triton home directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Transferring the job script to your Triton home directory**
 
 You can use ``FileZilla`` or ``scp`` to transfer the job script to
 ``/home/abc123/example.job`` on Triton. You need to replace abc123 with
 your CaneID.
 
 5. Submitting and monitoring the job
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Job submission
-~~~~~~~~~~~~~~
+**Job submission**
 
 ::
 
     [abc123@login ~]$ bsub < example_script.job
 
-Job monitoring
-~~~~~~~~~~~~~~
+**Job monitoring**
 
 While the job is submitted, you can use ``bjobs`` to check the status.
 
@@ -409,10 +400,9 @@ If the job has finished you will see:
    If you do not provide the "-u CaneID" argument, command defaults to the user running the command.  The long form output "-l" displays detailed information for each job in a multiline format, followed by a summary.
 
 6. Checking the job output
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Standard output file
-~~~~~~~~~~~~~~~~~~~~
+**Standard output file**
 
 This is the file you specify with ``#BSUB -o`` in your job script. In
 this example, after the job is finished, the standard output file
@@ -449,15 +439,13 @@ the text you ask to ``print`` (to the stardard output) in
 
     The program lasts for 120.23024702072144 seconds.
 
-Output data
-~~~~~~~~~~~
+**Output data**
 
 After the job is done, you will find the output data which is the png
 file saved in the scratch space. In this example, it is
 ``/scratch/xyz/data_plot.png``.
 
-Transferring output file to local computer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Transferring output file to local computer**
 
 You can view the output plot using any image viewer software on your
 local computer. To transfer the output file from Triton to your local 
@@ -470,17 +458,15 @@ which you intend to move the file),
 and following the prompt to provide a password.
 
 7. Chao
--------
+~~~~~~~
 
-Logging out from Triton on the command-line interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Logging out from Triton on the command-line interface**
 
 ::
 
     [abc123@login ~]$ exit
 
-Disconnecting from Triton on ``FileZilla``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Disconnecting from Triton on ``FileZilla``**
 
 On FileZilla, you can click on the ``x`` icon in the menu bar to
 disconnect from Triton.
