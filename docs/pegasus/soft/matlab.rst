@@ -73,9 +73,9 @@ This will bring up the MATLAB command window:
 ::
 
                                 < M A T L A B (R) >
-                      Copyright 1984-2013 The MathWorks, Inc.
-                        R2013a (8.1.0.604) 64-bit (glnxa64)
-                                 February 15, 2013
+                      Copyright 1984-2018 The MathWorks, Inc.
+                        R2018a (9.4.0.813654) 64-bit (glnxa64)
+                                 February 23, 2018
 
 
     No window system found.  Java option 'Desktop' ignored.
