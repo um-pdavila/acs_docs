@@ -68,7 +68,7 @@ Open a regular ssh connection to Pegasus.
     [username@pegasus ~]$ module load matlab
     [username@pegasus ~]$ bsub -Is -q interactive -P projectID matlab -nodisplay
 
-This will bring up the MALAB command window:
+This will bring up the MATLAB command window:
 
 ::
 
