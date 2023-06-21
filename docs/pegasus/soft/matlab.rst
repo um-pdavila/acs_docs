@@ -205,25 +205,32 @@ MATLAB licenses the MATLAB Distributed Computer Engine™  for
 running multi-processor jobs that involve 16+ cpus and more
 than a single node. We have up to 32 licenses
 available on Pegasus, and this makes it possible to run jobs
-on up to 32 cores. *These jobs must be submitted to the **parallel** queue with the
-appropriate ptile resource distribution.* For more information about
-queue and resource distribution requirements, see :ref:`Scheduling
-Jobs <p-jobs>`.
-
-The parallel LSF MATLAB cluster also needs to be configured. After
-loading the matlab module, import the default LSF parallel configuration
-as following:
+on up to 32 cores. The first thing that needs to be done is to 
+make sure that Pegasus, running LSF, is discoverable to MATLAB. 
+To do this, the user has the MATLAB client use the cluster 
+configuration file ``/share/opt/MATLAB/etc/LSF1.settings`` to create 
+a cluster profile (for themself). This is done as follows:
 
 ::
 
-    [username@pegasus ~]$ matlab -nodisplay -r "parallel.importProfile('/share/opt/MATLAB/etc/LSF1.settings');exit";reset
+    [username@pegasus ~]$ matlab -nodisplay -r "parallel.importProfile('/share/opt/MATLAB/etc/LSF1.settings')"
+
+::
+
+    [username@pegasus ~] >> exit
+
+::
+
+    [username@pegasus ~]$ reset
+
 
 This command only needs to be run once. It imports the cluster profile
 named ‘LSF1’ that is configured to use up to 32 MatlabWorkers and to
 submit MATLAB jobs to the **parallel** Pegasus queue. This profile does
 not have a ``projectID`` associated with the job, and you may need to
 coordinate the project name for the LSF job submission. This can be done
-by running the following script (only once!) during your matlab session:
+by running the following script ``conf_lsf1_project_id.m`` (only once!) 
+during your matlab session:
 
 .. code:: matlab
 
@@ -242,6 +249,15 @@ by running the following script (only once!) during your matlab session:
     parallel.defaultClusterProfile('LSF1');
     %% Verify the current profiles and the default:
     [allProfiles,defaultProfile] = parallel.clusterProfiles()
+
+
+*The multi-node parallel jobs must be submitted to the **parallel** queue with the
+appropriate ptile resource distribution.* For more information about
+queue and resource distribution requirements, see :ref:`Scheduling
+Jobs <p-jobs>`.
+
+
+
 
 The above script also reviews your current settings of the cluster
 profiles. You can now use the cluster profile for distributed
