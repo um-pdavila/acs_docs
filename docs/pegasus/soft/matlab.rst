@@ -124,29 +124,47 @@ assigned by LSF when you submit your job.
 Parallel Computations
 ---------------------
 
-MATLAB has software products to enable parallel computations for
-multi-core computers as well as for multiple-node computer clusters. The
-latter case scenario requires a job scheduler, such as LSF on Pegasus
-cluster.
+.. MATLAB has software products to enable parallel computations for
+.. multi-core computers as well as for multiple-node computer clusters. The
+.. latter case scenario requires a job scheduler, such as LSF on the Pegasus
+.. cluster.
 
-The MATLAB product for the parallel processing that uses the cores of
-the same node is the “Distributed Computing Toolbox/DCT” (also appears
-in MATLAB documentation under the name of “Parallel Computing Toolbox”).
-Licensed MATLAB software product for a computer cluster is called
-“Distributed Computing Engine/DCE” (also appears in documentation as
-“MATLAB Distributed Computing Server”).
+.. The MATLAB product for the parallel processing that uses the cores of
+.. the same node is the “Distributed Computing Toolbox/DCT” (also appears
+.. in MATLAB documentation under the name of “Parallel Computing Toolbox”).
+.. Licensed MATLAB software product for a computer cluster is called
+.. “Distributed Computing Engine/DCE” (also appears in documentation as
+.. “MATLAB Distributed Computing Server”).
+
+MATLAB's Parallel Computing Toolbox™ and Distributed Computing Server™ let users run 
+MATLAB programs and Simulink models on multi-core and/or multi-node computer clusters. 
+The Parallel Computing Toolbox, a toolbox of parallel-enabled functions 
+that abstracts away the complexity of parallel programming, enables
+the user to write code that scales across multiple compute cores and/or processors
+without needing any modification. Furthermore, the Parallel Computing 
+Toolbox defines the jobs and their distribution to MATLAB computational engines or workers.
+The MATLAB Distributed Computing Server is responsible for the execution of the 
+jobs, and interfaces with resource schedulers such as LSF, effectively mapping each MATLAB worker 
+to the available cores of multicore standalone/cluster computers.
 
 Single-node parallel MATLAB jobs (up to 16 cpus)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a single-node parallel job, MATLAB Distributed Computing Toolbox
-(licensed software) is used. It has a build-in default MATLAB cluster
-profile **‘local’**, from which the pool of MatlabWorkers can be
-reserved for computations. The default number of MatlabWorkers is 12.
-You can specify up to 15 on a single Pegasus node using the **general**
-queue, and 16 cpus using the **parallel** queue. For more information
+The MATLAB Distributed Computing Server™ can be used to
+provide up to 16 MATLAB computational engines or workers on a single node
+on Pegasus. You may get up to 15 workers on the **general** queue, and 
+up to 16 on the **parallel** one. For more information
 about queue and parallel resource distribution requirements, see
 :ref:`Scheduling Jobs <p-jobs>`.
+
+
+.. build-in default MATLAB cluster
+.. profile **‘local’**, from which the pool of MatlabWorkers can be
+.. reserved for computations. The default number of MatlabWorkers is 12.
+.. You can specify up to 15 on a single Pegasus node using the **general**
+.. queue, and 16 cpus using the **parallel** queue. For more information
+.. about queue and parallel resource distribution requirements, see
+.. :ref:`Scheduling Jobs <p-jobs>`.
 
 Refer to MATLAB documentation on the ways to adapt your script for
 multi-processor calculations. One of the parallel tools in MATLAB is the
@@ -160,7 +178,7 @@ is given below:
     % Distributed Computing Toolbox (DCT)
     % Example: Print datestamp within a parallel "parfor" loop
     %==============================================================
-    %% Create a parallel pool of MatlabWorkers on the current working node:
+    %% Create a parallel pool of workers on the current working node:
     parpool('local',16);
     % The test loop size
     N = 40;       
