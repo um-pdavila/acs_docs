@@ -166,10 +166,14 @@ about queue and parallel resource distribution requirements, see
 .. about queue and parallel resource distribution requirements, see
 .. :ref:`Scheduling Jobs <p-jobs>`.
 
-Refer to MATLAB documentation on the ways to adapt your script for
-multi-processor calculations. One of the parallel tools in MATLAB is the
-``parfor`` loop replacing the regular ``for`` loop, and in the example
-is given below:
+Documentation from MATLAB outlines strategies and tools from the 
+Parallel Computing Toolbox that help adapt your script for
+multi-processor calculations. One of the tools available is a parallel
+construct of the ubiquitous ``for`` loop, which is named the ``parfor`` loop,
+and the syntax for its use is as shown in the script right below. Essentially,
+what would have been a set of sequential operations on a single processor 
+can now be a set of parallel operations over a parallel pool (parpool) 
+of 16 MATLAB workers.
 
 .. code:: matlab
 
@@ -197,10 +201,11 @@ is given below:
 Multi-node parallel MATLAB jobs (16-32 cpus)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For running multi-processor MATLAB jobs that involve 16+ cpus and more
-than a single node, MATLAB Distributed Computer Engine (licensed
-software) is used, with currently 32 licenses available on Pegasus.
-*These jobs must be submitted to the **parallel** queue with the
+MATLAB licenses the MATLAB Distributed Computer Engine™  for 
+running multi-processor jobs that involve 16+ cpus and more
+than a single node. We have up to 32 licenses
+available on Pegasus, and this makes it possible to run jobs
+on up to 32 cores. *These jobs must be submitted to the **parallel** queue with the
 appropriate ptile resource distribution.* For more information about
 queue and resource distribution requirements, see :ref:`Scheduling
 Jobs <p-jobs>`.
