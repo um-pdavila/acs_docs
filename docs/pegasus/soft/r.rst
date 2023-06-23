@@ -1,65 +1,94 @@
 R on Pegasus
 ============
 
-To run the R programming language on Pegasus, first load an R module
-with ``module load R/version``. Use the command ``module avail`` to see
-a list of available software, including R versions. For more information
-about Pegasus software, see :ref:`Software on the Pegasus
-Cluster <p-soft>`.
+R is available on Pegasus through the ``module`` command. You can load 
+R into your environment by typing the following on the commandline:
+
+::
+
+    [username@pegasus ~]$ module load R
+
+This loads the default version of R, currently ``4.1.0``. To load a specific
+version of R, say, ``3.6.3``, you can type the following:
+
+::
+
+    [username@pegasus ~]$ module load R/3.6.3
+
+
+To see a list of available software, including R versions, use the command 
+``module avail``. For more information about software available on Pegasus, 
+see :ref:`Software on the Pegasus Cluster <p-soft>`.
 
 Batch R
 -------
 
-To run a batch R file on Pegasus compute nodes, submit the file to LSF
-with ``R CMD BATCH filename.R``. Remember to include the ``-P`` flag and
-your project, if you have one.
+To run a batch R file on the compute nodes on Pegasus, submit the file to LSF
+with ``R CMD BATCH filename.R``, with ``filename`` being the name of your R script.
+This can be done using the following (two) command:
 
 ::
 
-    [username@pegasus ~]$ module load R/2.15.2
-    [username@pegasus ~]$ bsub -q general -P projectID R CMD BATCH example1.R
+    [username@pegasus ~]$ module load R/4.1.0
+    [username@pegasus ~]$ bsub -q general -P projectID R CMD BATCH filename.R
     Job is submitted to <projectID> project.
     Job <6101046> is submitted to queue <general>.
 
-See ``example1.R`` below. For more information about ``bsub`` and
-scheduling jobs, see :ref:`Scheduling Jobs on the Pegasus
-Cluster <p-jobs>`.
-
-Batch jobs can also be submitted to LSF with script files.
+Batch jobs can also be submitted to LSF with script files, such as 
+``example.job`` shown below.
 
 ::
 
     example.job
     #!/bin/bash
     #BSUB -J R_job            # name of your job
+    #BSUB -e filename.e%J     # file that will contain any error messages
+    #BSUB -o filename.o%J     # file that will contain standard output
     #BSUB -R "span[hosts=1]"  # request run script on one node
     #BSUB -q general          # request run on general queue
     #BSUB -n 1                # request 1 core
     #BSUB -W 2                # request 2 minutes of runtime
     #BSUB -P projectID        # your projectID
-    R CMD BATCH example1.R    # R command and your batch R file
+    R CMD BATCH filename.R    # R command and your batch R file
 
+When using such a script file, the batch job can be submitted by typing the 
+following on the commandline
 
+::
 
     [username@pegasus ~]$ bsub < example.job
 
 Interactive R
 -------------
 
-Load an R module, then submit an interactive R session with
-``bsub -Is``. Specify your project with the ``-P`` flag.
+R can also be run interactively by requesting resources on
+the interactive queue. This can be done by first loading R into your 
+environment
 
 ::
 
-    [username@pegasus ~]$ module load R/2.15.2
-    [username@pegasus ~]$ bsub -Is -q interactive R
-    or
-    [username@pegasus ~]$ bsub -Is -P hpc R
+[username@pegasus ~]$ module load R/4.1.0
+
+and then requesting an interactive R session by typing on the commandline
+
+::
+
+[username@pegasus ~]$ bsub -Is -q interactive R
+
+or 
+
+::
+
+[username@pegasus ~]$ bsub -Is -P ProjectID R
+
+making sure to replace ProjectID with the actual name of your project.
 
 R packages
 ----------
 
-Confirm that your R package's pre-requisites are met, either in your local environment or as a module on the cluster. You will need to load any cluster modules that are pre-requisites, and install locally any other pre-requisites.  See :ref:`Pegasus Cluster Software Installation <soft-install>` for help with complex requirements.
+To install R packages, you'll need to confirm that your package's 
+pre-requisites are met, either in your local environment or through
+loading the appropriate modules on the cluster. You will need to load any cluster modules that are pre-requisites, and install locally any other pre-requisites.  See :ref:`Pegasus Cluster Software Installation <soft-install>` for help with complex requirements.
 
 From the R prompt, install any R package to your personal R library with
 the standard ``install.package()`` R command. Choose ``y`` when asked
