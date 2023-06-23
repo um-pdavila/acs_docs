@@ -83,32 +83,61 @@ or
 
 making sure to replace ProjectID with the actual name of your project.
 
-R packages
-----------
+Installing additional R packages
+--------------------------------
 
-To install R packages, you'll need to confirm that your package's 
+To install additional R packages, you'll need to confirm that your package's 
 pre-requisites are met, either in your local environment or through
-loading the appropriate modules on the cluster. You will need to load any cluster modules that are pre-requisites, and install locally any other pre-requisites.  See :ref:`Pegasus Cluster Software Installation <soft-install>` for help with complex requirements.
+loading the appropriate modules on the cluster. See :ref:`Pegasus Cluster Software Installation <soft-install>` 
+for help with complex requirements.
 
 From the R prompt, install any R package to your personal R library with
-the standard ``install.package()`` R command. Choose ``y`` when asked
-about using a personal library, and ``y`` again if asked to create one.
+the standard ``install.package()`` R command. If asked about using a 
+personal library, choose ``y``, and if asked to create one, choose ``y`` again.
+
+For instance, to install the ``doParallel`` package, a parallel backend for the ``foreach``
+function, one would type the following on the commandline in an interactive 
+session of R:
 
 ::
 
     >  install.packages("doParallel", repos="http://R-Forge.R-project.org")
-    Warning in install.packages("doParallel", repos = "http://R-Forge.R-project.org") :
-      'lib = "/share/opt/R/3.1.2/lib64/R/library"' is not writable
-    Would you like to use a personal library instead?  (y/n) y
-    Would you like to create a personal library
-    ~/R/x86_64-unknown-linux-gnu-library/3.1
-    to install packages into?  (y/n) y
-    ...
 
-Contact `IDSC ACS <mailto:hpc@ccs.miami.edu>`_ to review any core library pre-requisites & dependencies, for cluster-wide installation.  
+and obtain as a result:
+
+::
+
+  Installing package into ‘/nethome/CaneID/R/x86_64-pc-linux-gnu-library/4.1’
+  (as ‘lib’ is unspecified)
+  trying URL 'http://R-Forge.R-project.org/src/contrib/doParallel_1.0.14.tar.gz'
+  Content type 'application/x-gzip' length 173692 bytes (169 KB)
+  ==================================================
+  downloaded 169 KB
+
+  * installing *source* package ‘doParallel’ ...
+  ** using staged installation
+  ** R
+  ** demo
+  ** inst
+  ** byte-compile and prepare package for lazy loading
+  ** help
+  *** installing help indices
+  ** building package indices
+  ** installing vignettes
+  ** testing if installed package can be loaded from temporary location
+  ** testing if installed package can be loaded from final location
+  ** testing if installed package keeps a record of temporary installation path
+  * DONE (doParallel)
+
+  The downloaded source packages are in
+  	  ‘/tmp/RtmpnBwmdD/downloaded_packages’
+  >
+
+Contact `IDSC ACS <mailto:hpc@ccs.miami.edu>`_ to review any core library 
+pre-requisites and dependencies, for cluster-wide installation.  
 
 
-R file examples
+Sample R script
 ~~~~~~~~~~~~~~~
 
 ``example1.R``
@@ -133,14 +162,10 @@ R file examples
     # close the file
     dev.off() 
 
-If you have forwarded your display, open the pdf from the Pegasus prompt
-with evince.
+The script above can be run as a batch job. After the job has run, the 
+graphical output file can be transferred to a local computer using 
+FileZilla or scp, in order to be viewed.
 
 ::
 
-    [username@pegasus ~]$ evince example1.pdf
-
-.. figure:: assets/r_example1pdf-246x300.png
-   :alt: example1.png
-
-   example1.png
+    [local_computer ~]$ open example1.pdf
