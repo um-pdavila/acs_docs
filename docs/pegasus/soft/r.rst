@@ -87,23 +87,21 @@ Installing additional R packages
 --------------------------------
 
 To install additional R packages, you'll need to confirm that your package's 
-pre-requisites are met, either in your local environment or through
-loading the appropriate modules on the cluster. See :ref:`Pegasus Cluster Software Installation <soft-install>` 
-for help with complex requirements.
+pre-requisites are met by inspecting and modifying your local environment as needed 
+or by loading the appropriate modules. See :ref:`Pegasus Cluster 
+Software Installation <soft-install>` for help with complex requirements.
 
 From the R prompt, install any R package to your personal R library with
-the standard ``install.package()`` R command. If asked about using a 
-personal library, choose ``y``, and if asked to create one, choose ``y`` again.
-
-For instance, to install the ``doParallel`` package, a parallel backend for the ``foreach``
+the standard ``install.package()`` R command. For instance, to install the 
+``doParallel`` package, a parallel backend for the ``foreach``
 function, one would type the following on the commandline in an interactive 
-session of R:
+session of R.
 
 ::
 
     >  install.packages("doParallel", repos="http://R-Forge.R-project.org")
 
-and obtain as a result:
+The result would be as follows:
 
 ::
 
@@ -137,8 +135,11 @@ Contact `IDSC ACS <mailto:hpc@ccs.miami.edu>`_ to review any core library
 pre-requisites and dependencies, for cluster-wide installation.  
 
 
-Sample R script
+A Sample R script
 ~~~~~~~~~~~~~~~
+
+Below is a sample R script which creates a grahical output file after it has been
+run.
 
 ``example1.R``
 
@@ -162,10 +163,6 @@ Sample R script
     # close the file
     dev.off() 
 
-The script above can be run as a batch job. After the job has run, the 
+Such a script can be run as a batch job. After the script has run, the 
 graphical output file can be transferred to a local computer using 
-FileZilla or scp, in order to be viewed.
-
-::
-
-    [local_computer ~]$ open example1.pdf
+``FileZilla`` or ``scp``, in order to be viewed. 
