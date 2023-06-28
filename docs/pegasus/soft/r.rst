@@ -25,7 +25,7 @@ Batch R
 
 To run a batch R file on the compute nodes on Pegasus, submit the file to LSF
 with ``R CMD BATCH filename.R``, with ``filename`` being the name of your R script.
-This can be done using the following (two) command:
+This can be done using the following (two) commands:
 
 ::
 
@@ -138,7 +138,7 @@ pre-requisites and dependencies, for cluster-wide installation.
 A Sample R script
 ~~~~~~~~~~~~~~~
 
-Below is a sample R script which creates a grahical output file after it has been
+Below is a sample R script which creates a graphical output file after it has been
 run.
 
 ``example1.R``
