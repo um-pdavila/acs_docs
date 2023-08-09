@@ -61,37 +61,39 @@ option). Consult the Linux man pages for more information on rsync.
 rclone 
 ~~~~~~
 
-The rclone a command-line program that can be used to manage your file over SFTP. Rclone supports over 40 cloud storage backends, as well as standard transfer protocols like SFTP.  This is a use case using rclone to migrate data from legacy storage to **IDSC CES** on **apex.idsc.miami.edu** using the default rclone on Pegasus, **rclone v1.39**.  You can install the latest version to your $HOME directory.
+The rclone a command-line program that can be used to manage your file over SFTP. Rclone supports over 40 cloud storage backends, as well as standard transfer protocols like SFTP.  This is a use case using rclone to migrate data from legacy storage to **IDSC CES** on **apex.idsc.miami.edu** using the latest version of rclone on Pegasus, **rclone v1.63.1**. 
 
-Source: https://rclone.org/sftp/
 
-**Installation**
+**Load the rclone software module**
 
 ::
 
-    [pdavila@login4 ~]$ curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
-      $ unzip rclone-current-linux-amd64.zip
-      $ mv rclone-v1.58.1-linux-amd64/ 1.58.1
-      $ export PATH=/nethome/pdavila/apps/rclone/1.58.1/:$PATH
-      $ which rclone
-      ~/apps/rclone/1.58.1/rclone
+    [nra20a@login4 ~]$ module load rclone
+    [nra20@login4 ~]$ module list
+    Currently Loaded Modulefiles:
+      1) perl/5.18.1(default)   2) rclone/1.63.1
 
-      $ rclone -V
-      rclone v1.58.1
-      - os/version: centos 7.6.1810 (64 bit)
-      - os/kernel: 3.10.0-957.el7.x86_64 (x86_64)
-      - os/type: linux
-      - os/arch: amd64
-      - go/version: go1.17.9
-      - go/linking: static 
-      - go/tags: none
+    [nra20@login4 ~]$ rclone -V
+    rclone v1.63.1
+    - os/version: centos 7.6.1810 (64 bit)
+    - os/kernel: 3.10.0-957.el7.x86_64 (x86_64)
+    - os/type: linux
+    - os/arch: amd64
+    - go/version: go1.20.6
+    - go/linking: static
+    - go/tags: none
 
-**Configuration**
+**Configure a new remote**
 
+
+1. Login to Pegasus 
 ::
 
     $ ssh pegasus.ccs.miami.edu
-    
+
+
+2. Create a new Remote 
+::
     [pdavila@login4 ~]$ rclone config
       No remotes found - make a new one
       n) New remote
@@ -100,72 +102,190 @@ Source: https://rclone.org/sftp/
  
       n/s/q> n
       name> apex
+
+3. Select your Storage Option (SSH/SFTP Connection "sftp")
+::
       ...
-      18 / SSH/SFTP Connection "sftp"
+      Option Storage.
+      Type of storage to configure.
+      Choose a number from below, or type in your own value.
       ...
-      Storage> 18
-      SSH host to connect to
-      Choose a number from below, or type in your own value
+      40 / SSH/SFTP Connection "sftp"
       ...
+      Storage> 40
+
+4. Enter apex host name
+::
+      Option host.
+      SSH host to connect to.
+      E.g. "example.com".
+      Enter a value.
       host> apex.idsc.miami.edu
-      SSH username, leave blank for current username, pdavila
-    
-      user> pdavila
-      SSH port, leave blank to use default (22)
-      port> 
+
+5. Enter your username
+::
+     Option user.
+     SSH username.
+     Enter a string value. Press Enter for the default (pdavila).
+     user> pdavila
+
+6. Enter port number (leave blank) 
+::
+     Option port.
+     SSH port number.
+     Enter a signed integer. Press Enter for the default (22).
+     port> 
+
+7. Enter your password
+::
+     Option pass.
+     SSH password, leave blank to use ssh-agent.
+     Choose an alternative below. Press Enter for the default (n).
+     y) Yes, type in my own password
+     g) Generate random password
+     n) No, leave this optional password blank (default)
+     y/g/n> y
+     Enter the password:
+     password:
+     Confirm the password:
+     password:
       
-      SSH password, leave blank to use ssh-agent.
-      y) Yes type in my own password
-      g) Generate random password
-      n) No leave this optional password blank
-      y/g/n> y
-      
-      Enter the password:
-      password:
-      Confirm the password:
-      password:
-      Path to unencrypted PEM-encoded private key file, leave blank to use ssh-agent.
-      key_file> 
-      Enable the user of the aes128-cbc cipher. This cipher is insecure and may allow plaintext data to be recovered by an attacker..
-      Choose a number from below, or type in your own value
-      1 / Use default Cipher list. "false"
-      2 / Enables the use of the aes128-cbc cipher.  "true"
-      
+8. Option key files (can be left blank by default)
+::
+     Option key_pem.
+     Raw PEM-encoded private key.
+     If specified, will override key_file parameter.
+     Enter a value. Press Enter to leave empty.
+     key_pem> 
+
+     Option key_file.
+     Path to PEM-encoded private key file.
+     Leave blank or set key-use-agent to use ssh-agent.
+     Leading `~` will be expanded in the file name as will environment variables such as `${RCLONE_CONFIG_DIR}`.
+     Enter a value. Press Enter to leave empty.
+     key_file> 
+
+9. Option key file password (type your own password)
+::
+
+     Option key_file_pass.
+     The passphrase to decrypt the PEM-encoded private key file.
+     Only PEM encrypted key files (old OpenSSH format) are supported. Encrypted keys
+     in the new OpenSSH format can't be used.
+     Choose an alternative below. Press Enter for the default (n).
+     y) Yes, type in my own password
+     g) Generate random password
+     n) No, leave this optional password blank (default)
+     y/g/n> y
+     Enter the password:
+     password:
+     Confirm the password:
+     password:
+
+10. Public key options (Can be left blank by default)
+::
+     Option pubkey_file.
+     Optional path to public key file.
+     Set this if you have a signed certificate you want to use for authentication.
+     Leading `~` will be expanded in the file name as will environment variables such as `${RCLONE_CONFIG_DIR}`.
+     Enter a value. Press Enter to leave empty.
+     pubkey_file> 
+
+     Option key_use_agent.
+     When set forces the usage of the ssh-agent.
+     When key-file is also set, the ".pub" file of the specified key-file is read and only the associated key is
+     requested from the ssh-agent. This allows to avoid `Too many authentication failures for *username*` errors
+     when the ssh-agent contains many keys.
+     Enter a boolean value (true or false). Press Enter for the default (false).
+     key_use_agent>
+
+11. Insecure cipher and hash options can be left blank by default
+::
+     Option use_insecure_cipher.
+     Enable the use of insecure ciphers and key exchange methods.
+     This enables the use of the following insecure ciphers and key exchange methods:
+     - aes128-cbc
+     - aes192-cbc
+     - aes256-cbc
+     - 3des-cbc
+     - diffie-hellman-group-exchange-sha256
+     - diffie-hellman-group-exchange-sha1
+     Those algorithms are insecure and may allow plaintext data to be recovered by an attacker.
+     This must be false if you use either ciphers or key_exchange advanced options.
+     Choose a number from below, or type in your own boolean value (true or false).
+     Press Enter for the default (false).
+      1 / Use default Cipher list.
+        \ (false)
+      2 / Enables the use of the aes128-cbc cipher and diffie-hellman-group-exchange-sha256, diffie-hellman-group-exchange-sha1 key 
+     exchange.
+        \ (true)
       use_insecure_cipher> 
-      Remote config
-      --------------------
-      [apex]
-      host = apex.idsc.miami.edu
-      user = pdavila
-      port = 
-      pass = *** ENCRYPTED ***
-      key_file = 
-      use_insecure_cipher = 
-      --------------------
-      y) Yes this is OK
-      e) Edit this remote
-      d) Delete this remote
-      y/e/d> y
-      Current remotes:
+
+     Option disable_hashcheck.
+     Disable the execution of SSH commands to determine if remote file hashing is available.
+     Leave blank or set to false to enable hashing (recommended), set to true to disable hashing.
+     Enter a boolean value (true or false). Press Enter for the default (false).
+     disable_hashcheck> 
+
+     Edit advanced config?
+     y) Yes
+     n) No (default)
+     y/n> 
+
+12. Configurations are now complete and will be shown, you can type in 'q' to quit the config menu
+::
       
-      Name                 Type
-      ====                 ====
-      apex                 sftp
-      
-      e) Edit existing remote
-      n) New remote
-      d) Delete remote
-      r) Rename remote
-      c) Copy remote
-      s) Set configuration password
-      q) Quit config
-      e/n/d/r/c/s/q> q
-      
-    [pdavila@login4 rclone]$ rclone lsd apex:/
-      -1 2022-06-08 12:40:30        -1 hpc
-      -1 2022-06-13 17:25:44        -1 schurerlab
- 
-    [pdavila@login4 rclone]$ rclone mkdir apex:/schurerlab/pdavila
+     Configuration complete.
+     Options:
+     - type: sftp
+     - host: apex.idsc.miami.edu
+     - pass: *** ENCRYPTED ***
+     - key_file_pass: *** ENCRYPTED ***
+     Keep this "apex" remote?
+     y) Yes this is OK (default)
+     e) Edit this remote
+     d) Delete this remote
+     y/e/d> 
+
+     Current remotes:
+
+     Name                 Type
+     ====                 ====
+     apex                 sftp
+
+     e) Edit existing remote
+     n) New remote
+     d) Delete remote
+     r) Rename remote
+     c) Copy remote
+     s) Set configuration password
+     q) Quit config
+     e/n/d/r/c/s/q>q
+
+**Transfer your data to remote site**
+
+The rclone lsd command will list the folders of the current specified path in the remote system
+::
+
+     [nra20@login4 ~]$ rclone lsd apex:/
+               -1 2023-08-09 10:36:35        -1 acs
+               -1 2022-11-04 15:20:10        -1 bin
+               -1 2022-11-28 15:36:50        -1 dcrawford
+               -1 2022-11-04 15:19:15        -1 lib64
+               -1 2022-09-30 18:17:33        -1 netra
+               -1 2022-09-13 18:12:26        -1 schurerlab
+               -1 2023-08-08 17:35:21        -1 selipot
+
+You can create a subdirectory if needed using the rclone mkdir command
+::
+
+    [nra20@login4 ~]$ rclone mkdir apex:/acs/nra20
+    [nra20@login4 ~]$ rclone lsd apex:/acs
+          -1 2022-06-08 12:40:43        -1 mihg-mapping
+          -1 2023-08-09 10:39:04        -1 nra20
+          -1 2022-11-04 15:23:17        -1 pdavila
+     
+    
 
 **Note:** Because ``rclone copy`` command can take hours to complete, we recommend you use the ``screen`` command when running rclone interactively.  This way the sync will not terminate prematurally, should your ssh session end.
 
@@ -178,6 +298,8 @@ Source: https://rclone.org/sftp/
       -1 2022-06-23 10:36:21        -1 ffmpeg
       -1 2022-06-23 10:36:21        -1 firefox
       -1 2022-06-23 10:36:21        -1 wget
+
+You can exit your screen session using the 'exit' command. 
 
 
 Using FileZilla
