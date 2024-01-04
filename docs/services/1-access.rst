@@ -38,8 +38,8 @@ or SSH without account credentials to be prompted::
     login as: username
     username@pegasus.ccs.miami.edu's password:
 
-To use SSH key pairs to authenticate, see the CentOS wiki:
-http://wiki.centos.org/HowTos/Network/SecuringSSH
+To use SSH key pairs to authenticate, see Tutorial below:
+https://phoenixnap.com/kb/how-to-generate-ssh-key-centos-7
 
 
 
