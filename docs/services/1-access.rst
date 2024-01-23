@@ -123,6 +123,8 @@ https://my.it.miami.edu/wda/a-z/virtual-private-network/
 
 Send access range requests (for Vendor VPN applications) to : `IDSC ACS <mailto:hpc@ccs.miami.edu>`_  
 
+PLEASE NOTE: As of 2024, only UMIT provisoned hardware will be able to access the VPN off campus. 
+
 
 
 
