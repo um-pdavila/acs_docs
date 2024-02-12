@@ -18,7 +18,7 @@ The Triton cluster is the University of Miami's newest supercomputer cluster.
     Details:              Triton Supercomputer
     Credentials:          University of Miami Account 
     Access & Allocations: Policies 
-    Operating System:     CentOS 7.6
+    Operating System:     Red Hat Linux Enterprise (RHEL) 7.6
     Default Shell:        Bash
     Data Transfer:        SCP and SFTP
     
