@@ -3,7 +3,7 @@
 Connecting to Advanced Computing Systems 
 ========================================
 
-Use a secure-shell (SSH) client to connect for secure, encrypted communication. From within UM's secure network (SecureCanes wired connection on campus) or VPN, connect from:
+Use a secure-shell (SSH) client to connect for secure, encrypted communication. From within UM's secure network (UMiamiWireless connection on campus) or VPN, connect from:
 
 Windows
 ~~~~~~~
