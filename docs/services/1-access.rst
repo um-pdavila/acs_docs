@@ -55,7 +55,7 @@ server and adding the ``-X`` option when connecting via SSH.
 Download an X Window System server
 ----------------------------------
 
--  For Windows, Xming with the default installation options : http://sourceforge.net/projects/xming/files/latest/download
+-  For Windows, VcXsrv with the default installation options : https://sourceforge.net/projects/vcxsrv/
 -  For Mac, XQuartz (OSX 10.8+) : http://www.xquartz.org/ 
 
 _OS X versions 10.5 through 10.7 include X11 and do not require XQuartz._ 
