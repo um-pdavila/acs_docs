@@ -104,7 +104,6 @@ For optimum performance, use the ``#BSUB -R "span[ptile=40]"``. This requires th
 
 .. code:: bash
 
-    $ cat mpi_hello_world.job
     #!/bin/sh
     #BSUB -n 20
     #BSUB -J mpi_hello_world
