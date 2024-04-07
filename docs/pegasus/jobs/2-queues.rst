@@ -47,7 +47,7 @@ may be suspended (:ref:`Policies <policies>`).
      - parallel jobs requiring 16 or more cores, up to 32 GB memory per node. :raw-html:`<br />` **requires resource distribution -R "span[ptile=16]"**
    * - bigmem 
      - 16 
-     - up to 250 GB 
+     - up to 250 GB per node
      - 4 hours \/ 5 days 
      - jobs requiring nodes with more than 32 GB of memory, max. of 64 cores allowed per job.
    * - debug 
@@ -57,7 +57,7 @@ may be suspended (:ref:`Policies <policies>`).
      - job debugging, max. of 64 cores allowed per job.
    * - interactive 
      - 16 (15 for jobs)
-     - up to 250 GB 
+     - up to 250 GB per node
      - 6 hours \/ 1 day 
      - interactive jobs :raw-html:`<br />` max 1 job per user
    * - gpu 
