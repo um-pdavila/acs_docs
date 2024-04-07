@@ -5,24 +5,23 @@ Pegasus Job Queues
 
 Pegasus queues are organized using limits like job size, job length, job
 purpose, and project. In general, users run jobs on Pegasus with equal
-resource shares. Current or recent resource usage lowers the priority
-applied when LSF assigns resources for new jobs from a user’s account.
+resource shares. A user's current or recent resource usage lowers the 
+priority applied when LSF assigns resources for their new jobs.
 
-Parallel jobs are more difficult to schedule as they are inherently
-larger. Serial jobs can “fit into” the gaps left by larger jobs if
-serial jobs use short enough run time limits and small enough numbers of
-processors.
+The **general** queue is available for jobs requiring 15 or less cores.
 
 The **parallel** queue is available for jobs requiring 16 or more cores.
 Submitting jobs to this queue ***requires*** resource distribution
-``-R "span[ptile=16]".``
+``-R "span[ptile=16]"`` which makes sure as few nodes as possible are used.
 
-The **bigmem** queue is available for jobs requiring nodes with expanded
-memory. Submitting jobs to this queue requires project membership. Do
-not submit jobs that can run on the general and parallel queues to the
+The **bigmem** queue is available for jobs requiring more than 32 GB of 
+memory per node. Submitting jobs to this queue requires project membership. 
+Do not submit jobs that can run on the general and parallel queues to the
 bigmem queue. 
 
-.. warning:: Jobs using less than 1.5G of memory per core on the bigmem queue are in violation of acceptable use policies and the IDSC account responsible for those jobs may be suspended (:ref:`Policies <policies>`).
+.. warning:: Jobs using less than 1.5G of memory per core on the bigmem queue are 
+in violation of acceptable use policies and the IDSC account responsible for those jobs 
+may be suspended (:ref:`Policies <policies>`).
 
 
 .. role:: raw-html(raw)
@@ -32,33 +31,33 @@ bigmem queue.
    :header-rows: 1
    
    * - Queue Name
-     - Processors (Cores)  
+     - Cores per node
      - Memory
      - Wall time default \/ max 
      - Description 
    * - general 
-     - 15- 
-     - 24GB max 
+     - 16 (15 for jobs)
+     - up to 32 GB per node
      - 1 day \/ 7 days 
-     - jobs up to 15 cores, up to 24GB memory 
+     - jobs up to 15 cores, up to 32 GB memory 
    * - parallel 
-     - 16+ 
-     - 24GB max 
+     - 16
+     - up to 32 GB per node 
      - 1 day \/ 7 days 
-     - parallel jobs requiring 16 or more cores, up to 24GB memory. :raw-html:`<br />` **requires resource distribution -R "span[ptile=16]"**
+     - parallel jobs requiring 16 or more cores, up to 32 GB memory per node. :raw-html:`<br />` **requires resource distribution -R "span[ptile=16]"**
    * - bigmem 
-     - 64 max 
-     - 250GB max 
+     - 16 
+     - up to 250 GB 
      - 4 hours \/ 5 days 
-     - jobs requiring nodes with expanded memory 
+     - jobs requiring nodes with more than 32 GB of memory 
    * - debug 
-     - 64 max 
-     - 24GB max 
+     - 16
+     - up to 32 GB 
      - 30 mins \/ 30 mins 
      - job debugging 
    * - interactive 
-     - 15- 
-     - 250GB max 
+     - 16 (15 for jobs)
+     - up to 250 GB 
      - 6 hours \/ 1 day 
      - interactive jobs :raw-html:`<br />` max 1 job per user
    * - gpu 
