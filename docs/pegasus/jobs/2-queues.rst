@@ -49,12 +49,12 @@ may be suspended (:ref:`Policies <policies>`).
      - 16 
      - up to 250 GB 
      - 4 hours \/ 5 days 
-     - jobs requiring nodes with more than 32 GB of memory 
+     - jobs requiring nodes with more than 32 GB of memory, max. of 64 cores allowed per job.
    * - debug 
      - 16
      - up to 32 GB 
      - 30 mins \/ 30 mins 
-     - job debugging 
+     - job debugging, max. of 64 cores allowed per job.
    * - interactive 
      - 16 (15 for jobs)
      - up to 250 GB 
