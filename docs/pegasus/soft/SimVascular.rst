@@ -1,12 +1,12 @@
 SimVascular on Pegasus
-============
+=======================
 
 SimVascular is available as a software module on Pegasus. SimVascular graphical jobs can be submitted to 
 the LSF scheduler via the interactive queue using the tk gui.
 
 
 Forwarding X11
--------
+----------------
 
 In order to launch a SimVascular interactive job, you will need to login to Pegasus with X11 forwarding enabled.
 
@@ -17,7 +17,7 @@ https://acs-docs.readthedocs.io/services/1-access.html?highlight=x11#connect-wit
 
 
 Loading the Module
--------
+-------------------
 The SimVascular module is dependent on the gcc/8.3.1 software module. This will come pre-loaded once the SimVascular module has been loaded.
 
 ::
@@ -29,7 +29,7 @@ The SimVascular module is dependent on the gcc/8.3.1 software module. This will 
        2) gcc/8.3.1    
        
 Launching Graphical Interactive Jobs
--------    
+------------------------------------- 
 You can use the following command to launch an interactive job. Be Sure to use the -tk parameter when launching SimVascular in order to utilize
 the tk gui.
 
