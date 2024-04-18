@@ -136,7 +136,7 @@ pre-requisites and dependencies, for cluster-wide installation.
 
 
 A Sample R script
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 Below is a sample R script which creates a graphical output file after it has been
 run.
