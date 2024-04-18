@@ -2,7 +2,7 @@
    Please make sure to save your work frequently in case a shutdown happens.
    
 JupyterHub on Pegasus User Menu
-==============================
+===============================
 
 Introduction
 ------------
@@ -19,7 +19,7 @@ Currently all requested Notebook servers are running in only two compute
 nodes. It is recommended to use the Notebook as a testing tool and submit formal jobs via LSF.
 
 Using JupyterHub on Pegasus
---------------------------
+---------------------------
 
 Login
 ~~~~~
