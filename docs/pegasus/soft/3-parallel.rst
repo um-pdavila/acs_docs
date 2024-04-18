@@ -14,7 +14,7 @@ Sample parallel programs:
 -------------------------
 
 C++ source code and compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``mpi_example1.cpp``
 
@@ -92,7 +92,7 @@ C source code and compilation:
     [username@pegasus ~]$ mpicc -o mpi_example1.x mpi_example1.c
 
 Fortran 90 source code and compilation:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                    
 
 ``mpi_example1.f90``
@@ -132,7 +132,7 @@ Fortran 90 source code and compilation:
     [username@pegasus ~]$ mpif90 -o mpi_example1.x mpi_example1.f90
 
 Fortran 77 source code and compilation:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                    
 
 ``mpi_example1.f``
