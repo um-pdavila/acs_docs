@@ -1,5 +1,5 @@
 Using R through Anaconda
-============
+========================
 
 If you find that the current R modules on Pegasus do not support 
 dependencies for your needed R packages, an alternative option is 
@@ -9,7 +9,7 @@ and deployment. It includes numerous data science packages including that of
 R.
 
 Anaconda Installation
--------
+---------------------
 
 First you will need to download and install Anaconda in your home directory. 
 
@@ -25,7 +25,7 @@ Unpack and install the downloaded Anaconda bash script
     
 
 Configuring Anaconda environment 
--------
+---------------------------------
 
 Activate conda with the new Anaconda3 folder in your home directory (Depending on your download this folder might also be named 'ENTER')
 
@@ -55,7 +55,7 @@ is currently active, in this case the R conda environment you just created.
     
 
 Common R package dependencies 
--------
+-----------------------------
 
 Some R packages like 'tidycensus', 'sqldf', and 'kableExtra' require additional 
 library dependencies in order to install properly. To install library dependencies you may
@@ -81,7 +81,7 @@ Below is an example of installing library dependencies needed for 'tidycensus', 
     
 
 Activating conda environment upon login  
--------
+----------------------------------------
 
 Whenever you login, you will need to re-activate your conda environment to re-enter it. 
 To avoid this, you can edit your .bashrc file in your home directory 
@@ -112,7 +112,7 @@ To obtain a list of your conda environments, use the following command:
     
 
 Running jobs
--------
+--------------
 
 In order to properly run a job using R within a conda environment you will need to 
 initiate & activate the conda environment within the job script, otherwise the job may fail to find your
