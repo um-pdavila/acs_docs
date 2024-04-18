@@ -46,6 +46,7 @@ Or installing individual package:
 -  (your environment)$ ``conda install <WML CE supported package>``
 
 .. note::
+
    WML CE 1.7.0 and 1.6.2 need Python 3.6 or 3.7; WML CE 1.6.1 needs Python 2.7 or 3.6.
    
    You can check the packages included in each WML CE version at 
