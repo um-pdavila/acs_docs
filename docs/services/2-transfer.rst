@@ -94,6 +94,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 2. Create a new Remote 
 ::
+
     [pdavila@login4 ~]$ rclone config
       No remotes found - make a new one
       n) New remote
@@ -105,6 +106,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 3. Select your Storage Option (SSH/SFTP Connection "sftp")
 ::
+
       ...
       Option Storage.
       Type of storage to configure.
@@ -116,6 +118,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 4. Enter apex host name
 ::
+
       Option host.
       SSH host to connect to.
       E.g. "example.com".
@@ -124,6 +127,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 5. Enter your username
 ::
+
      Option user.
      SSH username.
      Enter a string value. Press Enter for the default (pdavila).
@@ -131,6 +135,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 6. Enter port number (leave blank) 
 ::
+
      Option port.
      SSH port number.
      Enter a signed integer. Press Enter for the default (22).
@@ -138,6 +143,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 7. Enter your password
 ::
+
      Option pass.
      SSH password, leave blank to use ssh-agent.
      Choose an alternative below. Press Enter for the default (n).
@@ -152,6 +158,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
       
 8. Option key files (can be left blank by default)
 ::
+
      Option key_pem.
      Raw PEM-encoded private key.
      If specified, will override key_file parameter.
@@ -184,6 +191,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 10. Public key options (Can be left blank by default)
 ::
+
      Option pubkey_file.
      Optional path to public key file.
      Set this if you have a signed certificate you want to use for authentication.
@@ -201,6 +209,7 @@ The rclone a command-line program that can be used to manage your file over SFTP
 
 11. Insecure cipher and hash options can be left blank by default
 ::
+
      Option use_insecure_cipher.
      Enable the use of insecure ciphers and key exchange methods.
      This enables the use of the following insecure ciphers and key exchange methods:
